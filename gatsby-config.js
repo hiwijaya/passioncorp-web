@@ -4,7 +4,18 @@
 module.exports = {
   siteMetadata: {
     title: `Passion Corp`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://passioncorp.id`
   },
-  plugins: ["gatsby-plugin-postcss"]
+  plugins: [
+    "gatsby-plugin-postcss",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
+  ]
 };
