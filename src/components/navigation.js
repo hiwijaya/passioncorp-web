@@ -14,11 +14,11 @@ const Navigation = () => {
           <div>
             <nav className="inline-flex text-white gap-10 mr-10">
               <a href="/">Services</a>
-              <a href="/">Portfolio</a>
+              <a href="/">Pricing</a>
               <a href="/">About</a>
               <a href="/">Contact</a>
             </nav>
-            <button className="rounded-xl bg-sky-500 text-white px-6 py-4">Hire Us</button>
+            <button className="rounded-xl bg-sky-500 text-white px-6 py-3">Hire Us</button>
           </div>
         </div>
     </div>

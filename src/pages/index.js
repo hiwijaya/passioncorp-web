@@ -2,6 +2,7 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Navigation from "../components/navigation"
 import Slider from "../components/slider"
+import Footer from "../components/footer"
 
 const IndexPage = () => {
 
@@ -166,14 +167,16 @@ const IndexPage = () => {
   )
 
   return (
-    <main className="bg-white">
-      <Navigation />
-      <Slider />
+    <main className="relative min-h-screen bg-white">
+      <div className="pb-72">
+        <Navigation />
+        <Slider />
 
-      {aboutUsSection()}
-      {glanceSection()}
-      {serviceSection()}
-
+        {aboutUsSection()}
+        {glanceSection()}
+        {serviceSection()}
+      </div>
+      <Footer/>
     </main>
   )
 }
