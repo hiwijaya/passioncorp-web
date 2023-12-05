@@ -11,9 +11,10 @@ const Slider = () => {
           <StaticImage imgClassName="object-cover w-full max-h-[700px]" src="../images/slider/slider-1.jpg" alt="slide 1"/>
           <div className="absolute left-0 top-0 w-full h-full inline-flex justify-center items-center bg-black/75">
             <div className="w-full max-w-7xl text-white">
-              <div className="font-bold text-4xl text-sky-500 mb-5">MEETINGS AND CORPORATE EVENTS</div>
+              <div className="font-bold text-5xl text-sky-500 mb-5">EVENT</div>
               <p className="w-full max-w-2xl">
-                From impressive, eye-catching stage design, to flawlessly executed breakout sessions, our team is here to help you provide exceptional experiences, no matter the size or scope.
+                From impressive, eye-catching stage design, to flawlessly executed breakout sessions, 
+                our team is here to help you provide exceptional experiences, no matter the size or scope.
               </p>
             </div>
           </div>
@@ -22,9 +23,10 @@ const Slider = () => {
           <StaticImage imgClassName="object-cover w-full max-h-[700px]" src="../images/slider/slider-2.jpg" alt="slide 1"/>
           <div className="absolute left-0 top-0 w-full h-full inline-flex justify-center items-center bg-black/75">
             <div className="w-full max-w-7xl text-white">
-              <div className="font-bold text-4xl text-sky-500 mb-5">CUSTOM LED DISPLAYS</div>
+              <div className="font-bold text-5xl text-sky-500 mb-5">PRODUCTION</div>
               <p className="w-full max-w-2xl">
-                Whether you'd like to display large images, custom graphics, or video, LEDs help to command greater attention and improve retention.
+                From concept to set-up to on-site support, we are there every step of the way to provide you
+                with the exceptional product and service you deserve.
               </p>
             </div>
           </div>
@@ -33,11 +35,9 @@ const Slider = () => {
           <StaticImage imgClassName="object-cover w-full max-h-[700px]" src="../images/slider/slider-3.jpg" alt="slide 1"/>
           <div className="absolute left-0 top-0 w-full h-full inline-flex justify-center items-center bg-black/75">
             <div className="w-full max-w-7xl text-white">
-              <div className="font-bold text-4xl text-sky-500 mb-5">PRODUCTION DESIGN CUSTOM</div>
+              <div className="font-bold text-5xl text-sky-500 mb-5">SUPPLIER</div>
               <p className="w-full max-w-2xl">
-                All events, sales conferences, customer meetings, awards shows 
-                and product launches need to make an emotional connection to be successful. 
-                Let passion corp indonesia be your guide to an impactful, memorable event.
+                We understand how to get audience's attention using the right tools, we're committed to customizing the experience to exceed all expectations.
               </p>
             </div>
           </div>
