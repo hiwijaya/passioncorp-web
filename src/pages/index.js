@@ -168,7 +168,7 @@ const IndexPage = () => {
 
   return (
     <main className="relative min-h-screen bg-white">
-      <div className="pb-72">
+      <div className="pb-96">
         <Navigation />
         <Slider />
 
