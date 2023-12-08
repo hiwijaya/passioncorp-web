@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Navigation from "../components/navigation"
 import Slider from "../components/slider"
 import Footer from "../components/footer"
+import TestimonyCard from "../components/testimonyCard"
 
 const IndexPage = () => {
 
@@ -166,6 +167,83 @@ const IndexPage = () => {
     </div>
   )
 
+  const testimonySection = () => (
+    <div className="inline-flex justify-center w-full bg-slate-100">
+      <div className="flex flex-col w-full max-w-7xl my-20">
+        <div className="font-bold text-4xl mb-10">What <span className="text-sky-500">People Say</span> <br/> About Us</div>
+        <div className="inline-flex gap-10 overflow-x-auto no-scrollbar w-full">
+
+          <TestimonyCard 
+            words="It is often interesting, in retrospect, to consider the trifling causes that lead to great events. 
+            A chance encounter, a thoughtless remark  and the tortuous chain reaction of coincidence is set in motion, 
+            leading with devious inevitability to some resounding climax."
+            name="Akira Murayama"
+            title="CEO ABEAM Consulting"/>
+
+          <TestimonyCard 
+            words="Thank you for making our event a success. I am very satisfied with the performance of your team. 
+            I hope you have more success in the future."
+            name="Pradeep Bahuguna"
+            title="CEO Indoin Business Group"/>
+
+          <TestimonyCard 
+            words="Pertemuan pertama yang bikin gak lupa 🤣 sangat friendly sampe bisa bikin suasana cair. 
+            So sorry banyak revisi di menjelang hari H semua tim keren yang telah sama-sama mempersiapkan 
+            dan menyelesaikan bersama event ini dengan baik. terima kasih untuk komunikasi dan diskusi selama ini."
+            name="Esther Suhana"
+            title="Marketing Manager CBQA Global"/>
+          
+          <TestimonyCard 
+            words="We appreciate and thank you so much for Passion Corp EO Pak Managing Director bilang all in Oke bagus semua"
+            name="Mohammad Rifani"
+            title="Legal and license Asst. Manager"/>
+
+          <TestimonyCard 
+            words="This is a big event, participants come from various countries in Asia. 
+            Thank you to eo for his contribution to help get involved in this event.
+            I wish you continued success in the future."
+            name="Daniel Sim"
+            title="Senior Director Asia Vertiv"/>
+          
+          <TestimonyCard 
+            words="acaranya seru banget, event ini juga waktunya kurang lama karena saking asiknya
+            ngobrolnya. pertanyaannya banyak banget, dan menginspirasi aku banget sebaga 
+            pembicaranya. sampai ketemu di next session."
+            name="Analisa Widyaningrum"
+            title="Director Analisa Personality Development Center"/>
+
+          <TestimonyCard 
+            words="seneng banget hari ini bisa gabung di acara welcoming party nya paranovo, 
+            menurutku acara nya seru banget dan teman2 bisa dateng sangat antusias,
+            mudah-mudahan temen2 bisa dapet ilmu yang bermanfaat dan bisa diaplikasikan 
+            sukses terus buat semuanya."
+            name="Daniel Sim"
+            title="Senior Director Asia Vertiv"/>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  )
+
+
+  const portfolioSection = () => (
+    <div className="inline-flex justify-center w-full ">
+      <div className="flex flex-col items-center w-full max-w-7xl my-20">
+        <div className="w-fit relative mb-10 ">
+          <div className="absolute bottom-0 left-5 bg-sky-300 w-44 h-3"></div>
+          <h2 className="relative text-4xl font-bold">See Our Work</h2>
+        </div>
+        <p className="mb-10">
+          we are there every step of the way to provide you with the exceptional event and service you deserve
+        </p>
+      </div>
+    </div>
+  )
+
+
   return (
     <main className="relative min-h-screen bg-white">
       <div className="pb-96">
@@ -175,6 +253,8 @@ const IndexPage = () => {
         {aboutUsSection()}
         {glanceSection()}
         {serviceSection()}
+        {testimonySection()}
+        {portfolioSection()}
       </div>
       <Footer/>
     </main>
