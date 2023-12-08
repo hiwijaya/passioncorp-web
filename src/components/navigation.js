@@ -7,7 +7,7 @@ const Navigation = () => {
         <div className="inline-flex items-center justify-between w-full max-w-7xl">
           <a href="/">
             <div className="flex flex-row items-center text-white font-medium">
-              <StaticImage className="w-12 mr-1" src="../images/logo-passion.png" alt="logo"/>
+              <StaticImage className="w-12 mr-1" src="../images/logo-white.png" alt="logo"/>
               Passion Corp. Indonesia
             </div>
           </a>
