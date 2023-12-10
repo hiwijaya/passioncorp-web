@@ -30,8 +30,8 @@ const IndexPage = () => {
             <a href="/about" className="text-primary font-bold">More about us..</a>
           </div>
           <div className="flex-1 flex items-center justify-center">
-            <StaticImage className="shadow-2xl shadow-sky-400 rounded-3xl w-[450px] rotate-12 hover:rotate-6 hover:scale-110 transition duration-150 cursor-pointer"
-              src="../images/team-1.jpg" alt="team" />
+            <StaticImage className="w-[450px]"
+              src="../images/image-profile.png" alt="about us" />
           </div>
         </div>
       </div>
@@ -217,11 +217,8 @@ const IndexPage = () => {
             menurutku acara nya seru banget dan teman2 bisa dateng sangat antusias,
             mudah-mudahan temen2 bisa dapet ilmu yang bermanfaat dan bisa diaplikasikan 
             sukses terus buat semuanya."
-            name="Daniel Sim"
-            title="Senior Director Asia Vertiv"/>
-
-
-
+            name="Nadhira Afifa"
+            title="Limitless Foundation Indonesia"/>
 
         </div>
       </div>
@@ -239,6 +236,72 @@ const IndexPage = () => {
         <p className="mb-10">
           we are there every step of the way to provide you with the exceptional event and service you deserve
         </p>
+        <div className="grid grid-cols-4 gap-5 mb-10">
+          <div className="flex flex-col bg-white h-[300px] shadow-xl rounded-2xl overflow-hidden cursor-pointer">
+            <StaticImage className="w-full h-[200px]" src="https://img.youtube.com/vi/uhfW9jKMlbo/maxresdefault.jpg" alt="event"/>
+            <div className="relative flex justify-center items-center flex-1 ">
+              <div className="absolute -top-7 right-5 bg-white w-14 h-14 flex justify-center items-center rounded-full shadow-xl">
+                <StaticImage className="w-5"  src="../images/icon-play.png" alt="play"/>
+              </div>
+              <div className="text-sm font-bold mx-5 text-center">
+                Asian Summit Vertiv 2023, Bali
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col bg-white h-[300px] shadow-xl rounded-2xl overflow-hidden cursor-pointer">
+            <StaticImage className="w-full h-[200px]" src="https://img.youtube.com/vi/O70Z5igRpgc/maxresdefault.jpg" alt="event"/>
+            <div className="relative flex justify-center items-center flex-1 ">
+              <div className="absolute -top-7 right-5 bg-white w-14 h-14 flex justify-center items-center rounded-full shadow-xl">
+                <StaticImage className="w-5" src="../images/icon-play.png" alt="play"/>
+              </div>
+              <div className="text-sm font-bold mx-5 text-center">
+                Forum Nasional Pindungan Data, Bali
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col bg-white h-[300px] shadow-xl rounded-2xl overflow-hidden cursor-pointer">
+            <StaticImage className="w-full h-[200px]" src="https://img.youtube.com/vi/bFlQzp0MFT4/maxresdefault.jpg" alt="event"/>
+            <div className="relative flex justify-center items-center flex-1 ">
+              <div className="absolute -top-7 right-5 bg-white w-14 h-14 flex justify-center items-center rounded-full shadow-xl">
+                <StaticImage className="w-5" src="../images/icon-play.png" alt="play"/>
+              </div>
+              <div className="text-sm font-bold mx-5 text-center">
+                Indoin Infinite 2023, Ritz Carlton Jakarta
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col bg-white h-[300px] shadow-xl rounded-2xl overflow-hidden cursor-pointer">
+            <StaticImage className="w-full h-[200px]" src="https://img.youtube.com/vi/msxYu8Ow4I8/maxresdefault.jpg" alt="event"/>
+            <div className="relative flex justify-center items-center flex-1 ">
+              <div className="absolute -top-7 right-5 bg-white w-14 h-14 flex justify-center items-center rounded-full shadow-xl">
+                <StaticImage className="w-5" src="../images/icon-play.png" alt="play"/>
+              </div>
+              <div className="text-sm font-bold mx-5 text-center">
+                3000+ Paragonian Rekor Muri
+              </div>
+            </div>
+          </div>
+        </div>
+        <button className="bg-sky-400 rounded-full text-white px-10 py-5">WE HAVE MORE!</button>
+      </div>
+    </div>
+  )
+
+  const touchSection = () => (
+    <div className="inline-flex justify-center w-full">
+      <div className="w-full max-w-7xl my-20">
+        <div className="w-full h-[300px] bg-cover bg-[url('../images/background.png')] rounded-3xl overflow-hidden">
+          <div className="flex flex-row h-full">
+            <div className="flex flex-col justify-center flex-1 pl-10 text-white">
+              <div>Passion Corp Indonesia as a solution your event matters</div>
+              <div className="text-2xl font-bold mb-5">Do you want your event to be quality? Just Passion.</div>
+              <button className="bg-yellow-400 w-52 py-4 text-black rounded-xl">Get in Touch</button>
+            </div>
+            <div className="flex justify-end items-end">
+              <StaticImage className="w-[450px]" src="../images/image-group.png" alt="image group"/>
+            </div>
+          </div>
+      </div>
       </div>
     </div>
   )
@@ -255,6 +318,7 @@ const IndexPage = () => {
         {serviceSection()}
         {testimonySection()}
         {portfolioSection()}
+        {touchSection()}
       </div>
       <Footer/>
     </main>
