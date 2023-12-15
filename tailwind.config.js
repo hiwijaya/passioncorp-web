@@ -10,7 +10,8 @@ module.exports = {
         'sans': ['Poppins', 'sans-serif']
       },
       colors: {
-        primary: '#30578e'
+        primary: '#30578e',
+        footer: '#ccdbed'
       },
     },
   },

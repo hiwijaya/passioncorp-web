@@ -288,8 +288,8 @@ const IndexPage = () => {
   )
 
   const touchSection = () => (
-    <div className="inline-flex justify-center w-full">
-      <div className="w-full max-w-7xl my-20">
+    <div className="relative inline-flex justify-center w-full">
+      <div className="z-10 w-full max-w-7xl mt-20">
         <div className="w-full h-[300px] bg-cover bg-[url('../images/background.png')] rounded-3xl overflow-hidden">
           <div className="flex flex-row h-full">
             <div className="flex flex-col justify-center flex-1 pl-10 text-white">
@@ -298,18 +298,19 @@ const IndexPage = () => {
               <button className="bg-yellow-400 w-52 py-4 text-black rounded-xl">Get in Touch</button>
             </div>
             <div className="flex justify-end items-end">
-              <StaticImage className="w-[450px]" src="../images/image-group.png" alt="image group"/>
+              <StaticImage className="w-[450px]" src="../images/image-group.png" alt="image group" />
             </div>
           </div>
+        </div>
       </div>
-      </div>
+      
     </div>
   )
 
 
   return (
     <main className="relative min-h-screen bg-white">
-      <div className="pb-96">
+      <div className="pb-[350px]">
         <Navigation />
         <Slider />
 
