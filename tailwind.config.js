@@ -11,6 +11,7 @@ module.exports = {
       },
       colors: {
         primary: '#30578e',
+        header: '#212529',
         footer: '#ccdbed'
       },
     },
