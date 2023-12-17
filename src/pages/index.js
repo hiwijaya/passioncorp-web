@@ -14,8 +14,8 @@ const IndexPage = () => {
         <div className="flex flex-row">
           <div className="flex-1">
             <div className="relative mb-10 md:mb-20">
-              <div className="absolute bottom-0 left-5 bg-sky-300 w-24 h-3"></div>
-              <h2 className="relative text-4xl font-bold">About Us</h2>
+              <div className="absolute bottom-0 left-3 sm:left-5 bg-sky-300 w-16 sm:w-24 h-3"></div>
+              <h2 className="relative text-2xl sm:text-4xl font-bold">About Us</h2>
             </div>
             <div className="font-bold text-xl mb-2">Go Passion Go World!</div>
             <p className="w-full max-w-xl mb-5">
@@ -46,7 +46,7 @@ const IndexPage = () => {
           <div className="flex flex-col items-center xl:items-start">
             <div className="relative mb-5 xl:mb-14">
               <div className="hidden sm:block absolute bottom-0 left-5 bg-sky-300 w-72 h-3"></div>
-              <h2 className="relative text-4xl font-bold text-center"><span className="text-sky-500 sm:text-black">Passion</span> at a glance</h2>
+              <h2 className="relative text-2xl sm:text-4xl font-bold text-center"><span className="text-sky-500 sm:text-black">Passion</span> at a glance</h2>
             </div>
             <p className="w-full max-w-md text-center xl:text-left">
               With more than 1000 creative workers that we call The Passioners all over Indonesia,
@@ -93,8 +93,8 @@ const IndexPage = () => {
     <div className="inline-flex justify-center w-full">
       <div className="flex flex-col items-center w-full max-w-7xl mx-4 my-10 sm:my-20">
         <div className="w-fit relative mb-10 ">
-          <div className="absolute bottom-0 left-5 bg-sky-300 w-44 h-3"></div>
-          <h2 className="relative text-4xl font-bold">Our Services</h2>
+          <div className="absolute bottom-0 left-3 sm:left-5 bg-sky-300 w-28 sm:w-44 h-3"></div>
+          <h2 className="relative text-2xl sm:text-4xl font-bold">Our Services</h2>
         </div>
         <p className="text-center mb-10">
           We are ready with the industry's most creative, cutting-edge solutions to help you produce extraordinary live events from start to finish.
@@ -171,7 +171,7 @@ const IndexPage = () => {
   const testimonySection = () => (
     <div className="inline-flex justify-center w-full bg-slate-100">
       <div className="flex flex-col w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
-        <div className="font-bold text-4xl mb-10">What <span className="text-sky-500">People Say</span> <br/> About Us</div>
+        <div className="font-bold text-2xl sm:text-4xl mb-5 sm:mb-10">What <span className="text-sky-500">People Say</span> <br/> About Us</div>
         <div className="inline-flex gap-5 xl:gap-10 overflow-x-auto no-scrollbar w-full">
 
           <TestimonyCard 
@@ -231,8 +231,8 @@ const IndexPage = () => {
     <div className="inline-flex justify-center w-full ">
       <div className="flex flex-col items-center w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
         <div className="w-fit relative mb-10 ">
-          <div className="absolute bottom-0 left-5 bg-sky-300 w-44 h-3"></div>
-          <h2 className="relative text-4xl font-bold">See Our Work</h2>
+          <div className="absolute bottom-0 left-3 sm:left-5 bg-sky-300 w-28 sm:w-44 h-3"></div>
+          <h2 className="relative text-2xl sm:text-4xl font-bold">See Our Work</h2>
         </div>
         <p className="mb-10 text-center">
           we are there every step of the way to provide you with the exceptional event and service you deserve
