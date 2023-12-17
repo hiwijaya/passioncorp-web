@@ -11,7 +11,7 @@ const TestimonyCard = ({words, name, title}) => (
         <div >{title}</div>
       </div>
     </div>
-    <StaticImage className="absolute bottom-0 right-0 w-2/3 z-0" src="../images/background-testimony.png" alt="testimony background" />
+    <StaticImage className="absolute bottom-0 right-0 z-0 w-40" src="../images/background-testimony.png" alt="testimony background" />
   </div>
 )
 export default TestimonyCard
