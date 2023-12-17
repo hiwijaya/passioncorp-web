@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="absolute bottom-0 h-[500px] md:h-[350px]">
       <StaticImage className="w-full" src="../images/background-wave.png" alt="wave" />
       <div className="flex justify-center w-full bg-footer h-full">
-        <div className="w-full max-w-7xl mx-8">
+        <div className="w-full max-w-7xl mx-4">
           <div className="grid grid-rows-1 sm:grid-cols-3 sm:gap-10 mb-10">
 
             <div className="col-span-2">
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col-reverse sm:flex-row text-sm text-gray-500">
             <div className="mr-10">© 2023 Passion Corp. Indonesia</div>
-            <div className="inline-flex space-x-5 mb-5 sm:mb-0">
+            <div className="inline-flex space-x-3 sm:space-x-5 mb-5 sm:mb-0">
               <a className="hover:text-sky-500" href="/">Services</a>
               <a className="hover:text-sky-500" href="/">Portfolio</a>
               <a className="hover:text-sky-500" href="/">About</a>

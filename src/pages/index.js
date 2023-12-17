@@ -10,7 +10,7 @@ const IndexPage = () => {
 
   const aboutUsSection = () => (
     <div className="inline-flex justify-center w-full">
-      <div className="w-full max-w-7xl my-20 mx-8">
+      <div className="w-full max-w-7xl my-10 sm:my-20 mx-4">
         <div className="flex flex-row">
           <div className="flex-1">
             <div className="relative mb-10 md:mb-20">
@@ -41,45 +41,45 @@ const IndexPage = () => {
 
   const glanceSection = () => (
     <div className="inline-flex justify-center w-full bg-slate-100">
-      <div className="w-full max-w-7xl my-20 mx-8">
+      <div className="w-full max-w-7xl my-10 sm:my-20 mx-4">
         <div className="flex flex-col xl:flex-row items-center justify-between gap-10">
           <div className="flex flex-col items-center xl:items-start">
             <div className="relative mb-5 xl:mb-14">
-              <div className="absolute bottom-0 left-5 bg-sky-300 w-72 h-3"></div>
-              <h2 className="relative text-4xl font-bold">Passion at a glance</h2>
+              <div className="hidden sm:block absolute bottom-0 left-5 bg-sky-300 w-72 h-3"></div>
+              <h2 className="relative text-4xl font-bold text-center"><span className="text-sky-500 sm:text-black">Passion</span> at a glance</h2>
             </div>
             <p className="w-full max-w-md text-center xl:text-left">
               With more than 1000 creative workers that we call The Passioners all over Indonesia,
               we keep on innovating for better service, programs, and ways of working to create more goodness to the society.
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-5 sm:gap-10 w-full sm:w-auto">
             <div className="flex flex-col justify-center items-center">
-              <div className="border-8 border-slate-300 p-8 rounded-full mb-5">
-                <StaticImage className="w-14" src="../images/icon-event.png" alt="event" />
+              <div className="border-8 border-slate-300 p-8 rounded-full mb-3 sm:mb-5">
+                <StaticImage className="w-10 sm:w-14" src="../images/icon-event.png" alt="event" />
               </div>
-              <div className="font-bold text-3xl">500+</div>
+              <div className="font-bold text-xl sm:text-3xl">500+</div>
               <div>Events</div>
             </div>
             <div className="flex flex-col justify-center items-center">
               <div className="border-8 border-slate-300 p-8 rounded-full mb-5">
-                <StaticImage className="w-14" src="../images/icon-city.png" alt="city" />
+                <StaticImage className="w-10 sm:w-14" src="../images/icon-city.png" alt="city" />
               </div>
-              <div className="font-bold text-3xl">20</div>
+              <div className="font-bold text-xl sm:text-3xl">20</div>
               <div>Cities</div>
             </div>
             <div className="flex flex-col justify-center items-center">
               <div className="border-8 border-slate-300 p-8 rounded-full mb-5">
-                <StaticImage className="w-14" src="../images/icon-partner.png" alt="partner" />
+                <StaticImage className="w-10 sm:w-14" src="../images/icon-partner.png" alt="partner" />
               </div>
-              <div className="font-bold text-3xl">300+</div>
+              <div className="font-bold text-xl sm:text-3xl">300+</div>
               <div>Partners</div>
             </div>
             <div className="flex flex-col justify-center items-center">
               <div className="border-8 border-slate-300 p-8 rounded-full mb-5">
-                <StaticImage className="w-14" src="../images/icon-service.png" alt="service" />
+                <StaticImage className="w-10 sm:w-14" src="../images/icon-service.png" alt="service" />
               </div>
-              <div className="font-bold text-3xl">30+</div>
+              <div className="font-bold text-xl sm:text-3xl">30+</div>
               <div>Services</div>
             </div>
           </div>
@@ -91,7 +91,7 @@ const IndexPage = () => {
 
   const serviceSection = () => (
     <div className="inline-flex justify-center w-full">
-      <div className="flex flex-col items-center w-full max-w-7xl mx-8 my-20">
+      <div className="flex flex-col items-center w-full max-w-7xl mx-4 my-10 sm:my-20">
         <div className="w-fit relative mb-10 ">
           <div className="absolute bottom-0 left-5 bg-sky-300 w-44 h-3"></div>
           <h2 className="relative text-4xl font-bold">Our Services</h2>
@@ -100,66 +100,66 @@ const IndexPage = () => {
           We are ready with the industry's most creative, cutting-edge solutions to help you produce extraordinary live events from start to finish.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-5 text-xl lg:text-2xl">
-          <div className="relative w-full h-40 sm:h-52 rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
+          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-event-organizer.jpg" alt="event organizer"/>
-            <div className="absolute left-0 top-0 p-8 w-full h-full bg-black/50">
-              <StaticImage className="w-8 mb-2" src="../images/services/icon-event-organizer.png" alt="icon event organizer"/>
+            <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
+              <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-event-organizer.png" alt="icon event organizer"/>
               <div className="text-white font-bold">Event Organizer</div>
             </div>
           </div>
-          <div className="relative w-full h-40 sm:h-52 rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
+          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-show-management.jpg" alt="event organizer"/>
-            <div className="absolute left-0 top-0 p-8 w-full h-full bg-black/50">
-              <StaticImage className="w-8 mb-2" src="../images/services/icon-show-management.png" alt="icon show management"/>
+            <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
+              <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-show-management.png" alt="icon show management"/>
               <div className="text-white font-bold">Show Management</div>
             </div>
           </div>
-          <div className="relative w-full h-40 sm:h-52 rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
+          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-documentation.jpg" alt="event organizer"/>
-            <div className="absolute left-0 top-0 p-8 w-full h-full bg-black/50">
-              <StaticImage className="w-8 mb-2" src="../images/services/icon-documentation.png" alt="icon documentation"/>
+            <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
+              <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-documentation.png" alt="icon documentation"/>
               <div className="text-white font-bold">Documentation</div>
             </div>
           </div>
-          <div className="relative w-full h-40 sm:h-52 rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
+          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-3d-design.jpg" alt="event organizer"/>
-            <div className="absolute left-0 top-0 p-8 w-full h-full bg-black/50">
-              <StaticImage className="w-8 mb-2" src="../images/services/icon-3d-design.png" alt="icon 3D design"/>
+            <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
+              <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-3d-design.png" alt="icon 3D design"/>
               <div className="text-white font-bold">3D Design</div>
             </div>
           </div>
-          <div className="relative w-full h-40 sm:h-52 rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
+          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-content.jpg" alt="event organizer"/>
-            <div className="absolute left-0 top-0 p-8 w-full h-full bg-black/50">
-              <StaticImage className="w-8 mb-2" src="../images/services/icon-graphic-content.png" alt="icon graphic content"/>
+            <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
+              <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-graphic-content.png" alt="icon graphic content"/>
               <div className="text-white font-bold">Graphic Content</div>
             </div>
           </div>
-          <div className="relative w-full h-40 sm:h-52 rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
+          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-sound.jpg" alt="event organizer"/>
-            <div className="absolute left-0 top-0 p-8 w-full h-full bg-black/50">
-              <StaticImage className="w-8 mb-2" src="../images/services/icon-sound-system.png" alt="icon sound system"/>
+            <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
+              <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-sound-system.png" alt="icon sound system"/>
               <div className="text-white font-bold">Sound System</div>
             </div>
           </div>
-          <div className="relative w-full h-40 sm:h-52 rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
+          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-travel.jpg" alt="event organizer"/>
-            <div className="absolute left-0 top-0 p-8 w-full h-full bg-black/50">
-              <StaticImage className="w-8 mb-2" src="../images/services/icon-tour.png" alt="icon tour and travel"/>
+            <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
+              <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-tour.png" alt="icon tour and travel"/>
               <div className="text-white font-bold">Tour & Travel</div>
             </div>
           </div>
-          <div className="relative w-full h-40 sm:h-52 rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
+          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-equipment.jpg" alt="event organizer"/>
-            <div className="absolute left-0 top-0 p-8 w-full h-full bg-black/50">
-              <StaticImage className="w-8 mb-2" src="../images/services/icon-equipment.png" alt="icon event equipment"/>
+            <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
+              <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-equipment.png" alt="icon event equipment"/>
               <div className="text-white font-bold">Event Equipment</div>
             </div>
           </div>
-          <div className="relative w-full h-40 sm:h-52 rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
+          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-live-streaming.jpg" alt="event organizer"/>
-            <div className="absolute left-0 top-0 p-8 w-full h-full bg-black/50">
-              <StaticImage className="w-8 mb-2" src="../images/services/icon-live.png" alt="icon live streaming"/>
+            <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
+              <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-live.png" alt="icon live streaming"/>
               <div className="text-white font-bold">Live Streaming</div>
             </div>
           </div>
@@ -170,7 +170,7 @@ const IndexPage = () => {
 
   const testimonySection = () => (
     <div className="inline-flex justify-center w-full bg-slate-100">
-      <div className="flex flex-col w-full max-w-7xl px-8 xl:px-0 my-20">
+      <div className="flex flex-col w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
         <div className="font-bold text-4xl mb-10">What <span className="text-sky-500">People Say</span> <br/> About Us</div>
         <div className="inline-flex gap-5 xl:gap-10 overflow-x-auto no-scrollbar w-full">
 
@@ -229,7 +229,7 @@ const IndexPage = () => {
 
   const portfolioSection = () => (
     <div className="inline-flex justify-center w-full ">
-      <div className="flex flex-col items-center w-full max-w-7xl px-8 xl:px-0 my-20">
+      <div className="flex flex-col items-center w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
         <div className="w-fit relative mb-10 ">
           <div className="absolute bottom-0 left-5 bg-sky-300 w-44 h-3"></div>
           <h2 className="relative text-4xl font-bold">See Our Work</h2>
@@ -238,8 +238,8 @@ const IndexPage = () => {
           we are there every step of the way to provide you with the exceptional event and service you deserve
         </p>
         <div className="inline-flex gap-5 pb-10 overflow-x-auto no-scrollbar w-full">
-          <div className="flex flex-col bg-white w-[300px] h-[300px] shadow-xl rounded-2xl overflow-hidden cursor-pointer shrink-0">
-            <StaticImage className="w-full h-[200px]" src="https://img.youtube.com/vi/uhfW9jKMlbo/maxresdefault.jpg" alt="event"/>
+          <div className="flex flex-col bg-white w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] shadow-xl rounded-2xl overflow-hidden cursor-pointer shrink-0">
+            <StaticImage className="w-full h-[160px] sm:h-[200px]" src="https://img.youtube.com/vi/uhfW9jKMlbo/maxresdefault.jpg" alt="event"/>
             <div className="relative flex justify-center items-center flex-1 ">
               <div className="absolute -top-7 right-5 bg-white w-14 h-14 flex justify-center items-center rounded-full shadow-xl">
                 <StaticImage className="w-5"  src="../images/icon-play.png" alt="play"/>
@@ -249,8 +249,8 @@ const IndexPage = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col bg-white w-[300px] h-[300px] shadow-xl rounded-2xl overflow-hidden cursor-pointer shrink-0">
-            <StaticImage className="w-full h-[200px]" src="https://img.youtube.com/vi/O70Z5igRpgc/maxresdefault.jpg" alt="event"/>
+          <div className="flex flex-col bg-white w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] shadow-xl rounded-2xl overflow-hidden cursor-pointer shrink-0">
+            <StaticImage className="w-full h-[160px] sm:h-[200px]" src="https://img.youtube.com/vi/O70Z5igRpgc/maxresdefault.jpg" alt="event"/>
             <div className="relative flex justify-center items-center flex-1 ">
               <div className="absolute -top-7 right-5 bg-white w-14 h-14 flex justify-center items-center rounded-full shadow-xl">
                 <StaticImage className="w-5" src="../images/icon-play.png" alt="play"/>
@@ -260,8 +260,8 @@ const IndexPage = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col bg-white w-[300px] h-[300px] shadow-xl rounded-2xl overflow-hidden cursor-pointer shrink-0">
-            <StaticImage className="w-full h-[200px]" src="https://img.youtube.com/vi/bFlQzp0MFT4/maxresdefault.jpg" alt="event"/>
+          <div className="flex flex-col bg-white w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] shadow-xl rounded-2xl overflow-hidden cursor-pointer shrink-0">
+            <StaticImage className="w-full h-[160px] sm:h-[200px]" src="https://img.youtube.com/vi/bFlQzp0MFT4/maxresdefault.jpg" alt="event"/>
             <div className="relative flex justify-center items-center flex-1 ">
               <div className="absolute -top-7 right-5 bg-white w-14 h-14 flex justify-center items-center rounded-full shadow-xl">
                 <StaticImage className="w-5" src="../images/icon-play.png" alt="play"/>
@@ -271,8 +271,8 @@ const IndexPage = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col bg-white w-[300px] h-[300px] shadow-xl rounded-2xl overflow-hidden cursor-pointer shrink-0">
-            <StaticImage className="w-full h-[200px]" src="https://img.youtube.com/vi/msxYu8Ow4I8/maxresdefault.jpg" alt="event"/>
+          <div className="flex flex-col bg-white w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] shadow-xl rounded-2xl overflow-hidden cursor-pointer shrink-0">
+            <StaticImage className="w-full h-[160px] sm:h-[200px]" src="https://img.youtube.com/vi/msxYu8Ow4I8/maxresdefault.jpg" alt="event"/>
             <div className="relative flex justify-center items-center flex-1 ">
               <div className="absolute -top-7 right-5 bg-white w-14 h-14 flex justify-center items-center rounded-full shadow-xl">
                 <StaticImage className="w-5" src="../images/icon-play.png" alt="play"/>
@@ -290,10 +290,10 @@ const IndexPage = () => {
 
   const touchSection = () => (
     <div className="relative inline-flex justify-center w-full">
-      <div className="z-10 w-full max-w-7xl mx-8 mb-10">
-        <div className="w-full h-[300px] bg-cover bg-[url('../images/background.png')] rounded-3xl overflow-hidden">
+      <div className="z-10 w-full max-w-7xl mx-4 mb-10">
+        <div className="w-full h-[250px] sm:h-[300px] bg-cover bg-[url('../images/background.png')] rounded-3xl overflow-hidden">
           <div className="flex flex-row h-full">
-            <div className="flex flex-col items-center xl:items-start justify-center flex-1 px-8 text-white">
+            <div className="flex flex-col items-center xl:items-start justify-center flex-1 px-4 text-white">
               <div className="hidden sm:block text-center">Passion Corp Indonesia as a solution your event matters</div>
               <div className="text-2xl font-bold mb-10 xl:mb-5 text-center">Do you want your event to be quality? Just Passion.</div>
               <button className="bg-yellow-400 w-52 py-4 text-black rounded-xl">Get in Touch</button>
@@ -304,7 +304,6 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      
     </div>
   )
 
