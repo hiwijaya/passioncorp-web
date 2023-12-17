@@ -172,7 +172,7 @@ const IndexPage = () => {
     <div className="inline-flex justify-center w-full bg-slate-100">
       <div className="flex flex-col w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
         <div className="font-bold text-2xl sm:text-4xl mb-5 sm:mb-10">What <span className="text-sky-500">People Say</span> <br/> About Us</div>
-        <div className="inline-flex gap-5 xl:gap-10 overflow-x-auto no-scrollbar w-full">
+        <div className="inline-flex gap-5 overflow-x-auto no-scrollbar w-full">
 
           <TestimonyCard 
             words="It is often interesting, in retrospect, to consider the trifling causes that lead to great events. 
