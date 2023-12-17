@@ -4,7 +4,6 @@ import Navigation from "../components/navigation"
 import Slider from "../components/slider"
 import Footer from "../components/footer"
 import TestimonyCard from "../components/testimonyCard"
-import VideoCard from "../components/videoCard"
 
 
 const IndexPage = () => {
