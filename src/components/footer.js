@@ -4,11 +4,11 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Footer = () => {
   return (
-    <footer className="absolute bottom-0 h-[350px]">
+    <footer className="absolute bottom-0 h-[500px] md:h-[350px]">
       <StaticImage className="w-full" src="../images/background-wave.png" alt="wave" />
       <div className="flex justify-center w-full bg-footer h-full">
-        <div className="w-full max-w-7xl">
-          <div className="grid grid-cols-3 gap-10 mb-10">
+        <div className="w-full max-w-7xl mx-8">
+          <div className="grid grid-rows-1 sm:grid-cols-3 sm:gap-10 mb-10">
 
             <div className="col-span-2">
               <div className="flex flex-row items-center font-medium mb-5">
@@ -35,9 +35,9 @@ const Footer = () => {
 
             <div className="text-sm mt-6">
               <div className="font-medium mb-2">Are you a vendor?</div>
-              <button className="rounded-xl bg-sky-500 text-white px-8 py-4 font-medium mb-10">Partnership</button>
-              <div className="flex flex-row items-center">
-                <div className="font-medium mr-3">Stay connect</div>
+              <button className="rounded-xl bg-sky-500 text-white px-8 py-4 font-medium mb-5 sm:mb-10">Partnership</button>
+              <div className="flex flex-col xl:flex-row items-start xl:items-center">
+                <div className="font-medium mr-3 mb-2 xl:mb-0">Stay connect</div>
                 <div className="inline-flex gap-4">
                   <a href="https://www.instagram.com/passioncorp.id/">
                     <StaticImage className="w-8" src="../images/icon-instagram.png" alt="email" />
@@ -53,9 +53,9 @@ const Footer = () => {
 
             </div>
           </div>
-          <div className="flex flex-row text-sm text-gray-500">
+          <div className="flex flex-col-reverse sm:flex-row text-sm text-gray-500">
             <div className="mr-10">© 2023 Passion Corp. Indonesia</div>
-            <div className="inline-flex space-x-5">
+            <div className="inline-flex space-x-5 mb-5 sm:mb-0">
               <a className="hover:text-sky-500" href="/">Services</a>
               <a className="hover:text-sky-500" href="/">Portfolio</a>
               <a className="hover:text-sky-500" href="/">About</a>

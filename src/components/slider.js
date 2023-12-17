@@ -9,7 +9,7 @@ const Slider = () => {
       <Slide canSwipe={false} pauseOnHover={false}>
         <div className="relative w-full h-screen lg:h-[700px]">
           <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/slider/slider-1.jpg" alt="slide 1"/>
-          <div className="absolute left-0 top-0 w-full h-full inline-flex justify-center items-center bg-black/75 px-8 lg:px-0">
+          <div className="absolute left-0 top-0 w-full h-full inline-flex justify-center items-center bg-black/75 px-8">
             <div className="w-full max-w-7xl text-white">
               <div className="font-bold text-4xl lg:text-5xl text-sky-500 mb-5">EVENT</div>
               <p className="w-full max-w-2xl">
@@ -21,7 +21,7 @@ const Slider = () => {
         </div>
         <div className="relative w-full h-screen lg:h-[700px]">
           <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/slider/slider-2.jpg" alt="slide 2"/>
-          <div className="absolute left-0 top-0 w-full h-full inline-flex justify-center items-center bg-black/75 px-8 lg:px-0">
+          <div className="absolute left-0 top-0 w-full h-full inline-flex justify-center items-center bg-black/75 px-8">
             <div className="w-full max-w-7xl text-white">
               <div className="font-bold text-4xl lg:text-5xl text-sky-500 mb-5">PRODUCTION</div>
               <p className="w-full max-w-2xl">
@@ -33,7 +33,7 @@ const Slider = () => {
         </div>
         <div className="relative w-full h-screen lg:h-[700px]">
           <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/slider/slider-3.jpg" alt="slide 3"/>
-          <div className="absolute left-0 top-0 w-full h-full inline-flex justify-center items-center bg-black/75 px-8 lg:px-0">
+          <div className="absolute left-0 top-0 w-full h-full inline-flex justify-center items-center bg-black/75 px-8">
             <div className="w-full max-w-7xl text-white">
               <div className="font-bold text-4xl lg:text-5xl text-sky-500 mb-5">SUPPLIER</div>
               <p className="w-full max-w-2xl">

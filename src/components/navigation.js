@@ -9,7 +9,7 @@ const Navigation = () => {
 
   return (
     <div className="absolute top-0 left-0 z-50 inline-flex justify-center w-full bg-header lg:bg-transparent">
-      <div className="flex flex-col w-full  max-w-7xl px-8 lg:px-0">
+      <div className="flex flex-col w-full  max-w-7xl mx-8">
         <div className="inline-flex items-center justify-between w-full h-16 lg:h-20">
           <a href="/">
             <div className="flex flex-row items-center text-white font-medium">
