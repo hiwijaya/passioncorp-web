@@ -5,23 +5,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 @layer utilities {
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .no-scrollbar::-webkit-scrollbar {
-        display: none;
-    }
-   /* Hide scrollbar for IE, Edge and Firefox */
-    .no-scrollbar {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
   }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .slider {
+    background: white;
+    /* height: 250px; */
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .slider::before,
+  .slider::after {
+    background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+  }
+
+  .slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+  }
+
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+
+  .slider .slide-track {
+    animation: scroll 10s linear infinite;
+    display: flex;
+    width: calc(250px * 16);
+
+  }
+
+
+  .slider .slide {
+    width: 250px;
+  }
+
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(-250px * 8));
+    }
+  }
+
 }
 
 body {
-    font-size: 12px;
-    @screen md {
-      font-size: 14px;
-    }
-    @screen lg {
-      font-size: 16px;
-    }
+  font-size: 12px;
+
+  @screen md {
+    font-size: 14px;
   }
+
+  @screen lg {
+    font-size: 16px;
+  }
+}

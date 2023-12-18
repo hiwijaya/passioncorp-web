@@ -4,6 +4,7 @@ import Navigation from "../components/navigation"
 import Slider from "../components/slider"
 import Footer from "../components/footer"
 import TestimonyCard from "../components/testimonyCard"
+import VideoPlay from "../components/videoPlay"
 
 
 const IndexPage = () => {
@@ -11,7 +12,7 @@ const IndexPage = () => {
   const aboutUsSection = () => (
     <div className="inline-flex justify-center w-full">
       <div className="w-full max-w-7xl my-10 sm:my-20 mx-4">
-        <div className="flex flex-row">
+        <div className="flex flex-col-reverse sm:flex-row">
           <div className="flex-1">
             <div className="relative mb-10 md:mb-20">
               <div className="absolute bottom-0 left-3 sm:left-5 bg-sky-300 w-16 sm:w-24 h-3"></div>
@@ -30,8 +31,8 @@ const IndexPage = () => {
             </p>
             <a href="/about" className="text-primary font-bold">More about us..</a>
           </div>
-          <div className="flex-1 hidden md:flex items-center justify-center">
-            <StaticImage className="w-[380px] lg:w-[450px]"
+          <div className="flex-1 flex items-center justify-center">
+            <StaticImage className="w-[320px] sm:w-[360px] lg:w-[450px]"
               src="../images/image-profile.png" alt="about us" />
           </div>
         </div>
@@ -238,50 +239,22 @@ const IndexPage = () => {
           we are there every step of the way to provide you with the exceptional event and service you deserve
         </p>
         <div className="inline-flex gap-5 pb-10 overflow-x-auto no-scrollbar w-full">
-          <div className="flex flex-col bg-white w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] shadow-xl rounded-2xl overflow-hidden cursor-pointer shrink-0">
-            <StaticImage className="w-full h-[160px] sm:h-[200px]" src="https://img.youtube.com/vi/uhfW9jKMlbo/maxresdefault.jpg" alt="event"/>
-            <div className="relative flex justify-center items-center flex-1 ">
-              <div className="absolute -top-7 right-5 bg-white w-14 h-14 flex justify-center items-center rounded-full shadow-xl">
-                <StaticImage className="w-5"  src="../images/icon-play.png" alt="play"/>
-              </div>
-              <div className="text-sm font-bold mx-5 text-center">
-                Asian Summit Vertiv 2023, Bali
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col bg-white w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] shadow-xl rounded-2xl overflow-hidden cursor-pointer shrink-0">
-            <StaticImage className="w-full h-[160px] sm:h-[200px]" src="https://img.youtube.com/vi/O70Z5igRpgc/maxresdefault.jpg" alt="event"/>
-            <div className="relative flex justify-center items-center flex-1 ">
-              <div className="absolute -top-7 right-5 bg-white w-14 h-14 flex justify-center items-center rounded-full shadow-xl">
-                <StaticImage className="w-5" src="../images/icon-play.png" alt="play"/>
-              </div>
-              <div className="text-sm font-bold mx-5 text-center">
-                Forum Nasional Pindungan Data, Bali
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col bg-white w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] shadow-xl rounded-2xl overflow-hidden cursor-pointer shrink-0">
-            <StaticImage className="w-full h-[160px] sm:h-[200px]" src="https://img.youtube.com/vi/bFlQzp0MFT4/maxresdefault.jpg" alt="event"/>
-            <div className="relative flex justify-center items-center flex-1 ">
-              <div className="absolute -top-7 right-5 bg-white w-14 h-14 flex justify-center items-center rounded-full shadow-xl">
-                <StaticImage className="w-5" src="../images/icon-play.png" alt="play"/>
-              </div>
-              <div className="text-sm font-bold mx-5 text-center">
-                Indoin Infinite 2023, Ritz Carlton Jakarta
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col bg-white w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] shadow-xl rounded-2xl overflow-hidden cursor-pointer shrink-0">
-            <StaticImage className="w-full h-[160px] sm:h-[200px]" src="https://img.youtube.com/vi/msxYu8Ow4I8/maxresdefault.jpg" alt="event"/>
-            <div className="relative flex justify-center items-center flex-1 ">
-              <div className="absolute -top-7 right-5 bg-white w-14 h-14 flex justify-center items-center rounded-full shadow-xl">
-                <StaticImage className="w-5" src="../images/icon-play.png" alt="play"/>
-              </div>
-              <div className="text-sm font-bold mx-5 text-center">
-                3000+ Paragonian Rekor Muri
-              </div>
-            </div>
-          </div>
+          <VideoPlay 
+            title="Asian Summit Vertiv 2023, Bali" 
+            thumbnail="https://img.youtube.com/vi/uhfW9jKMlbo/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/uhfW9jKMlbo"/>
+          <VideoPlay 
+            title="Forum Nasional Pelindungan Data, Bali" 
+            thumbnail="https://img.youtube.com/vi/O70Z5igRpgc/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/O70Z5igRpgc"/>
+          <VideoPlay 
+            title="Indoin Infinite 2023, Ritz Carlton Jakarta" 
+            thumbnail="https://img.youtube.com/vi/bFlQzp0MFT4/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/bFlQzp0MFT4"/>
+          <VideoPlay 
+            title="3000+ Paragonian Rekor Muri" 
+            thumbnail="https://img.youtube.com/vi/msxYu8Ow4I8/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/msxYu8Ow4I8"/>
         </div>
         <button className="bg-sky-400 rounded-full text-white px-10 py-5">WE HAVE MORE!</button>
       </div>
@@ -320,6 +293,7 @@ const IndexPage = () => {
         {testimonySection()}
         {portfolioSection()}
         {touchSection()}
+
       </div>
       <Footer/>
     </main>
