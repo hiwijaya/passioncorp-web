@@ -24,7 +24,7 @@
     /* height: 250px; */
     margin: auto;
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
     width: 100%;
   }
 
@@ -51,7 +51,7 @@
   }
 
   .slider .slide-track {
-    animation: scroll 10s linear infinite;
+    animation: scroll 30s linear infinite;
     display: flex;
     width: calc(250px * 16);
 
@@ -59,7 +59,10 @@
 
 
   .slider .slide {
-    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
   }
 
 

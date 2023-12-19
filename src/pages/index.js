@@ -5,6 +5,7 @@ import Slider from "../components/slider"
 import Footer from "../components/footer"
 import TestimonyCard from "../components/testimonyCard"
 import VideoPlay from "../components/videoPlay"
+import PartnerSlider from "../components/partnerSlider"
 
 
 const IndexPage = () => {
@@ -292,7 +293,12 @@ const IndexPage = () => {
         {serviceSection()}
         {testimonySection()}
         {portfolioSection()}
+
+        <PartnerSlider/>
+        
         {touchSection()}
+
+        
 
       </div>
       <Footer/>
