@@ -262,9 +262,18 @@ const IndexPage = () => {
     </div>
   )
 
+  const partnerSection = () => (
+    <div className="relative inline-flex justify-center w-full bg-slate-100">
+      <div className="flex flex-col w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
+      <div className="font-bold text-xl">Trusted Partners</div>
+        <PartnerSlider/>
+      </div>
+    </div>
+  )
+
   const touchSection = () => (
     <div className="relative inline-flex justify-center w-full">
-      <div className="z-10 w-full max-w-7xl mx-4 mb-10">
+      <div className="z-10 w-full max-w-7xl mx-4 my-10 sm:my-20">
         <div className="w-full h-[250px] sm:h-[300px] bg-cover bg-[url('../images/background.png')] rounded-3xl overflow-hidden">
           <div className="flex flex-row h-full">
             <div className="flex flex-col items-center xl:items-start justify-center flex-1 px-4 text-white">
@@ -294,7 +303,7 @@ const IndexPage = () => {
         {testimonySection()}
         {portfolioSection()}
 
-        <PartnerSlider/>
+        {partnerSection()}
         
         {touchSection()}
 
