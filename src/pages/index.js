@@ -264,8 +264,15 @@ const IndexPage = () => {
 
   const partnerSection = () => (
     <div className="relative inline-flex justify-center w-full bg-slate-100">
-      <div className="flex flex-col w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
-      <div className="font-bold text-xl">Trusted Partners</div>
+      <div className="flex flex-col items-center w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
+        <div className="w-fit relative mb-10 ">
+          <div className="absolute bottom-0 left-3 sm:left-5 bg-sky-300 w-36 sm:w-56 h-3"></div>
+          <h2 className="relative text-2xl sm:text-4xl font-bold">Trusted Partners</h2>
+        </div>
+        <p className="mb-10 text-center">
+          Collaborate with local, national and global communities to create 
+          events that are more comprehensive and best suit the desired concept
+        </p>
         <PartnerSlider/>
       </div>
     </div>
@@ -274,15 +281,15 @@ const IndexPage = () => {
   const touchSection = () => (
     <div className="relative inline-flex justify-center w-full">
       <div className="z-10 w-full max-w-7xl mx-4 my-10 sm:my-20">
-        <div className="w-full h-[250px] sm:h-[300px] bg-cover bg-[url('../images/background.png')] rounded-3xl overflow-hidden">
-          <div className="flex flex-row h-full">
-            <div className="flex flex-col items-center xl:items-start justify-center flex-1 px-4 text-white">
-              <div className="hidden sm:block text-center">Passion Corp Indonesia as a solution your event matters</div>
-              <div className="text-2xl font-bold mb-10 xl:mb-5 text-center">Do you want your event to be quality? Just Passion.</div>
+        <div className="w-full h-[420px] sm:h-[450px] md:h-[300px] bg-cover bg-[url('../images/background.png')] rounded-3xl overflow-hidden">
+          <div className="flex flex-col md:flex-row h-full">
+            <div className="flex flex-col items-center xl:items-start justify-center flex-1 pl-0 md:pl-10 text-white">
+              <div className="hidden md:block text-center">Passion Corp Indonesia as a solution your event matters</div>
+              <div className="text-2xl font-bold mb-5 text-center">Do you want your event to be quality? Just Passion.</div>
               <button className="bg-yellow-400 w-52 py-4 text-black rounded-xl">Get in Touch</button>
             </div>
-            <div className="hidden xl:flex justify-end items-end">
-              <StaticImage className="w-[400px] xl:w-[450px]" src="../images/image-group.png" alt="image group" />
+            <div className="flex justify-end items-end">
+              <StaticImage className="w-11/12 md:w-[380px] xl:w-[450px]" src="../images/image-group.png" alt="image group" />
             </div>
           </div>
         </div>
