@@ -21,7 +21,7 @@ const Navigation = () => {
             <nav className="inline-flex text-white gap-10 mr-10">
               <a href="/">Services</a>
               <a href="/">Portfolio</a>
-              <a href="/">About</a>
+              <a href="/about">About</a>
               <a href="/">Contact</a>
               <a href="/">FAQ</a>
             </nav>
@@ -43,7 +43,7 @@ const Navigation = () => {
           <nav className="flex flex-col items-center w-full text-white gap-5 mb-5">
             <a href="/">Services</a>
             <a href="/">Portfolio</a>
-            <a href="/">About</a>
+            <a href="/about">About</a>
             <a href="/">Contact</a>
             <a href="/">FAQ</a>
             <button className="rounded-xl bg-sky-500 text-white px-10 py-3">Hire Us</button>
