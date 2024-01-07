@@ -111,6 +111,61 @@ const AboutPage = () => {
         </div>
 
 
+        <div className="inline-flex justify-center w-full bg-slate-100">
+          <div className="flex flex-col w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
+            <div className="relative mb-10">
+              <div className="absolute bottom-0 left-3 sm:left-5 bg-sky-300 w-20 sm:w-32 h-3"></div>
+              <h2 className="relative text-2xl sm:text-4xl font-bold">Our Values</h2>
+            </div>
+            
+            <div className="flex flex-col-reverse md:flex-row items-center p-8 md:px-16 md:py-10 bg-white rounded-xl shadow-xl mb-10">
+              <div className="md:mr-10 mt-5 md:mt-0">
+                <h2 className="font-bold text-2xl mb-5 text-center md:text-left">Innovation</h2>
+                <p className="text-center md:text-left">
+                  The success of your innovation event will depend on careful planning, 
+                  engaging content, and effective promotion. Be sure to create an event that not only
+                  showcases innovation but also provides value and memorable experiences for your attendes.
+                </p>
+              </div>
+              <StaticImage className="w-[100px] shrink-0" src="../images/image-innovation.png" alt="innovation"/> 
+            </div>
+            <div className="flex flex-col-reverse md:flex-row items-center p-8 md:px-16 md:py-10 bg-white rounded-xl shadow-xl mb-10">
+              <div className="md:mr-10 mt-5 md:mt-0">
+                <h2 className="font-bold text-2xl mb-5 text-center md:text-left">Quality</h2>
+                <p className="text-center md:text-left">
+                  Event quality refers to the overall excellence, effectiveness, and positive experience
+                  that attendes, participans, and the stakeholders derive from an event. High quality is
+                  essential for achieving the event's objectives and leaving a lasting positive experiences.
+                </p>
+              </div>
+              <StaticImage className="w-[100px] shrink-0" src="../images/image-quality.png" alt="innovation"/> 
+            </div>
+            <div className="flex flex-col-reverse md:flex-row items-center p-8 md:px-16 md:py-10 bg-white rounded-xl shadow-xl mb-10">
+              <div className="md:mr-10 mt-5 md:mt-0">
+                <h2 className="font-bold text-2xl mb-5 text-center md:text-left">Experience</h2>
+                <p className="text-center md:text-left">
+                  The experience as event organizer give you a strong advantage in creating exceptional experiences.
+                  By incorporating innovative and creative elements, you can ensure that your events continue to captivate
+                  attendees and provide unique values.
+                </p>
+              </div>
+              <StaticImage className="w-[100px] shrink-0" src="../images/image-experience.png" alt="innovation"/> 
+            </div>
+            <div className="flex flex-col-reverse md:flex-row items-center p-8 md:px-16 md:py-10 bg-white rounded-xl shadow-xl mb-10">
+              <div className="md:mr-10 mt-5 md:mt-0">
+                <h2 className="font-bold text-2xl mb-5 text-center md:text-left">Support</h2>
+                <p className="text-center md:text-left">
+                  Having a cohesive ad supportive team is an significant asset in the event planning industry.
+                  A collaborative team environment can contribute to the success of your events and the overall
+                  satisfaction of your clients.
+                </p>
+              </div>
+              <StaticImage className="w-[100px] shrink-0" src="../images/image-support.png" alt="innovation"/> 
+            </div>
+          </div>
+        </div>
+
+
       </div>
       <Footer />
     </main>
