@@ -11,7 +11,7 @@ const AboutPage = () => {
       <div className="pb-[500px] md:pb-[350px]">
         <Navigation />
         <div className="relative w-full h-screen">
-          <StaticImage className="w-full h-full" imgClassName="object-none w-96 h-full" src="../images/image-about.jpg" alt="slide 1" />
+          <StaticImage className="w-full h-full" imgClassName="object-cover w-96 h-full" src="../images/image-about.jpg" alt="slide 1" />
           <div className="absolute left-0 top-0 w-full h-full inline-flex justify-center items-center bg-black/75 px-4">
             <div className="w-full max-w-7xl text-white">
               <h1 className="font-bold text-2xl lg:text-5xl text-center mb-5">ABOUT PASSION</h1>
@@ -165,7 +165,36 @@ const AboutPage = () => {
           </div>
         </div>
 
+        <div className="relative w-full">
+          <StaticImage className="w-full h-[200px] md:h-[400px] shrink-0" src="../images/image-success.jpg" alt="innovation"/> 
+          <div className="absolute left-0 top-0 w-full h-full inline-flex justify-center items-center bg-black/75 px-4">
+            <div className="w-full max-w-7xl text-white">
+              <p className="text-xl sm:text-2xl lg:text-5xl text-center mb-5">
+                CREATE EVENT THAT GUESTS WANT <br/>
+                TO LIVE ALL OVER AGAIN
+              </p>
+            </div>
+          </div>
+        </div>
 
+        <div className="inline-flex justify-center w-full ">
+          <div className="flex flex-col items-center w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
+            <div className="relative mb-10">
+              <div className="absolute bottom-0 left-3 sm:left-5 bg-sky-300 w-20 sm:w-32 h-3"></div>
+              <h2 className="relative text-2xl sm:text-4xl font-bold">Passion Team</h2>
+            </div>
+            <p className="text-center mb-10">
+              Passion Corp Indonesia is comprised of professional, compassionate and Event Planners and Assistants
+              who love helping clients with special events. We serve within Indonesia areas! Our team 
+              gives proper care and concern throughout the process of planning to ensure client satisfaction
+              and relief from all the stress that event planning can bring. It is important to us that all clients
+              feel confident in our Passion Corp Indonesia team as we make your event smoothly and provide 
+              special memories for years to come!
+            </p>
+            <StaticImage className="w-full md:w-4/5 shrink-0" src="../images/image-team.png" alt="team"/> 
+          </div>
+        </div>
+        
       </div>
       <Footer />
     </main>
