@@ -2,23 +2,24 @@ import * as React from "react"
 import { useState } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-const Navigation = () => {
+const NavigationColor = () => {
 
   const [menuVisible, setMenuVisible] = useState(false);
 
 
   return (
-    <div className="absolute top-0 left-0 z-50 inline-flex justify-center w-full bg-primary lg:bg-transparent">
+    <div className="inline-flex justify-center w-full bg-primary lg:bg-transparent">
       <div className="flex flex-col w-full  max-w-7xl mx-4">
         <div className="inline-flex items-center justify-between w-full h-20">
           <a href="/">
-            <div className="flex flex-row items-center text-white font-medium">
-              <StaticImage className="w-10 lg:w-12 mr-1" src="../images/logo-white.png" alt="logo" />
+            <div className="flex flex-row items-center text-white lg:text-primary font-medium">
+              <StaticImage className="hidden lg:block w-10 lg:w-12 mr-1" src="../images/logo-color.png" alt="logo" />
+              <StaticImage className="block lg:hidden w-10 lg:w-12 mr-1" src="../images/logo-white.png" alt="logo" />
               Passion Corp. Indonesia
             </div>
           </a>
           <div className="hidden lg:block">
-            <nav className="inline-flex text-white gap-10 mr-10">
+            <nav className="inline-flex text-white lg:text-black  gap-10 mr-10">
               <a href="/services">Services</a>
               <a href="/">Portfolio</a>
               <a href="/about">About</a>
@@ -55,4 +56,4 @@ const Navigation = () => {
     </div>
   )
 }
-export default Navigation
+export default NavigationColor
