@@ -1,10 +1,42 @@
 import * as React from "react"
+import { useState } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Footer from "../components/footer";
-import Navigation from "../components/navigation";
 import NavigationColor from "../components/navigationColor";
+import servicesData from "../content/services.json";
+
 
 const ServicesPage = () => {
+
+  const [selectedService, setSelectedService] = useState(servicesData[0]);
+
+  const packageSection = () => (
+    <div className="inline-flex justify-center w-full">
+      <div className="flex flex-col items-center w-full max-w-7xl mx-4 my-10 sm:my-20">
+        <div className="w-full">
+          <h2>{selectedService.title}</h2>
+          <div className="flex flex-col md:flex-row  md:items-start space-x-5">
+            {selectedService.packages.map((pkg, i) => (
+              <div className="flex-1 rounded-lg shadow-lg overflow-hidden mb-5">
+                <div className="bg-sky-500 font-bold text-white text-lg text-center py-5 md:py-8">{pkg.level}</div>
+                <div>
+                  <div className="text-gray-400 text-center py-6 md:py-10">Promo/<span className="text-sky-500 font-bold text-xl md:text-2xl">Harga Spesial</span></div>
+                </div>
+                <div className="">
+                  {pkg.items.map((item, ii) => (
+                    <div className="text-center py-2">{item}</div>
+                  ))}
+                </div>
+                <div className="p-6 md:p-10">
+                  <button className="border-2 border-sky-500 rounded-xl w-full text-sky-500 py-5 text-center">Tanya Lebih Lanjut</button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 
 
   const serviceSection = () => (
@@ -92,6 +124,8 @@ const ServicesPage = () => {
         <NavigationColor />
         
         {serviceSection()}
+
+        {packageSection()}
       </div>
       <Footer />
     </main>

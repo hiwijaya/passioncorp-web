@@ -1,0 +1,59 @@
+[
+  {
+    "slug": "event-organizer",
+    "title": "Event Organizer",
+    "packages": [
+      {
+        "level": "Standard",
+        "items": [
+          "Event Consultant",
+          "Meeting & Preperation",
+          "Project Officer",
+          "PIC Production",
+          "Runner 2 person",
+          "Capacity 50-80 person",
+          "Crew 3 person"
+        ],
+        "price": 12000000
+      },
+      {
+        "level": "Premium",
+        "items": [
+          "Event Consultant",
+          "Meeting & Preperation",
+          "Project Officer",
+          "PIC Production",
+          "Runner 2 person",
+          "F&B Management",
+          "Crowded Management",
+          "Mc Assist",
+          "Crew 4 person",
+          "Registration 2 person",
+          "Capacity 80-250 person",
+          "General Affair Vendor"
+        ],
+        "price": 25000000
+      },
+      {
+        "level": "Premium",
+        "items": [
+          "Event Consultant",
+          "Meeting & Preperation",
+          "Project Officer",
+          "Account Executive",
+          "Runner 4 person",
+          "Consultant venue",
+          "Management production",
+          "F&B Management",
+          "Crowded Management",
+          "Mc Assist",
+          "Crew 7 person",
+          "Registration 4 person",
+          "Capacity 250-400 person",
+          "General Affair Vendor"
+        ],
+        "price": 45000000
+      }
+    ]
+  }
+]
