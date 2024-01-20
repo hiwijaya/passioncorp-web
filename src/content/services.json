@@ -35,7 +35,7 @@
         "price": 25000000
       },
       {
-        "level": "Premium",
+        "level": "Exclusive",
         "items": [
           "Event Consultant",
           "Meeting & Preperation",
@@ -53,6 +53,283 @@
           "General Affair Vendor"
         ],
         "price": 45000000
+      }
+    ]
+  },
+  {
+    "slug": "show-management",
+    "title": "Show Management",
+    "packages": [
+      {
+        "level": "Standard",
+        "items": [
+          "Show Director",
+          "Lighting Man",
+          "Meeting & Preparation",
+          "Sound Man",
+          "MC",
+          "2 Floor Director",
+          "Operator LED",
+          "PIC Production",
+          "Stage Manager",
+          "Transport and Meals"
+        ],
+        "price": 25000000
+      },
+      {
+        "level": "Premium",
+        "items": [
+          "Show Director",
+          "Lighting Man",
+          "Meeting & Preparation",
+          "Sound Man",
+          "MC",
+          "MC Assist",
+          "4 Floor Director",
+          "Talant Artist",
+          "Operator PPT",
+          "PIC Production",
+          "Stage Manager",
+          "Design Grafis",
+          "Kontent Multimedia",
+          "Electricity",
+          "Transport & Meals",
+          "Capacity 500-1000 person"
+        ],
+        "price": 45000000
+      },
+      {
+        "level": "Exclusive",
+        "items": [
+          "Show Director",
+          "Lighting Man",
+          "Meeting & Preparation",
+          "Sound Man",
+          "MC",
+          "MC Assist",
+          "4 Floor Director",
+          "Talant Artist",
+          "Operator PPT",
+          "PIC Production",
+          "Stage Manager",
+          "Design Grafis",
+          "Kontent Multimedia",
+          "Electricity",
+          "Safe & Healthy Management",
+          "Capacity 1000-10000 person"
+        ],
+        "price": 85000000
+      }
+    ]
+  },
+  {
+    "slug": "documentation",
+    "title": "Documentation",
+    "packages": [
+      {
+        "level": "Standard",
+        "items": [
+          "1 Photographer",
+          "1 Videographer",
+          "Technical Meeting",
+          "8 hours/day",
+          "Editing photos 100 pcs",
+          "Highlight Video 3.5 minutes",
+          "All file photo"
+        ],
+        "price": 3500000
+      },
+      {
+        "level": "Premium",
+        "items": [
+          "2 Photographer",
+          "2 Videographer",
+          "Technical Meeting",
+          "12 hours/day",
+          "Editing photos 200 pcs",
+          "Highlight Video 3-5 minutes",
+          "All file photo",
+          "2 Campers Live Cam",
+          "All file transfer",
+          "Hardisk"
+        ],
+        "price": 25000000
+      },
+      {
+        "level": "Exclusive",
+        "items": [
+          "2 Photographer",
+          "2 Videographer",
+          "Technical Meeting",
+          "12 hours/day",
+          "Editing photos 300 pcs",
+          "Highlight Video 3-5 minutes",
+          "All file photo",
+          "4 Campers Live Cam",
+          "Jimmy Jib",
+          "All file transfer",
+          "Hardisk",
+          "International Event or National Event"
+        ],
+        "price": 35000000
+      }
+    ]
+  },
+  {
+    "slug": "sound-system",
+    "title": "Sound System",
+    "packages": [
+      {
+        "level": "Standard",
+        "items": [
+          "4 unit speaker 15 inch",
+          "2 unit three way 2x15 inch",
+          "2 unit sub woofer 18 inch",
+          "1 unit mixer",
+          "2 unit wireless mic",
+          "2 unit cable mic",
+          "Sound Man",
+          "5000 watt"
+        ],
+        "price": 3500000
+      },
+      {
+        "level": "Premium",
+        "items": [
+          "6 unit speaker 15 inch",
+          "4 unit three way 2x15 inch",
+          "4 unit sub woofer 18 inch",
+          "1 unit mixer",
+          "2 unit wireless mic",
+          "2 unit cable mic",
+          "Sound Man",
+          "10000 watt"
+        ],
+        "price": 7000000
+      },
+      {
+        "level": "Exclusive",
+        "items": [
+          "8 unit speaker 15 inch",
+          "6 unit three way 2x15 inch",
+          "6 unit sub woofer 18 inch",
+          "2 unit mixer Midas m32",
+          "4 unit wireless mic",
+          "4 unit cable mic",
+          "Sound Man",
+          "20000 watt"
+        ],
+        "price": 17000000
+      }
+    ]
+  },
+  {
+    "slug": "tour-travel",
+    "title": "Tour and Travel",
+    "packages": [
+      {
+        "level": "Standard",
+        "items": [
+          "Project Officer",
+          "Hotel / Venue / Cotage",
+          "Handling Transportation",
+          "Tour Guide",
+          "Meals & Resto",
+          "Dokumentasi",
+          "Man Power"
+        ],
+        "price": null
+      },
+      {
+        "level": "Premium",
+        "items": [
+          "Project Officer",
+          "Hotel / Venue / Cotage",
+          "Handling Transportation",
+          "Tour Guide",
+          "Meals & Resto",
+          "Dokumentasi",
+          "Man Power",
+          "Mice Management",
+          "Production",
+          "Master Games or Motivator",
+          "Entertainment"
+        ],
+        "price": null
+      },
+      {
+        "level": "Exclusive",
+        "items": [
+          "Project Officer",
+          "Hotel / Venue / Cotage",
+          "Handling Transportation",
+          "Tour Guide",
+          "Meals & Resto",
+          "Dokumentasi",
+          "Man Power",
+          "Mice Management",
+          "Production",
+          "Master Games or Motivator",
+          "Entertainment",
+          "Show Management",
+          "International Event",
+          "Translator"
+        ],
+        "price": null
+      }
+    ]
+  },
+  {
+    "slug": "live-streaming",
+    "title": "Live Streaming",
+    "packages": [
+      {
+        "level": "Standard",
+        "items": [
+          "1 unit camera Full HD",
+          "1 person camera professional",
+          "1 unit video capture",
+          "Operator Live Streaming",
+          "Laptop / PC",
+          "Sound card audio",
+          "1 modem internet",
+          "10 Meter HDMI Cable",
+          "Output video shooting",
+          "8 hours kerja"
+        ],
+        "price": 3500000
+      },
+      {
+        "level": "Premium",
+        "items": [
+          "2 unit camera Full HD",
+          "2 person camera professional",
+          "2 unit video capture",
+          "Operator Live Streaming",
+          "Laptop / PC",
+          "Sound card audio",
+          "1 modem internet",
+          "10 Meter HDMI Cable",
+          "Output video shooting",
+          "8 hours kerja"
+        ],
+        "price": 4500000
+      },
+      {
+        "level": "Standard",
+        "items": [
+          "3 unit camera Full HD",
+          "3 person camera professional",
+          "3 unit video capture",
+          "Operator Live Streaming",
+          "Laptop / PC",
+          "Sound card audio",
+          "1 modem internet",
+          "10 Meter HDMI Cable",
+          "Output video shooting",
+          "8 hours kerja"
+        ],
+        "price": 5500000
       }
     ]
   }

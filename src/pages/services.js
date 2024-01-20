@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Footer from "../components/footer";
 import NavigationColor from "../components/navigationColor";
 import servicesData from "../content/services.json";
+import PartnerSlider from "../components/partnerSlider";
 
 
 const ServicesPage = () => {
@@ -14,11 +15,13 @@ const ServicesPage = () => {
     <div className="inline-flex justify-center w-full">
       <div className="flex flex-col items-center w-full max-w-7xl mx-4 my-10 sm:my-20">
         <div className="w-full">
-          <h2>{selectedService.title}</h2>
-          <div className="flex flex-col md:flex-row  md:items-start space-x-5">
+          <div className="flex flex-col md:flex-row md:items-start md:space-x-5">
             {selectedService.packages.map((pkg, i) => (
               <div className="flex-1 rounded-lg shadow-lg overflow-hidden mb-5">
-                <div className="bg-sky-500 font-bold text-white text-lg text-center py-5 md:py-8">{pkg.level}</div>
+                <div className="bg-sky-500 text-white text-lg text-center py-5 md:py-8">
+                  <div>{selectedService.title}</div>
+                  <div className="font-bold">{pkg.level}</div>
+                </div>
                 <div>
                   <div className="text-gray-400 text-center py-6 md:py-10">Promo/<span className="text-sky-500 font-bold text-xl md:text-2xl">Harga Spesial</span></div>
                 </div>
@@ -118,6 +121,22 @@ const ServicesPage = () => {
     </div>
   )
 
+  const partnerSection = () => (
+    <div className="relative inline-flex justify-center w-full bg-slate-100">
+      <div className="flex flex-col items-center w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
+        <div className="w-fit relative mb-10 ">
+          <div className="absolute bottom-0 left-3 sm:left-5 bg-sky-300 w-36 sm:w-56 h-3"></div>
+          <h2 className="relative text-2xl sm:text-4xl font-bold">Trusted Partners</h2>
+        </div>
+        <p className="mb-10 text-center">
+          Collaborate with local, national and global communities to create 
+          events that are more comprehensive and best suit the desired concept
+        </p>
+        <PartnerSlider/>
+      </div>
+    </div>
+  )
+
   return(
     <main className="relative min-h-screen bg-white">
       <div className="pb-[500px] md:pb-[350px]">
@@ -126,6 +145,8 @@ const ServicesPage = () => {
         {serviceSection()}
 
         {packageSection()}
+
+        {partnerSection()}
       </div>
       <Footer />
     </main>
