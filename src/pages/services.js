@@ -93,14 +93,16 @@ const ServicesPage = () => {
               <div className="text-white font-bold">Documentation</div>
             </div>
           </div>
-          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
+          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
+            onClick={() => findServiceBySlug('3d-design')}>
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-3d-design.jpg" alt="event organizer"/>
             <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
               <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-3d-design.png" alt="icon 3D design"/>
               <div className="text-white font-bold">3D Design</div>
             </div>
           </div>
-          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
+          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
+            onClick={() => findServiceBySlug('graphic-content')}>
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-content.jpg" alt="event organizer"/>
             <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
               <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-graphic-content.png" alt="icon graphic content"/>
@@ -123,7 +125,8 @@ const ServicesPage = () => {
               <div className="text-white font-bold">Tour & Travel</div>
             </div>
           </div>
-          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
+          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
+            onClick={() => findServiceBySlug('event-equipment')}>
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-equipment.jpg" alt="event organizer"/>
             <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
               <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-equipment.png" alt="icon event equipment"/>
