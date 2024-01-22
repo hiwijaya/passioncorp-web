@@ -5,14 +5,30 @@ import Footer from "../components/footer";
 import NavigationColor from "../components/navigationColor";
 import servicesData from "../content/services.json";
 import PartnerSlider from "../components/partnerSlider";
+import VideoPlay from "../components/videoPlay";
+import { navigate } from "gatsby";
 
 
 const ServicesPage = () => {
 
   const [selectedService, setSelectedService] = useState(servicesData[0]);
 
+  const findServiceBySlug = (slug) => {
+    for (let i = 0; i < servicesData.length; i++) {
+      const service = servicesData[i];
+      if(service.slug === slug){
+        setSelectedService(service);
+        navigate('#pricing');
+        return;
+      }
+    }
+
+    setSelectedService(servicesData[0]);
+    navigate('#pricing');
+  }
+
   const packageSection = () => (
-    <div className="inline-flex justify-center w-full">
+    <div id="pricing" className="inline-flex justify-center w-full">
       <div className="flex flex-col items-center w-full max-w-7xl mx-4 my-10 sm:my-20">
         <div className="w-full">
           <div className="flex flex-col md:flex-row md:items-start md:space-x-5">
@@ -53,21 +69,24 @@ const ServicesPage = () => {
           We are ready with the industry's most creative, cutting-edge solutions to help you produce extraordinary live events from start to finish.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-5 text-xl lg:text-2xl">
-          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
+          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
+            onClick={() => findServiceBySlug('event-organizer')}>
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-event-organizer.jpg" alt="event organizer"/>
             <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
               <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-event-organizer.png" alt="icon event organizer"/>
               <div className="text-white font-bold">Event Organizer</div>
             </div>
           </div>
-          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
+          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
+            onClick={() => findServiceBySlug('show-management')}>
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-show-management.jpg" alt="event organizer"/>
             <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
               <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-show-management.png" alt="icon show management"/>
               <div className="text-white font-bold">Show Management</div>
             </div>
           </div>
-          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
+          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
+            onClick={() => findServiceBySlug('documentation')}>
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-documentation.jpg" alt="event organizer"/>
             <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
               <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-documentation.png" alt="icon documentation"/>
@@ -88,14 +107,16 @@ const ServicesPage = () => {
               <div className="text-white font-bold">Graphic Content</div>
             </div>
           </div>
-          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
+          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
+            onClick={() => findServiceBySlug('sound-system')}>
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-sound.jpg" alt="event organizer"/>
             <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
               <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-sound-system.png" alt="icon sound system"/>
               <div className="text-white font-bold">Sound System</div>
             </div>
           </div>
-          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
+          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
+            onClick={() => findServiceBySlug('tour-travel')}>
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-travel.jpg" alt="event organizer"/>
             <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
               <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-tour.png" alt="icon tour and travel"/>
@@ -109,7 +130,8 @@ const ServicesPage = () => {
               <div className="text-white font-bold">Event Equipment</div>
             </div>
           </div>
-          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition">
+          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
+            onClick={() => findServiceBySlug('live-streaming')}>
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-live-streaming.jpg" alt="event organizer"/>
             <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
               <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-live.png" alt="icon live streaming"/>
@@ -117,6 +139,39 @@ const ServicesPage = () => {
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  )
+
+  const portfolioSection = () => (
+    <div className="inline-flex justify-center w-full ">
+      <div className="flex flex-col items-center w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
+        <div className="w-fit relative mb-10 ">
+          <div className="absolute bottom-0 left-3 sm:left-5 bg-sky-300 w-28 sm:w-44 h-3"></div>
+          <h2 className="relative text-2xl sm:text-4xl font-bold">See Our Work</h2>
+        </div>
+        <p className="mb-10 text-center">
+          we are there every step of the way to provide you with the exceptional event and service you deserve
+        </p>
+        <div className="inline-flex gap-5 pb-10 overflow-x-auto no-scrollbar w-full">
+          <VideoPlay 
+            title="Asian Summit Vertiv 2023, Bali" 
+            thumbnail="https://img.youtube.com/vi/uhfW9jKMlbo/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/uhfW9jKMlbo"/>
+          <VideoPlay 
+            title="Forum Nasional Pelindungan Data, Bali" 
+            thumbnail="https://img.youtube.com/vi/O70Z5igRpgc/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/O70Z5igRpgc"/>
+          <VideoPlay 
+            title="Indoin Infinite 2023, Ritz Carlton Jakarta" 
+            thumbnail="https://img.youtube.com/vi/bFlQzp0MFT4/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/bFlQzp0MFT4"/>
+          <VideoPlay 
+            title="3000+ Paragonian Rekor Muri" 
+            thumbnail="https://img.youtube.com/vi/msxYu8Ow4I8/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/msxYu8Ow4I8"/>
+        </div>
+        <button className="bg-sky-400 rounded-full text-white px-10 py-5">WE HAVE MORE!</button>
       </div>
     </div>
   )
@@ -137,6 +192,21 @@ const ServicesPage = () => {
     </div>
   )
 
+  const mapsSection = () => (
+    <div className="inline-flex justify-center w-full">
+      <div className="flex flex-col items-center w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
+        <div className="w-fit relative mb-10 ">
+          <div className="absolute bottom-0 left-3 sm:left-5 bg-sky-300 w-36 sm:w-56 h-3"></div>
+          <h2 className="relative text-2xl sm:text-4xl font-bold">Passion Network</h2>
+        </div>
+        <p className="mb-10 text-center">
+          Supporting events in cities in various regions in Indonesia, both at the scale of ministries, regional institutions and private companies.
+        </p>
+        <StaticImage className="w-full" src="../images/passion-map.png" alt="passion map" />
+      </div>
+    </div>
+  )
+
   return(
     <main className="relative min-h-screen bg-white">
       <div className="pb-[500px] md:pb-[350px]">
@@ -146,7 +216,12 @@ const ServicesPage = () => {
 
         {packageSection()}
 
+        {portfolioSection()}
+
         {partnerSection()}
+
+        {mapsSection()}
+        
       </div>
       <Footer />
     </main>
