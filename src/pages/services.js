@@ -2,7 +2,7 @@ import * as React from "react"
 import { useState } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Footer from "../components/footer";
-import NavigationColor from "../components/navigationColor";
+import Navigation from "../components/navigation";
 import servicesData from "../content/services.json";
 import PartnerSlider from "../components/partnerSlider";
 import VideoPlay from "../components/videoPlay";
@@ -28,8 +28,12 @@ const ServicesPage = () => {
   }
 
   const packageSection = () => (
-    <div id="pricing" className="inline-flex justify-center w-full">
+    <div id="pricing" className="inline-flex justify-center w-full bg-slate-100">
       <div className="flex flex-col items-center w-full max-w-7xl mx-4 my-10 sm:my-20">
+        <div className="w-fit relative mb-10 ">
+          <div className="absolute bottom-0 left-3 sm:left-5 bg-sky-300 w-24 sm:w-36 h-3"></div>
+          <h2 className="relative text-2xl sm:text-4xl font-bold">{selectedService.title}</h2>
+        </div>
         <div className="w-full">
           <div className="flex flex-col md:flex-row md:items-start md:space-x-5">
             {selectedService.packages.map((pkg, i) => (
@@ -47,7 +51,10 @@ const ServicesPage = () => {
                   ))}
                 </div>
                 <div className="p-6 md:p-10">
-                  <button className="border-2 border-sky-500 rounded-xl w-full text-sky-500 py-5 text-center">Tanya Lebih Lanjut</button>
+                  <button className="border-2 border-sky-500 rounded-xl w-full text-sky-500 py-5 text-center" 
+                    onClick={() => {
+                      navigate(`https://wa.me/6289609399684?text=Thank%20you%20for%20contacting%20Passion%20Corp%20Indonesia.%20While%20waiting%20for%20our%20support%20team%20to%20respond%2C%20please%20fill%20in%20first%3A%0A%0AName%3A%0ACompany%20name%3A%0AServices%20you%20want%20to%20ask%20about%3A%0ABudget%20Estimate%20%3A%0A%0Ahttps%3A%2F%2Fpassioncorp.id%2Fservices%3Fs%3D${selectedService.slug}%0A%0AThank%20You`)
+                    }}>Tanya Lebih Lanjut</button>
                 </div>
               </div>
             ))}
@@ -61,13 +68,11 @@ const ServicesPage = () => {
   const serviceSection = () => (
     <div className="inline-flex justify-center w-full">
       <div className="flex flex-col items-center w-full max-w-7xl mx-4 my-10 sm:my-20">
-        <div className="w-fit relative mb-10 ">
-          <div className="absolute bottom-0 left-3 sm:left-5 bg-sky-300 w-28 sm:w-44 h-3"></div>
-          <h2 className="relative text-2xl sm:text-4xl font-bold">Our Services</h2>
-        </div>
-        <p className="text-center mb-10">
-          We are ready with the industry's most creative, cutting-edge solutions to help you produce extraordinary live events from start to finish.
+        <div className="font-bold text-2xl sm:text-4xl mb-5 text-center sm:text-left">Choose <span className="text-sky-500">The Best</span> For Your Event Needs</div>
+        <p className="mb-10 text-center">
+          You can choose and we know how to make best for your event
         </p>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-5 text-xl lg:text-2xl">
           <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
             onClick={() => findServiceBySlug('event-organizer')}>
@@ -213,7 +218,18 @@ const ServicesPage = () => {
   return(
     <main className="relative min-h-screen bg-white">
       <div className="pb-[500px] md:pb-[350px]">
-        <NavigationColor />
+        <Navigation />
+        <div className="relative w-full h-screen">
+          <StaticImage className="w-full h-full" imgClassName="object-cover h-full" src="../images/image-service.png" alt="slide 1" />
+          <div className="absolute left-0 top-0 w-full h-full inline-flex justify-center items-center bg-black/75 px-4">
+            <div className="w-full max-w-7xl text-white">
+              <h1 className="font-bold text-2xl lg:text-5xl text-center mb-5">OUR SERVICES</h1>
+              <p className="text-center lg:text-lg">
+                Supported by the best Management Team, lets #ConsultTogether Passion Corp Indonesia as the first step your event success
+              </p>
+            </div>
+          </div>
+        </div>
         
         {serviceSection()}
 

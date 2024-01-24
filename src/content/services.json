@@ -332,5 +332,175 @@
         "price": 5500000
       }
     ]
+  },
+  {
+    "slug": "3d-design",
+    "title": "3D Design",
+    "packages": [
+      {
+        "level": "Standard",
+        "items": [
+          "Story Board/Story Line",
+          "Production",
+          "Video Equipment",
+          "Voice Over",
+          "Backsound",
+          "Editing video",
+          "Graphic asset",
+          "Video resolusi Full HD"
+        ],
+        "price": null
+      }, 
+      {
+        "level": "Premium",
+        "items": [
+          "Story Board/Story Line",
+          "Production",
+          "Drone",
+          "Video Equipment",
+          "Voice Over",
+          "Backsound",
+          "Editing video",
+          "Graphic asset",
+          "Infographic",
+          "Video resolusi Full HD"
+        ],
+        "price": null
+      },
+      {
+        "level": "Exclusive",
+        "items": [
+          "Story Board/Story Line",
+          "Production",
+          "Drone",
+          "Video Equipment",
+          "Voice Over",
+          "Talent",
+          "Backsound",
+          "Editing video",
+          "Bumper",
+          "Graphic asset",
+          "Infographic",
+          "Video resolusi 4K"
+        ],
+        "price": null
+      }
+    ]
+  },
+  {
+    "slug": "graphics-content",
+    "title": "Graphics Content",
+    "packages": [
+      {
+        "level": "Standard",
+        "items": [
+          "Bumper Logo",
+          "Background Looping",
+          "Event Opener",
+          "Bumper Speaker",
+          "Banner Design"
+        ],
+        "price": null
+      },
+      {
+        "level": "Premium",
+        "items": [
+          "Bumper Logo",
+          "Background Looping",
+          "Event Opener",
+          "Bumper Speaker",
+          "Banner Design",
+          "Motion Graphics",
+          "Animated Vector Character",
+          "Advertisement Motion Graphics",
+          "Price/minutes"
+        ],
+        "price": null
+      },
+      {
+        "level": "Exclusive",
+        "items": [
+          "Bumper Logo",
+          "Background Looping",
+          "Event Opener",
+          "Bumper Speaker",
+          "Banner Design",
+          "Motion Graphics",
+          "Animated Vector Character",
+          "Advertisement Motion Graphics",
+          "Hand Drawn Animation",
+          "Anime Film",
+          "Animate Illustration",
+          "Price/minutes"
+        ],
+        "price": null
+      }
+    ]
+  },
+  {
+    "slug": "event-equipment",
+    "title": "Event Equipment",
+    "packages": [
+      {
+        "level": "Standard",
+        "items": [
+          "Backdrop Stage",
+          "Stage Standard 40/60/80cm",
+          "Garder Stage",
+          "Lighting Standard",
+          "Sound System",
+          "Usher 2 person",
+          "Crew 3 person",
+          "TV Standing 2pcs",
+          "Live Cam",
+          "Documentation"
+        ],
+        "price": null
+      },
+      {
+        "level": "Premium",
+        "items": [
+          "LED Videotron",
+          "Backdrop Stage",
+          "Stage Standard 40/60/80cm",
+          "Garder Stage",
+          "Lighting Standard",
+          "Sound System",
+          "Usher 4 person",
+          "Crew 5 person",
+          "TV Standing 4pcs",
+          "Live Cam",
+          "Documentation",
+          "Backdrop Photobooth",
+          "TV Prompter"
+        ],
+        "price": null
+      },
+      {
+        "level": "Exclusive",
+        "items": [
+          "LED Videotron",
+          "Backdrop Stage",
+          "Stage Standard 40/60/80cm",
+          "Garder Stage",
+          "Lighting Show",
+          "Sound System",
+          "Usher 8 person",
+          "Crew 15 person",
+          "TV Standing 6pcs",
+          "Live Cam 4 unit",
+          "Documentation",
+          "Backdrop Photobooth",
+          "Exibition Booth",
+          "Games Corner",
+          "Confetti",
+          "Ballon Droper",
+          "Fire Flame",
+          "Jimmy Jib",
+          "TV Prompter"
+        ],
+        "price": null
+      }
+    ]
   }
 ]

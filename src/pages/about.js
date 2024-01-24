@@ -11,7 +11,7 @@ const AboutPage = () => {
       <div className="pb-[500px] md:pb-[350px]">
         <Navigation />
         <div className="relative w-full h-screen">
-          <StaticImage className="w-full h-full" imgClassName="object-cover w-96 h-full" src="../images/image-about.jpg" alt="slide 1" />
+          <StaticImage className="w-full h-full" imgClassName="object-cover h-full" src="../images/image-about.jpg" alt="slide 1" />
           <div className="absolute left-0 top-0 w-full h-full inline-flex justify-center items-center bg-black/75 px-4">
             <div className="w-full max-w-7xl text-white">
               <h1 className="font-bold text-2xl lg:text-5xl text-center mb-5">ABOUT PASSION</h1>
