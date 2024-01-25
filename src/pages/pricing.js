@@ -9,7 +9,7 @@ import VideoPlay from "../components/videoPlay";
 import { navigate } from "gatsby";
 
 
-const ServicesPage = () => {
+const PricingPage = () => {
 
   const [selectedService, setSelectedService] = useState(servicesData[0]);
 
@@ -30,10 +30,11 @@ const ServicesPage = () => {
   const packageSection = () => (
     <div id="pricing" className="inline-flex justify-center w-full bg-slate-100">
       <div className="flex flex-col items-center w-full max-w-7xl mx-4 my-10 sm:my-20">
-        <div className="w-fit relative mb-10 ">
+        <div className="w-fit relative mb-5">
           <div className="absolute bottom-0 left-3 sm:left-5 bg-sky-300 w-24 sm:w-36 h-3"></div>
           <h2 className="relative text-2xl sm:text-4xl font-bold">{selectedService.title}</h2>
         </div>
+        <p className="text-center text-sm mb-10 w-full max-w-2xl">{selectedService.description}</p>
         <div className="w-full">
           <div className="flex flex-col md:flex-row md:items-start md:space-x-5">
             {selectedService.packages.map((pkg, i) => (
@@ -107,7 +108,7 @@ const ServicesPage = () => {
             </div>
           </div>
           <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
-            onClick={() => findServiceBySlug('graphic-content')}>
+            onClick={() => findServiceBySlug('graphics-content')}>
             <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-content.jpg" alt="event organizer"/>
             <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
               <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-graphic-content.png" alt="icon graphic content"/>
@@ -246,5 +247,5 @@ const ServicesPage = () => {
     </main>
   );
 }
-export default ServicesPage
-export const Head = () => <title>Services</title>
+export default PricingPage
+export const Head = () => <title>Pricing</title>

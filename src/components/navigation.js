@@ -19,7 +19,7 @@ const Navigation = () => {
           </a>
           <div className="hidden lg:block">
             <nav className="inline-flex text-white gap-10 mr-10">
-              <a href="/services">Services</a>
+              <a href="/pricing">Pricing</a>
               <a href="/">Portfolio</a>
               <a href="/about">About</a>
               <a href="/">Contact</a>

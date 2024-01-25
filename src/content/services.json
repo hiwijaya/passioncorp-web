@@ -2,6 +2,7 @@
   {
     "slug": "event-organizer",
     "title": "Event Organizer",
+    "description": "Creative events have a way of making people appreciate their membership to your organization or their strong connections to you as a consumer. Transformative events are built by creative strategy, taking every exchange and interaction with your audience into account.",
     "packages": [
       {
         "level": "Standard",
@@ -59,6 +60,7 @@
   {
     "slug": "show-management",
     "title": "Show Management",
+    "description": "When show time arrives, our expertise is expecting the unexpected. Our team of producers, stage and talent managers, with decades of experience in hybrid settings and venues Indonesia Areas, work closely with you, to ensure a seamless experience.",
     "packages": [
       {
         "level": "Standard",
@@ -125,6 +127,7 @@
   {
     "slug": "documentation",
     "title": "Documentation",
+    "description": "Documenting an event is not only about taking photos and videos. It can also be useful to keep a record of the things that were successful about an event and the things that did go as well. This information will become helpful when planning subsequent activities.",
     "packages": [
       {
         "level": "Standard",
@@ -178,6 +181,7 @@
   {
     "slug": "sound-system",
     "title": "Sound System",
+    "description": "Audio is important for your event because it creates another way to engage your audience and create a memorable experience. Sound helps evoke emotions and convey your message while enhancing the impact of your visual stimuli.",
     "packages": [
       {
         "level": "Standard",
@@ -226,6 +230,7 @@
   {
     "slug": "tour-travel",
     "title": "Tour and Travel",
+    "description": "Working with a tour organizer can take the stress out of planning a trip, leaving you free to enjoy it to its fullest. Where would you rather spend your time – planning and organizing the details of an tour itinerary or traversing a foreign land and experiencing different types of cultures? Passion Corp Indonesia make it possible to do both.",
     "packages": [
       {
         "level": "Standard",
@@ -282,6 +287,7 @@
   {
     "slug": "live-streaming",
     "title": "Live Streaming",
+    "description": "Quality live streaming services supported by the best equipment and professional staff so that the event and high quality live streaming services are supported by the best equipment and professional staff so that your event can run well.",
     "packages": [
       {
         "level": "Standard",
@@ -336,52 +342,50 @@
   {
     "slug": "3d-design",
     "title": "3D Design",
+    "description": "Visualize Your Spaces to Increase Communication and Sales. venue plans have never been easier or more realistic. Passion offers the best services for 3D design that help make your event a success Turn on screen reader support.",
     "packages": [
       {
         "level": "Standard",
         "items": [
-          "Story Board/Story Line",
-          "Production",
-          "Video Equipment",
-          "Voice Over",
-          "Backsound",
-          "Editing video",
-          "Graphic asset",
-          "Video resolusi Full HD"
+          "Design Layout Simple",
+          "Rendering",
+          "Work Drawing",
+          "i7 10700f",
+          "GTX 1660",
+          "RAM 32 GB DDR4",
+          "Windows 10 Pro",
+          "2x Revision"
         ],
         "price": null
       }, 
       {
         "level": "Premium",
         "items": [
-          "Story Board/Story Line",
-          "Production",
-          "Drone",
-          "Video Equipment",
-          "Voice Over",
-          "Backsound",
-          "Editing video",
-          "Graphic asset",
-          "Infographic",
-          "Video resolusi Full HD"
+          "Design Layout",
+          "Rendering",
+          "Work Drawing",
+          "Final Art",
+          "i9 10900kf",
+          "GTX 1660",
+          "RAM 32 GB DDR4",
+          "Windows 10 Pro",
+          "4x Revision"
         ],
         "price": null
       },
       {
         "level": "Exclusive",
         "items": [
-          "Story Board/Story Line",
-          "Production",
-          "Drone",
-          "Video Equipment",
-          "Voice Over",
-          "Talent",
-          "Backsound",
-          "Editing video",
-          "Bumper",
-          "Graphic asset",
-          "Infographic",
-          "Video resolusi 4K"
+          "Grafis Visual",
+          "Design Layout",
+          "Rendering",
+          "Work Drawing",
+          "Final Art",
+          "i5 14600k",
+          "GTX 1080ti/4060ti",
+          "RAM 64 GB DDR4",
+          "Windows 10 Pro",
+          "Unlimited Revision"
         ],
         "price": null
       }
@@ -390,6 +394,7 @@
   {
     "slug": "graphics-content",
     "title": "Graphics Content",
+    "description": "Whether you're organizing a large or small event, an indoor or outdoor event, or any other type of event, you need a collection of visual content that captures people's attention and motivates them to excited in order to effectively promote it. Turn on screen reader support.",
     "packages": [
       {
         "level": "Standard",
@@ -440,6 +445,7 @@
   {
     "slug": "event-equipment",
     "title": "Event Equipment",
+    "description": "A successful event holds the execution of a lot of little processes. All the tasks are aligned and executed by a plan. An expert event planner defines the plan according to the requirement of the host. The main reasons for organizing an event are to create awareness, build reputation, and effectively convey your message. It provides great exposure to your ceremony or product launch, which can be beneficial for your business in more than one way. Turn on screen reader support.",
     "packages": [
       {
         "level": "Standard",
