@@ -38,7 +38,7 @@ const ImageGallery = () => {
   ];
 
   return (
-    <div className="w-full overflow-hidden h-[400px]">
+    <div className="w-full overflow-hidden">
       <Slide slidesToScroll={1} slidesToShow={3} autoplay={true} responsive={responsiveSettings}>
         {
           images.map((image, i) => (
