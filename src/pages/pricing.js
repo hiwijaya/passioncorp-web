@@ -1,5 +1,5 @@
 import * as React from "react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Footer from "../components/footer";
 import Navigation from "../components/navigation";
@@ -13,10 +13,21 @@ const PricingPage = () => {
 
   const [selectedService, setSelectedService] = useState(servicesData[0]);
 
-  const findServiceBySlug = (slug) => {
+  useEffect(() => {
+
+    if(typeof window !== 'undefined'){
+      const urlParams = new URLSearchParams(window.location.search);
+      if(urlParams.has('s')){
+        findServiceBySlug(urlParams.get('s'));
+      }
+    }
+
+  }, []);
+
+  const findServiceBySlug = (s) => {
     for (let i = 0; i < servicesData.length; i++) {
       const service = servicesData[i];
-      if(service.slug === slug){
+      if(service.slug === s){
         setSelectedService(service);
         navigate('#pricing');
         return;
@@ -226,7 +237,7 @@ const PricingPage = () => {
             <div className="w-full max-w-7xl text-white">
               <h1 className="font-bold text-2xl lg:text-5xl text-center mb-5">OUR SERVICES</h1>
               <p className="text-center lg:text-lg">
-                Supported by the best Management Team, lets #ConsultTogether Passion Corp Indonesia as the first step your event success
+                Supported by the best Management Team, lets #ConsultTogether with Passion Corp Indonesia as the first step your event success
               </p>
             </div>
           </div>
