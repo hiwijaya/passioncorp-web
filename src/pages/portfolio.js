@@ -1,11 +1,80 @@
-import * as React from "react"
-import { useState, useEffect } from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 import Footer from "../components/footer";
 import Navigation from "../components/navigation";
+import ImageGallery from "../components/imageGallery";
+import VideoPlay from "../components/videoPlay"
 
 
 const portfolioPage = () => {
+
+  const gallerySection = () => (
+    <div className="inline-flex justify-center w-full ">
+      <div className="flex flex-col items-center w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
+        <ImageGallery/>
+      </div>
+    </div>
+  )
+
+  const videoSection = () => (
+    <div className="inline-flex justify-center w-full ">
+      <div className="flex flex-col items-center w-full max-w-7xl px-4 xl:px-0 mb-10 sm:mb-20">
+      <div className="font-bold text-2xl sm:text-4xl mb-10 text-center sm:text-left">Know More About <span className="text-sky-500">Our Story</span></div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-10">
+          <VideoPlay 
+            title="Asian Summit Vertiv 2023, Bali" 
+            thumbnail="https://img.youtube.com/vi/uhfW9jKMlbo/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/uhfW9jKMlbo"/>
+          <VideoPlay 
+            title="Forum Nasional Pelindungan Data, Bali" 
+            thumbnail="https://img.youtube.com/vi/O70Z5igRpgc/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/O70Z5igRpgc"/>
+          <VideoPlay 
+            title="Indoin Infinite 2023, Ritz Carlton Jakarta" 
+            thumbnail="https://img.youtube.com/vi/bFlQzp0MFT4/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/bFlQzp0MFT4"/>
+          <VideoPlay 
+            title="3000+ Paragonian Rekor Muri" 
+            thumbnail="https://img.youtube.com/vi/msxYu8Ow4I8/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/msxYu8Ow4I8"/>
+          <VideoPlay 
+            title="Birthday Party at Jakarta Pinishi" 
+            thumbnail="https://img.youtube.com/vi/MZX0sVtcmVI/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/MZX0sVtcmVI"/>
+          <VideoPlay 
+            title="ALEZA Fashion Show" 
+            thumbnail="https://img.youtube.com/vi/7FcLW8K-p3w/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/7FcLW8K-p3w"/>
+          <VideoPlay 
+            title="Junior High School Graduation" 
+            thumbnail="https://img.youtube.com/vi/AewdYg5AMm4/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/AewdYg5AMm4"/>
+          <VideoPlay 
+            title="Daikin Gathering 2023" 
+            thumbnail="https://img.youtube.com/vi/OiwncNc9XQE/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/OiwncNc9XQE"/>
+
+
+          <VideoPlay 
+            title="Sun Energy 2023" 
+            thumbnail="https://img.youtube.com/vi/QyffSIrsnIo/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/QyffSIrsnIo"/>
+          <VideoPlay 
+            title="KAS KOM Meeting 2023, Bali" 
+            thumbnail="https://img.youtube.com/vi/6AhcWoFqw0E/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/6AhcWoFqw0E"/>
+          <VideoPlay 
+            title="Gelaran Budaya Bersama Kapolri 2023" 
+            thumbnail="https://img.youtube.com/vi/46i2aRtMuo0/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/46i2aRtMuo0"/>
+          <VideoPlay 
+            title="China(Fujian) - Indonesia 2023" 
+            thumbnail="https://img.youtube.com/vi/G5PGI_Y-KN4/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/G5PGI_Y-KN4"/>
+        </div>
+      </div>
+    </div>
+  )
 
   return (
     <main className="relative min-h-screen bg-white">
@@ -26,6 +95,8 @@ const portfolioPage = () => {
           </div>
         </div>
 
+        {gallerySection()}
+        {videoSection()}
 
       </div>
       <Footer />
