@@ -11,6 +11,15 @@ const portfolioPage = () => {
   const gallerySection = () => (
     <div className="inline-flex justify-center w-full ">
       <div className="flex flex-col items-center w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
+      <div className="relative mb-10">
+        <div className="absolute bottom-0 left-3 sm:left-5 bg-sky-300 w-16 sm:w-20 h-3"></div>
+        <h2 className="relative text-2xl sm:text-4xl font-bold">Gallery</h2>
+      </div>
+      <p className="text-center mb-10 w-full max-w-2xl"> 
+        we make everyone enjoy their time with us. No matter how many participants there are, 
+        and no matter how heavy your burden is in preparing this event, we are here to provide answers for the success of your event.
+      </p>
+
         <ImageGallery/>
       </div>
     </div>
@@ -76,6 +85,53 @@ const portfolioPage = () => {
     </div>
   )
 
+  const countrySection = () => (
+    <div className="inline-flex justify-center w-full bg-slate-100">
+      <div className="flex flex-col items-center w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
+        <div className="font-bold text-2xl sm:text-4xl mb-20 text-center"><span className="text-sky-500">Experienced</span> for World Class Events</div>
+        <div className="w-full grid grid-cols-3 md:grid-cols-6 gap-10">
+          <div className="flex flex-col justify-center items-center font-bold">
+            <StaticImage className="w-20 mb-5" src="../images/indonesia.png" alt="Indonesia"/>
+            <div>INDONESIA</div>
+          </div>
+          <div className="flex flex-col justify-center items-center font-bold">
+            <StaticImage className="w-20 mb-5" src="../images/india.png" alt="India"/>
+            <div>INDIA</div>
+          </div>
+          <div className="flex flex-col justify-center items-center font-bold">
+            <StaticImage className="w-20 mb-5" src="../images/philippines.png" alt="Philippines"/>
+            <div>PHILIPPINES</div>
+          </div>
+          <div className="flex flex-col justify-center items-center font-bold">
+            <StaticImage className="w-20 mb-5" src="../images/singapore.png" alt="Singapore"/>
+            <div>SINGAPORE</div>
+          </div>
+          <div className="flex flex-col justify-center items-center font-bold">
+            <StaticImage className="w-20 mb-5" src="../images/thailand.png" alt="Thailand"/>
+            <div>THAILAND</div>
+          </div>
+          <div className="flex flex-col justify-center items-center font-bold">
+            <StaticImage className="w-20 mb-5" src="../images/japan.png" alt="Japan"/>
+            <div>JAPAN</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  )
+
+  const contactSection  = () => (
+    <div className="inline-flex justify-center w-full ">
+      <div className="flex flex-col items-center w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
+        <div className="font-bold text-xl text-center mb-2">Did you find what you were looking for or need help?</div>
+        <p className="mb-10">
+          You can contact Passion sales to find out about products and services from Passion Corp Indonesia
+        </p>
+        <button className="rounded-xl bg-sky-500 text-white px-10 py-3">CONTACT US</button>
+      </div>
+    </div>
+  )
+
   return (
     <main className="relative min-h-screen bg-white">
       <div className="pb-[500px] md:pb-[350px]">
@@ -98,6 +154,19 @@ const portfolioPage = () => {
         {gallerySection()}
         {videoSection()}
 
+        <div className="relative w-full">
+          <StaticImage className="w-full h-[160px] md:h-[350px] shrink-0" src="../images/image-success.jpg" alt="innovation"/> 
+          <div className="absolute left-0 top-0 w-full h-full inline-flex justify-center items-center bg-black/75 px-4">
+            <div className="w-full max-w-7xl text-white">
+              <p className="text-xl sm:text-2xl lg:text-5xl text-center mb-5">
+                Commitment, Creativity, and Collaboration
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {countrySection()}
+        {contactSection()}
       </div>
       <Footer />
     </main>
