@@ -20,7 +20,7 @@ const Navigation = () => {
           <div className="hidden lg:block">
             <nav className="inline-flex text-white gap-10 mr-10">
               <a href="/pricing">Pricing</a>
-              <a href="/">Portfolio</a>
+              <a href="/portfolio">Portfolio</a>
               <a href="/about">About</a>
               <a href="/">Contact</a>
               <a href="/">FAQ</a>
@@ -42,7 +42,7 @@ const Navigation = () => {
         <div className={`${menuVisible ? 'block' : 'hidden'} text-white py-5`}>
           <nav className="flex flex-col items-center w-full text-white gap-5 mb-5">
             <a href="/pricing">Pricing</a>
-            <a href="/">Portfolio</a>
+            <a href="/portfolio">Portfolio</a>
             <a href="/about">About</a>
             <a href="/">Contact</a>
             <a href="/">FAQ</a>
