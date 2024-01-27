@@ -27,9 +27,9 @@ const VideoPlay = ({title = '', thumbnail = '', link}) => {
   )
 
   return (
-    <div className="flex flex-col bg-white w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] shadow-xl rounded-2xl overflow-hidden shrink-0">
+    <div className="flex flex-col bg-white w-full max-w-[350px] h-[250px] shadow-xl rounded-2xl overflow-hidden shrink-0">
       {showPlayer && player()}
-      <img className="w-full h-[160px] sm:h-[200px] object-cover" src={thumbnail} alt="event" />
+      <img className="w-full h-[160px] object-cover" src={thumbnail} alt="event" />
       <div className="relative flex justify-center items-center flex-1 ">
         <div className="absolute -top-7 right-5 bg-white w-14 h-14 flex justify-center items-center rounded-full shadow-xl cursor-pointer " role="button"
           onClick={() => setShowPlayer(prevState => !prevState)}>
