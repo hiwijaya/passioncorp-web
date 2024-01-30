@@ -19,7 +19,7 @@ const VideoPlay = ({title = '', thumbnail = '', link}) => {
         </div>
         { 
           !link ? <div>Loading...</div> :
-          <iframe className="h-full" src={link}
+          <iframe className="h-full" src={link} referrerpolicy="no-referrer-when-downgrade"
              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         }
       </div>

@@ -66,7 +66,7 @@ const PricingPage = () => {
                   <button className="border-2 border-sky-500 rounded-xl w-full text-sky-500 py-5 text-center" 
                     onClick={() => {
                       navigate(`https://wa.me/6289609399684?text=Thank%20you%20for%20contacting%20Passion%20Corp%20Indonesia.%20While%20waiting%20for%20our%20support%20team%20to%20respond%2C%20please%20fill%20in%20first%3A%0A%0AName%3A%0ACompany%20name%3A%0AServices%20you%20want%20to%20ask%20about%3A%20${selectedService.title}%0ABudget%20Estimate%20%3A%0A%0Ahttps%3A%2F%2Fpassioncorp.id%2Fpricing%3Fs%3D${selectedService.slug}%0A%0AThank%20You.`)
-                    }}>Tanya Lebih Lanjut</button>
+                    }}>Ask More</button>
                 </div>
               </div>
             ))}
@@ -191,7 +191,7 @@ const PricingPage = () => {
             thumbnail="https://img.youtube.com/vi/msxYu8Ow4I8/maxresdefault.jpg"
             link="https://www.youtube.com/embed/msxYu8Ow4I8"/>
         </div>
-        <button className="bg-sky-400 rounded-full text-white px-10 py-5">WE HAVE MORE!</button>
+        <a href="/portfolio" className="bg-sky-400 rounded-full text-white px-10 py-5">WE HAVE MORE!</a>
       </div>
     </div>
   )
