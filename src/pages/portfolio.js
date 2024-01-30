@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import Navigation from "../components/navigation";
 import ImageGallery from "../components/imageGallery";
 import VideoPlay from "../components/videoPlay"
+import { navigate } from "gatsby";
 
 
 const portfolioPage = () => {
@@ -43,7 +44,7 @@ const portfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/bFlQzp0MFT4/maxresdefault.jpg"
             link="https://www.youtube.com/embed/bFlQzp0MFT4"/>
           <VideoPlay 
-            title="3000+ Paragonian Rekor Muri" 
+            title="30,000+ Paragonian Rekor Muri" 
             thumbnail="https://img.youtube.com/vi/msxYu8Ow4I8/maxresdefault.jpg"
             link="https://www.youtube.com/embed/msxYu8Ow4I8"/>
           <VideoPlay 
@@ -86,10 +87,10 @@ const portfolioPage = () => {
   )
 
   const countrySection = () => (
-    <div className="inline-flex justify-center w-full bg-slate-100">
+    <div className="inline-flex justify-center w-full bg-footer">
       <div className="flex flex-col items-center w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
         <div className="font-bold text-2xl sm:text-4xl mb-20 text-center"><span className="text-sky-500">Experienced</span> for World Class Events</div>
-        <div className="w-full grid grid-cols-3 md:grid-cols-6 gap-10">
+        <div className="w-full grid grid-cols-3 md:grid-cols-7 gap-10">
           <div className="flex flex-col justify-center items-center font-bold">
             <StaticImage className="w-20 mb-5" src="../images/indonesia.png" alt="Indonesia"/>
             <div>INDONESIA</div>
@@ -114,6 +115,10 @@ const portfolioPage = () => {
             <StaticImage className="w-20 mb-5" src="../images/japan.png" alt="Japan"/>
             <div>JAPAN</div>
           </div>
+          <div className="flex flex-col justify-center items-center font-bold col-span-3 md:col-span-1">
+            <StaticImage className="w-20 mb-5" src="../images/china.png" alt="Japan"/>
+            <div>CHINA</div>
+          </div>
         </div>
 
       </div>
@@ -127,7 +132,8 @@ const portfolioPage = () => {
         <p className="mb-10">
           You can contact Passion sales to find out about products and services from Passion Corp Indonesia
         </p>
-        <button className="rounded-xl bg-sky-500 text-white px-10 py-3">CONTACT US</button>
+        <button className="rounded-xl bg-sky-500 text-white px-10 py-3"
+          onClick={() => navigate(`https://wa.me/6289609399684?text=Hi%2C%20Passion%20Corp%20Indonesia%2C%20I%20know%20you%20from%20website%20https%3A%2F%2Fpassioncorp.id%2F`)}>CONTACT US</button>
       </div>
     </div>
   )

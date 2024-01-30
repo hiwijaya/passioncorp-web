@@ -20,7 +20,7 @@ const VideoPlay = ({title = '', thumbnail = '', link}) => {
         { 
           !link ? <div>Loading...</div> :
           <iframe className="h-full" src={link}
-             frameborder="0" allowfullscreen></iframe>
+             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         }
       </div>
     </div>

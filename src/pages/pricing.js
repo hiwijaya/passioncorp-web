@@ -55,7 +55,7 @@ const PricingPage = () => {
                   <div className="font-bold">{pkg.level}</div>
                 </div>
                 <div>
-                  <div className="text-gray-400 text-center py-6 md:py-10">Promo/<span className="text-sky-500 font-bold text-xl md:text-2xl">Harga Spesial</span></div>
+                  <div className="text-gray-400 text-center py-6 md:py-10">Promo/<span className="text-sky-500 font-bold text-xl md:text-2xl">Special Price</span></div>
                 </div>
                 <div className="">
                   {pkg.items.map((item, ii) => (
