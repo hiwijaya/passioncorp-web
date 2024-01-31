@@ -129,11 +129,10 @@ const portfolioPage = () => {
     <div className="inline-flex justify-center w-full ">
       <div className="flex flex-col items-center w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
         <div className="font-bold text-xl text-center mb-2">Did you find what you were looking for or need help?</div>
-        <p className="mb-10">
+        <p className="mb-10 text-center">
           You can contact Passion sales to find out about products and services from Passion Corp Indonesia
         </p>
-        <button className="rounded-xl bg-sky-500 text-white px-10 py-3"
-          onClick={() => navigate(`https://wa.me/6289609399684?text=Hi%2C%20Passion%20Corp%20Indonesia%2C%20I%20know%20you%20from%20website%20https%3A%2F%2Fpassioncorp.id%2F`)}>CONTACT US</button>
+        <a href="https://wa.me/6289609399684?text=Hi%2C%20Passion%20Corp%20Indonesia%2C%20I%20know%20you%20from%20website%20https%3A%2F%2Fpassioncorp.id%2F" className="rounded-xl bg-sky-500 text-white px-10 py-3">CONTACT US</a>
       </div>
     </div>
   )
