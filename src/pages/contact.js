@@ -21,7 +21,6 @@ const contactPage = () => {
 
   return (
     <main className="relative min-h-screen bg-white">
-      <SEO/>
       <div className="pb-[500px] md:pb-[350px]">
         <Navigation />
         <div className="relative w-full h-screen md:h-[600px]">
@@ -89,4 +88,6 @@ const contactPage = () => {
   );
 }
 export default contactPage;
-export const Head = () => <title>Contact Us</title>
+export const Head = () => (
+  <SEO title={'Contact Us'}/>
+)

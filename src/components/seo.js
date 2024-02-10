@@ -1,80 +1,31 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
 
 import React from "react";
-import { Helmet } from "react-helmet";
+import useSiteMetadata from "../hooks/use-site-metadata";
 
+const SEO = ({ title, description, pathname, children }) => {
+  const { title: defaultTitle, description: defaultDescription, image, siteUrl, twitterUsername } = useSiteMetadata()
 
-const SEO = ({ title, description, keywords, image, meta }) => {
-
-  const author = `Passion Corp Indonesia`;
+  const seo = {
+    title: title || defaultTitle,
+    description: description || defaultDescription,
+    image: `${siteUrl}${image}`,
+    url: `${siteUrl}${pathname || ``}`,
+    twitterUsername,
+  }
 
   return (
-    <Helmet
-      htmlAttributes={{ lang: `en` }}
-      title={title}
-      defaultTitle={`Passion Corp Indonesia`}
-      meta={[
-        {
-          name: `author`,
-          content: author,
-        },
-        {
-          name: `description`,
-          content: description,
-        },
-        {
-          name: `keywords`,
-          content: keywords.join,
-        },
-
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: description,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          property: `og:image`,
-          content: image,
-        },
-
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: description,
-        },
-      ].concat(meta)}
-    />
+    <>
+      <title>{seo.title}</title>
+      <meta name="description" content={seo.description} />
+      <meta name="image" content={seo.image} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={seo.title} />
+      <meta name="twitter:url" content={seo.url} />
+      <meta name="twitter:description" content={seo.description} />
+      <meta name="twitter:image" content={seo.image} />
+      <meta name="twitter:creator" content={seo.twitterUsername} />
+      {children}
+    </>
   )
 }
 export default SEO;
-
-SEO.defaultProps = {
-  title: `Passion Corp - Go Passion Go World!`,
-  description: `Passion Corp is comprised of professional, compassionate and Event Planners and Assistants who love helping clients with special events.`,
-  keywords: [],
-  image: `https://passioncorp.id/social.png`,
-  meta: [],
-}

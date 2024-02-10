@@ -310,7 +310,6 @@ const IndexPage = () => {
 
   return (
     <main className="relative min-h-screen bg-white">
-      <SEO/>
       <div className="pb-[500px] md:pb-[350px]">
         <Navigation />
         <Slider />
@@ -332,5 +331,7 @@ const IndexPage = () => {
     </main>
   )
 }
-
 export default IndexPage;
+export const Head = () => (
+  <SEO/>
+)

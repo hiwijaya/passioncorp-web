@@ -9,7 +9,6 @@ const AboutPage = () => {
 
   return (
     <main className="relative min-h-screen bg-white">
-      <SEO/>
       <div className="pb-[500px] md:pb-[350px]">
         <Navigation />
         <div className="relative w-full h-screen">
@@ -204,4 +203,6 @@ const AboutPage = () => {
 
 }
 export default AboutPage
-export const Head = () => <title>About Us</title>
+export const Head = () => (
+  <SEO title={'About'}/>
+)

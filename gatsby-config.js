@@ -7,6 +7,7 @@ module.exports = {
     description: `Passion Corp is comprised of professional, compassionate and Event Planners and Assistants who love helping clients with special events.`,
     image: `https://passioncorp.id/social.png`,
     siteUrl: `https://passioncorp.id`,
+    twitterUsername: `@passioncorp.id`,
   },
   plugins: [
     "gatsby-plugin-postcss",

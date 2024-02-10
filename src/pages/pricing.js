@@ -230,7 +230,6 @@ const PricingPage = () => {
 
   return(
     <main className="relative min-h-screen bg-white">
-      <SEO/>
       <div className="pb-[500px] md:pb-[350px]">
         <Navigation />
         <div className="relative w-full h-screen">
@@ -261,4 +260,6 @@ const PricingPage = () => {
   );
 }
 export default PricingPage
-export const Head = () => <title>Pricing</title>
+export const Head = () => (
+  <SEO title={'Pricing'}/>
+)

@@ -26,7 +26,6 @@ const FaqPage = () => {
 
   return (
     <main className="relative min-h-screen bg-white">
-      <SEO/>
       <div className="pb-[500px] md:pb-[350px]">
         <Navigation />
         <div className="relative w-full h-screen md:h-[600px]">
@@ -82,4 +81,6 @@ const FaqPage = () => {
 
 }
 export default FaqPage;
-export const Head = () => <title>FAQ</title>
+export const Head = () => (
+  <SEO title={'FAQ'}/>
+)
