@@ -26,5 +26,6 @@ module.exports = {
         icon: 'src/images/logo-color.png',
       },
     },
+    "gatsby-plugin-sitemap",
   ]
 };
