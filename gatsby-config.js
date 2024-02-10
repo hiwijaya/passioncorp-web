@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: `Passion Corp - Go Passion Go World!`,
     description: `Passion Corp is comprised of professional, compassionate and Event Planners and Assistants who love helping clients with special events.`,
-    image: `https://passioncorp.id/social.png`,
+    image: `/social.png`,
     siteUrl: `https://passioncorp.id`,
     twitterUsername: `@passioncorp.id`,
   },
