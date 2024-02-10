@@ -7,6 +7,7 @@ import servicesData from "../content/services.json";
 import PartnerSlider from "../components/partnerSlider";
 import VideoPlay from "../components/videoPlay";
 import { navigate } from "gatsby";
+import SEO from "../components/seo";
 
 
 const PricingPage = () => {
@@ -229,6 +230,7 @@ const PricingPage = () => {
 
   return(
     <main className="relative min-h-screen bg-white">
+      <SEO/>
       <div className="pb-[500px] md:pb-[350px]">
         <Navigation />
         <div className="relative w-full h-screen">

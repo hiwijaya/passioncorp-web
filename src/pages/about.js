@@ -2,12 +2,14 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Footer from "../components/footer";
 import Navigation from "../components/navigation";
+import SEO from "../components/seo";
 
 const AboutPage = () => {
 
 
   return (
     <main className="relative min-h-screen bg-white">
+      <SEO/>
       <div className="pb-[500px] md:pb-[350px]">
         <Navigation />
         <div className="relative w-full h-screen">

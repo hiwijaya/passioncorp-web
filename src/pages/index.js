@@ -7,7 +7,7 @@ import TestimonyCard from "../components/testimonyCard"
 import VideoPlay from "../components/videoPlay"
 import PartnerSlider from "../components/partnerSlider"
 import { navigate } from "gatsby";
-
+import SEO from "../components/seo";
 
 const IndexPage = () => {
 
@@ -310,6 +310,7 @@ const IndexPage = () => {
 
   return (
     <main className="relative min-h-screen bg-white">
+      <SEO/>
       <div className="pb-[500px] md:pb-[350px]">
         <Navigation />
         <Slider />
