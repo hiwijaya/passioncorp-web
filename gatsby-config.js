@@ -3,8 +3,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Passion Corp`,
-    siteUrl: `https://passioncorp.id`
+    title: `Passion Corp - Go Passion Go World!`,
+    description: `Passion Corp is comprised of professional, compassionate and Event Planners and Assistants who love helping clients with special events.`,
+    image: `/social.png`,
+    siteUrl: `https://passioncorp.id`,
   },
   plugins: [
     "gatsby-plugin-postcss",
