@@ -349,7 +349,6 @@ export const Head = () => (
       "url": "https://passioncorp.id/",
       "logo": "https://passioncorp.id/static/8bebf6dfc17e1b0c2e6fb7d1be3aa6d3/f9338/logo-white.webp",
       "sameAs": [
-        "https://www.instagram.com/passioncorp.id/",
         "https://www.instagram.com/passioncorp.id/"
       ]
     }
