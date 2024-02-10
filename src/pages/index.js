@@ -333,5 +333,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
-export const Head = () => <title>Passion Corp</title>
+export default IndexPage;
