@@ -8,6 +8,7 @@ import VideoPlay from "../components/videoPlay"
 import PartnerSlider from "../components/partnerSlider"
 import { navigate } from "gatsby";
 import SEO from "../components/seo";
+import { useStaticQuery, graphql } from 'gatsby';
 
 const IndexPage = () => {
 
@@ -331,7 +332,28 @@ const IndexPage = () => {
     </main>
   )
 }
+
 export default IndexPage;
 export const Head = () => (
-  <SEO/>
+  <SEO
+      title="Passion Corp - Go Passion Go World!"
+      description="Passion Corp is comprised of professional, compassionate and Event Planners and Assistants who love helping clients with special events."
+      keywords="Passion Corp, Passion Corp Indonesia"
+    >
+      <script type="application/ld+json">
+  {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Passion Corp",
+      "url": "https://passioncorp.id/",
+      "logo": "https://passioncorp.id/static/8bebf6dfc17e1b0c2e6fb7d1be3aa6d3/f9338/logo-white.webp",
+      "sameAs": [
+        "https://www.instagram.com/passioncorp.id/",
+        "https://www.instagram.com/passioncorp.id/"
+      ]
+    }
+  `}
+</script>
+    </SEO>
 )
