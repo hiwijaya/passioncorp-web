@@ -8,6 +8,8 @@ import VideoPlay from "../components/videoPlay"
 import PartnerSlider from "../components/partnerSlider"
 import { navigate } from "gatsby";
 import SEO from "../components/seo";
+import useSiteMetadata from '../hooks/use-site-metadata';
+
 
 const IndexPage = () => {
 
@@ -319,19 +321,46 @@ const IndexPage = () => {
         {serviceSection()}
         {testimonySection()}
         {portfolioSection()}
-
-        {partnerSection()}
-        
+        {partnerSection()}    
         {touchSection()}
-
-        
 
       </div>
       <Footer/>
     </main>
   )
 }
+
 export default IndexPage;
-export const Head = () => (
-  <SEO/>
-)
+
+export const Head = () => {
+  const { title, siteUrl, image } = useSiteMetadata();
+
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: title,
+    url: siteUrl,
+  };
+
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: title,
+    url: siteUrl,
+    logo: siteUrl + image,
+    sameAs: [
+      'https://www.instagram.com/passioncorp.id/',
+    ],
+  };
+
+  return (
+    <>
+      <SEO
+        title="Passion Corp - Go Passion Go World!"
+        description="Passion Corp is comprised of professional, compassionate and Event Planners and Assistants who love helping clients with special events."
+        keywords="Passion Corp, Passion Corp Indonesia"
+        schemaMarkup={[websiteSchema, organizationSchema]}
+      />
+    </>
+  );
+};
