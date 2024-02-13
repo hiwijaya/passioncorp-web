@@ -8,8 +8,8 @@ import VideoPlay from "../components/videoPlay"
 import PartnerSlider from "../components/partnerSlider"
 import { navigate } from "gatsby";
 import SEO from "../components/seo";
-import { useStaticQuery, graphql } from 'gatsby';
 import useSiteMetadata from '../hooks/use-site-metadata';
+
 
 const IndexPage = () => {
 
@@ -321,12 +321,8 @@ const IndexPage = () => {
         {serviceSection()}
         {testimonySection()}
         {portfolioSection()}
-
-        {partnerSection()}
-        
+        {partnerSection()}    
         {touchSection()}
-
-        
 
       </div>
       <Footer/>
