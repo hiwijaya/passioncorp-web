@@ -27,5 +27,18 @@ module.exports = {
       },
     },
     "gatsby-plugin-sitemap",
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          'G-9W4FVNS6XV'
+        ],
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+          delayOnRouteUpdate: 0,
+        }
+      }
+    }
   ]
 };
