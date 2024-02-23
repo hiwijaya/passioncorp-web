@@ -39,6 +39,16 @@ module.exports = {
           delayOnRouteUpdate: 0,
         }
       }
+    }, 
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: 'GTM-5CK7GCZF',
+        includeInDevelopment: false,
+        defaultDataLayer: { 
+          platform: 'gatsby'
+        }
+      }
     }
   ]
 };
