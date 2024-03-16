@@ -13,6 +13,7 @@ import SEO from "../components/seo";
 const PricingPage = () => {
 
   const [selectedService, setSelectedService] = useState(servicesData[0]);
+  const [showDropdown, setShowDropdown] = useState(false);
 
   useEffect(() => {
 
@@ -86,79 +87,32 @@ const PricingPage = () => {
           You can choose and we know how to make best for your event
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-5 text-xl lg:text-2xl">
-          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
-            onClick={() => findServiceBySlug('event-organizer')}>
-            <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-event-organizer.jpg" alt="event organizer"/>
-            <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
-              <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-event-organizer.png" alt="icon event organizer"/>
-              <div className="text-white font-bold">Event Organizer</div>
+        <div className="relative w-full max-w-lg">
+          <div className="flex flex-row items-center h-16 border border-sky-500 rounded-full cursor-pointer"
+            onClick={() => {
+              setShowDropdown((prevState) => !prevState);
+            }}>
+            <div className="flex-1 text-center ml-10 font-bold">{selectedService.title}</div>
+            <div className="w-10">
+              <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" id="Bold" viewBox="0 0 24 24" width="512" height="512"><path d="M19.061,7.854a1.5,1.5,0,0,0-2.122,0l-4.586,4.585a.5.5,0,0,1-.707,0L7.061,7.854A1.5,1.5,0,0,0,4.939,9.975l4.586,4.586a3.5,3.5,0,0,0,4.95,0l4.586-4.586A1.5,1.5,0,0,0,19.061,7.854Z"/></svg>
             </div>
           </div>
-          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
-            onClick={() => findServiceBySlug('show-management')}>
-            <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-show-management.jpg" alt="event organizer"/>
-            <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
-              <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-show-management.png" alt="icon show management"/>
-              <div className="text-white font-bold">Show Management</div>
-            </div>
+          {
+            showDropdown &&
+            <div className="absolute top-20 w-full shadow-xl rounded-lg py-5 overflow-y-auto h-80 bg-white overflow-hidden z-10">
+            {
+              servicesData.map((service, i) => (
+                <div key={i} className="mx-10 text-center cursor-pointer py-3"
+                  onClick={() => {
+                    setSelectedService(servicesData[i]);
+                    setShowDropdown(false);
+                  }}>
+                  {service.title}
+                </div>
+              ))
+            }
           </div>
-          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
-            onClick={() => findServiceBySlug('documentation')}>
-            <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-documentation.jpg" alt="event organizer"/>
-            <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
-              <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-documentation.png" alt="icon documentation"/>
-              <div className="text-white font-bold">Documentation</div>
-            </div>
-          </div>
-          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
-            onClick={() => findServiceBySlug('3d-design')}>
-            <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-3d-design.jpg" alt="event organizer"/>
-            <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
-              <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-3d-design.png" alt="icon 3D design"/>
-              <div className="text-white font-bold">3D Design</div>
-            </div>
-          </div>
-          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
-            onClick={() => findServiceBySlug('graphics-content')}>
-            <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-content.jpg" alt="event organizer"/>
-            <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
-              <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-graphic-content.png" alt="icon graphic content"/>
-              <div className="text-white font-bold">Graphic Content</div>
-            </div>
-          </div>
-          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
-            onClick={() => findServiceBySlug('sound-system')}>
-            <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-sound.jpg" alt="event organizer"/>
-            <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
-              <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-sound-system.png" alt="icon sound system"/>
-              <div className="text-white font-bold">Sound System</div>
-            </div>
-          </div>
-          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
-            onClick={() => findServiceBySlug('tour-travel')}>
-            <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-travel.jpg" alt="event organizer"/>
-            <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
-              <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-tour.png" alt="icon tour and travel"/>
-              <div className="text-white font-bold">Tour & Travel</div>
-            </div>
-          </div>
-          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
-            onClick={() => findServiceBySlug('event-equipment')}>
-            <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-equipment.jpg" alt="event organizer"/>
-            <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
-              <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-equipment.png" alt="icon event equipment"/>
-              <div className="text-white font-bold">Event Equipment</div>
-            </div>
-          </div>
-          <div className="relative w-full h-32 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-slate-500 hover:scale-105 transition"
-            onClick={() => findServiceBySlug('live-streaming')}>
-            <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/services/thumbnail-live-streaming.jpg" alt="event organizer"/>
-            <div className="absolute left-0 top-0 flex flex-col justify-end sm:justify-start p-6 sm:p-8 w-full h-full bg-black/50">
-              <StaticImage className="w-6 sm:w-8 mb-2" src="../images/services/icon-live.png" alt="icon live streaming"/>
-              <div className="text-white font-bold">Live Streaming</div>
-            </div>
-          </div>
+          }
         </div>
       </div>
     </div>
