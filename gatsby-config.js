@@ -29,6 +29,16 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+          plugins: [
+              {
+                resolve: `gatsby-remark-images`,
+              },
+          ],
+      },
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: 'src/images/logo-color.png',
@@ -58,6 +68,5 @@ module.exports = {
       }
     },
     "gatsby-plugin-sitemap",
-    "gatsby-transformer-remark",
   ]
 };

@@ -8,8 +8,6 @@ import Footer from "../components/footer";
 const NewsPage = ({ data }) => {
   const posts = data.allPosts.edges;
 
-
-
   return (
     <main className="relative min-h-screen bg-white">
       <div className="pb-[500px] md:pb-[350px]">
@@ -24,7 +22,9 @@ const NewsPage = ({ data }) => {
         </div>
 
         <div className="relative inline-flex justify-center w-full">
-          <div className="flex flex-col items-center w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
+          <div className="flex flex-col w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
+            <div className="text-left text-xl font-bold mb-10">Latest News</div>
+            
             {
               posts.map((post, i) => {
                 const { title, date, desc, tags, slug, thumbnail } = post.node.frontmatter;

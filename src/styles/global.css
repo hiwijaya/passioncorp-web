@@ -6,6 +6,66 @@
 
 @layer utilities {
 
+  /* .post {
+    font-size: 1.0em;
+    font-weight: 500;
+    max-width: 1000px;
+  } */
+  .post .post-title {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 10px 0;
+    margin-bottom: 60px;
+  }
+  .post .post-date {
+    font-size: 1em;
+    color: #6A737D;
+  }
+  .post .post-tags {
+    display: block;
+  }
+  .post h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .post p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .post em {
+    font-style: italic;
+  }
+  .post strong {
+    font-weight: 700;
+  }
+  .post a {
+    color: #30578e;
+    text-decoration: none;
+  }
+  .post img {
+    width: 100%;
+    max-width: 600px;
+  }
+  .gatsby-resp-image-wrapper {	
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .post ul, .post ol {
+      margin: 0 0 20px 30px;
+  }
+  .post ul {
+      list-style-type: disc;
+  }
+  .post li {
+      line-height: 1.5em;
+      margin-bottom: 5px;
+  }
+  .post li p {
+    margin-bottom: 0;
+  }
+
+
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
