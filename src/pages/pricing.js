@@ -9,7 +9,6 @@ import VideoPlay from "../components/videoPlay";
 import { navigate } from "gatsby";
 import SEO from "../components/seo";
 
-
 const PricingPage = () => {
 
   const [selectedService, setSelectedService] = useState(servicesData[0]);
