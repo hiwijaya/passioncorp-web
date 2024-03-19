@@ -13,6 +13,7 @@ module.exports = {
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -21,12 +22,28 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+          name: `posts`,
+          path: `${__dirname}/src/pages/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+          plugins: [
+              {
+                resolve: `gatsby-remark-images`,
+              },
+          ],
+      },
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: 'src/images/logo-color.png',
       },
     },
-    "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -49,6 +66,7 @@ module.exports = {
           platform: 'gatsby'
         }
       }
-    }
+    },
+    "gatsby-plugin-sitemap",
   ]
 };
