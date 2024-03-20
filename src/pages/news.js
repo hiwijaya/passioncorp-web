@@ -30,10 +30,11 @@ const NewsPage = ({ data }) => {
                 const { title, date, desc, tags, slug, thumbnail } = post.node.frontmatter;
 
                 return(
-                  <a href={`/news${slug}`} key={i} className="flex flex-row rounded-xl shadow-xl overflow-hidden w-full cursor-pointer mb-10">
-                    <GatsbyImage className="w-96 h-60 shrink-0" 
+                  <a href={`/news${slug}`} key={i} 
+                    className="flex flex-col md:flex-row md:h-60 rounded-xl shadow-xl overflow-hidden w-full cursor-pointer mb-10">
+                    <GatsbyImage className="w-full md:w-96 shrink-0" 
                       image={getImage(thumbnail?.childImageSharp.gatsbyImageData)} alt={title}/>
-                    <div className="flex flex-col justify-center p-10">
+                    <div className="flex flex-col justify-center p-5 md:p-10">
                       <div className="text-gray-500">{date}</div>
                       <div className="text-xl font-bold mb-5">{title}</div>
                       <p className="text-gray-500">{desc}</p>
