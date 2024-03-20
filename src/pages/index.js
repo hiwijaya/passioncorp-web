@@ -10,6 +10,7 @@ import { navigate } from "gatsby";
 import SEO from "../components/seo";
 import useSiteMetadata from '../hooks/use-site-metadata';
 import AlertBar from "../components/alertBar"
+import ContactFloat from "../components/contactFloat"
 
 
 const IndexPage = () => {
@@ -314,6 +315,7 @@ const IndexPage = () => {
   return (
     <main className="relative min-h-screen bg-white">
       <AlertBar/>
+      <ContactFloat/>
       <div className="relative pb-[500px] md:pb-[350px]">
         <Navigation />
         <Slider />
