@@ -15,7 +15,7 @@
           "Capacity 50-80 person",
           "Crew 3 person"
         ],
-        "price": 12000000
+        "price": "IDR 12,000,000"
       },
       {
         "level": "Premium",
@@ -33,7 +33,7 @@
           "Capacity 80-250 person",
           "General Affair Vendor"
         ],
-        "price": 25000000
+        "price": "IDR 23,000,000"
       },
       {
         "level": "Exclusive",
@@ -53,7 +53,7 @@
           "Capacity 250-400 person",
           "General Affair Vendor"
         ],
-        "price": 45000000
+        "price": "IDR 35,000,000"
       }
     ]
   },
@@ -76,7 +76,7 @@
           "Stage Manager",
           "Transport and Meals"
         ],
-        "price": 25000000
+        "price": "IDR 22,500,000"
       },
       {
         "level": "Premium",
@@ -98,7 +98,7 @@
           "Transport & Meals",
           "Capacity 500-1000 person"
         ],
-        "price": 45000000
+        "price": "IDR 32,000,000"
       },
       {
         "level": "Exclusive",
@@ -120,7 +120,7 @@
           "Safe & Healthy Management",
           "Capacity 1000-10000 person"
         ],
-        "price": 85000000
+        "price": "IDR 45,000,000"
       }
     ]
   },
@@ -140,7 +140,7 @@
           "Highlight Video 3.5 minutes",
           "All file photo"
         ],
-        "price": 3500000
+        "price": "IDR 3,500,000"
       },
       {
         "level": "Premium",
@@ -156,7 +156,7 @@
           "All file transfer",
           "Hardisk"
         ],
-        "price": 25000000
+        "price": "IDR 12,000,000"
       },
       {
         "level": "Exclusive",
@@ -174,7 +174,7 @@
           "Hardisk",
           "International Event or National Event"
         ],
-        "price": 35000000
+        "price": "IDR 23,000,000"
       }
     ]
   },
@@ -195,7 +195,7 @@
           "Sound Man",
           "5000 watt"
         ],
-        "price": 3500000
+        "price": "IDR 4,000,000"
       },
       {
         "level": "Premium",
@@ -209,7 +209,7 @@
           "Sound Man",
           "10000 watt"
         ],
-        "price": 7000000
+        "price": "IDR 7,000,000"
       },
       {
         "level": "Exclusive",
@@ -223,7 +223,7 @@
           "Sound Man",
           "20000 watt"
         ],
-        "price": 17000000
+        "price": "IDR 12,000,000"
       }
     ]
   },
@@ -243,7 +243,7 @@
           "Dokumentasi",
           "Man Power"
         ],
-        "price": null
+        "price": "IDR 10,000,000"
       },
       {
         "level": "Premium",
@@ -260,7 +260,7 @@
           "Master Games or Motivator",
           "Entertainment"
         ],
-        "price": null
+        "price": "IDR 80,000,000"
       },
       {
         "level": "Exclusive",
@@ -280,7 +280,7 @@
           "International Event",
           "Translator"
         ],
-        "price": null
+        "price": "IDR 300,000,000"
       }
     ]
   },
@@ -303,7 +303,7 @@
           "Output video shooting",
           "8 hours kerja"
         ],
-        "price": 3500000
+        "price": "IDR 3,500,000"
       },
       {
         "level": "Premium",
@@ -319,7 +319,7 @@
           "Output video shooting",
           "8 hours kerja"
         ],
-        "price": 4500000
+        "price": "IDR 4,500,000"
       },
       {
         "level": "Standard",
@@ -335,7 +335,7 @@
           "Output video shooting",
           "8 hours kerja"
         ],
-        "price": 5500000
+        "price": "IDR 5,500,000"
       }
     ]
   },
@@ -356,7 +356,7 @@
           "Windows 10 Pro",
           "2x Revision"
         ],
-        "price": null
+        "price": "IDR 3,800,000"
       }, 
       {
         "level": "Premium",
@@ -371,7 +371,7 @@
           "Windows 10 Pro",
           "4x Revision"
         ],
-        "price": null
+        "price": "IDR 5,500,000"
       },
       {
         "level": "Exclusive",
@@ -387,7 +387,7 @@
           "Windows 10 Pro",
           "Unlimited Revision"
         ],
-        "price": null
+        "price": "IDR 7,500,000"
       }
     ]
   },
@@ -405,7 +405,7 @@
           "Bumper Speaker",
           "Banner Design"
         ],
-        "price": null
+        "price": "IDR 200,000"
       },
       {
         "level": "Premium",
@@ -420,7 +420,7 @@
           "Advertisement Motion Graphics",
           "Price/minutes"
         ],
-        "price": null
+        "price": "IDR 300,000"
       },
       {
         "level": "Exclusive",
@@ -438,7 +438,7 @@
           "Animate Illustration",
           "Price/minutes"
         ],
-        "price": null
+        "price": "IDR 500,000"
       }
     ]
   },

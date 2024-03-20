@@ -47,6 +47,12 @@ const PricingPage = () => {
           <div className="absolute bottom-0 left-3 sm:left-5 bg-sky-300 w-24 sm:w-36 h-3"></div>
           <h2 className="relative text-2xl sm:text-4xl font-bold">{selectedService.title}</h2>
         </div>
+
+        <div className="flex flex-row items-center py-5">
+          <div className="text-gray-500">Start from</div>
+          <div className="text-2xl ml-2">{selectedService.packages[0].price}</div>
+        </div>
+
         <p className="text-center text-sm mb-10 w-full max-w-2xl">{selectedService.description}</p>
         <div className="w-full">
           <div className="flex flex-col md:flex-row md:items-start md:space-x-5">
