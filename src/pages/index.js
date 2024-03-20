@@ -9,6 +9,7 @@ import PartnerSlider from "../components/partnerSlider"
 import { navigate } from "gatsby";
 import SEO from "../components/seo";
 import useSiteMetadata from '../hooks/use-site-metadata';
+import AlertBar from "../components/alertBar"
 
 
 const IndexPage = () => {
@@ -312,7 +313,8 @@ const IndexPage = () => {
 
   return (
     <main className="relative min-h-screen bg-white">
-      <div className="pb-[500px] md:pb-[350px]">
+      <AlertBar/>
+      <div className="relative pb-[500px] md:pb-[350px]">
         <Navigation />
         <Slider />
 
