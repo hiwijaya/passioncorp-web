@@ -262,9 +262,9 @@ const IndexPage = () => {
             thumbnail="https://img.youtube.com/vi/O70Z5igRpgc/maxresdefault.jpg"
             link="https://www.youtube.com/embed/O70Z5igRpgc"/>
           <VideoPlay 
-            title="Indoin Infinite 2023, Ritz Carlton Jakarta" 
-            thumbnail="https://img.youtube.com/vi/bFlQzp0MFT4/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/bFlQzp0MFT4"/>
+            title="Pertamina PET 36th Anniversary" 
+            thumbnail="https://img.youtube.com/vi/0wGoB8WUiH4/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/0wGoB8WUiH4"/>
           <VideoPlay 
             title="30,000+ Paragonian Rekor Muri" 
             thumbnail="https://img.youtube.com/vi/msxYu8Ow4I8/maxresdefault.jpg"
