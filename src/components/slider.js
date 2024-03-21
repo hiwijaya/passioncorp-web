@@ -1,6 +1,6 @@
 import * as React from "react"
 import { useState } from "react"
-import { Slide } from "react-slideshow-image"
+import { Fade } from "react-slideshow-image"
 import "react-slideshow-image/dist/styles.css"
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -44,7 +44,7 @@ const Slider = () => {
   return(
     <div className="w-full overflow-hidden">
       {showPlayer && player()}
-      <Slide canSwipe={false} pauseOnHover={false} arrows={false}>
+      <Fade canSwipe={false} pauseOnHover={false} arrows={false}>
         <div className="relative w-full h-screen lg:h-[700px]">
           <StaticImage className="w-full h-full" imgClassName="object-cover w-full h-full" src="../images/slider/slider-1.jpg" alt="slide 1"/>
           <div className="absolute left-0 top-0 w-full h-full inline-flex justify-center items-center bg-black/75 px-4">
@@ -83,7 +83,7 @@ const Slider = () => {
             </div>
           </div>
         </div>
-      </Slide>
+      </Fade>
     </div>
   )
 }
