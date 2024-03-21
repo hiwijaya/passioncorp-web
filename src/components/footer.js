@@ -36,13 +36,13 @@ const Footer = () => {
                 <div className="font-medium mr-3 mb-2 xl:mb-0">Stay connect</div>
                 <div className="inline-flex gap-4">
                   <a href="https://www.instagram.com/passioncorp.id/">
-                    <StaticImage className="w-8" src="../images/icon-instagram.png" alt="email" />
+                    <StaticImage className="w-8" src="../images/icon-instagram.png" alt="instagram" />
+                  </a>
+                  <a href="https://www.youtube.com/@PassionCorpIndonesia/">
+                    <StaticImage className="w-8" src="../images/icon-youtube.png" alt="youtube" />
                   </a>
                   <a href="https://www.instagram.com/passioncorp.id/">
-                    <StaticImage className="w-8" src="../images/icon-youtube.png" alt="email" />
-                  </a>
-                  <a href="https://www.instagram.com/passioncorp.id/">
-                    <StaticImage className="w-8" src="../images/icon-tiktok.png" alt="email" />
+                    <StaticImage className="w-8" src="../images/icon-tiktok.png" alt="tiktok" />
                   </a>
                 </div>
               </div>
