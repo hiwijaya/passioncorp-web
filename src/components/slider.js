@@ -10,7 +10,7 @@ const Slider = () => {
 
   const introButton = () => (
     <div className="flex flex-col lg:flex-row items-center mt-10 space-x-0 space-y-5 lg:space-x-10 lg:space-y-0">
-      <a href={`/kontakWA?redirect=${encodeURIComponent('https://wa.me/6289609399684?text=Hi%2C%20Passion%20Corp%20Indonesia%2C%20I%20know%20you%20from%20website%20https%3A%2F%2Fpassioncorp.id%2F')}`} target="_blank" 
+      <a href={`/kontakWA?redirect=${encodeURIComponent('https://wa.me/6289609399684?text=Hi%2C%20Passion%20Corp%20Indonesia%2C%20I%20know%20you%20from%20website%20https%3A%2F%2Fpassioncorp.id%2F')}`} target="_blank" rel="noreferrer" 
         className="flex items-center rounded-xl bg-sky-500 text-white px-6 h-12 lg:h-14 self-center">FREE EVENT CONSULTATION</a>
       <div className="flex flex-row items-center text-white" role="button"
         onClick={() => setShowPlayer(prevState => !prevState)}>

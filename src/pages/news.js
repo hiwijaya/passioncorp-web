@@ -55,7 +55,7 @@ const NewsPage = ({ data }) => {
 export default NewsPage;
 export const query = graphql`
 query NewsPage {
-  allPosts: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+  allPosts: allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
     edges {
       node {
         frontmatter {
