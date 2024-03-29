@@ -36,6 +36,33 @@ const portfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/uhfW9jKMlbo/maxresdefault.jpg"
             link="https://www.youtube.com/embed/uhfW9jKMlbo"/>
           <VideoPlay 
+            title="Pertagas Seventeen Anniversary" 
+            thumbnail="https://img.youtube.com/vi/3nh6If9cAVc/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/3nh6If9cAVc"/>
+          <VideoPlay 
+            title="VIVO V29E Brand Launching" 
+            thumbnail="https://img.youtube.com/vi/ZRUz3uyifzU/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/ZRUz3uyifzU"/>
+          <VideoPlay 
+            title="Poundfit Hari Gizi Nasional Kemenkes" 
+            thumbnail="https://img.youtube.com/vi/Qu07WW6bF-Q/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/Qu07WW6bF-Q"/>
+          <VideoPlay 
+            title="HUT PERTAMINA 66th" 
+            thumbnail="https://img.youtube.com/vi/EihpKPFFOZM/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/EihpKPFFOZM"/>
+          <VideoPlay 
+            title="Family Symphony" 
+            thumbnail="https://img.youtube.com/vi/qvLGlzah2BI/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/qvLGlzah2BI"/>
+          <VideoPlay 
+            title="Pertamina PET 36th Anniversary" 
+            thumbnail="https://img.youtube.com/vi/0wGoB8WUiH4/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/0wGoB8WUiH4"/>
+
+
+
+          <VideoPlay 
             title="Forum Nasional Pelindungan Data, Bali" 
             thumbnail="https://img.youtube.com/vi/O70Z5igRpgc/maxresdefault.jpg"
             link="https://www.youtube.com/embed/O70Z5igRpgc"/>

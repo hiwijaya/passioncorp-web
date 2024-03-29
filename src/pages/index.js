@@ -259,17 +259,17 @@ const IndexPage = () => {
             thumbnail="https://img.youtube.com/vi/uhfW9jKMlbo/maxresdefault.jpg"
             link="https://www.youtube.com/embed/uhfW9jKMlbo"/>
           <VideoPlay 
-            title="Forum Nasional Pelindungan Data, Bali" 
-            thumbnail="https://img.youtube.com/vi/O70Z5igRpgc/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/O70Z5igRpgc"/>
+            title="HUT PERTAMINA 66th" 
+            thumbnail="https://img.youtube.com/vi/EihpKPFFOZM/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/EihpKPFFOZM"/>
           <VideoPlay 
-            title="Pertamina PET 36th Anniversary" 
-            thumbnail="https://img.youtube.com/vi/0wGoB8WUiH4/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/0wGoB8WUiH4"/>
+            title="VIVO V29E Brand Launching" 
+            thumbnail="https://img.youtube.com/vi/ZRUz3uyifzU/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/ZRUz3uyifzU"/>
           <VideoPlay 
-            title="30,000+ Paragonian Rekor Muri" 
-            thumbnail="https://img.youtube.com/vi/msxYu8Ow4I8/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/msxYu8Ow4I8"/>
+            title="Pertagas Seventeen Anniversary" 
+            thumbnail="https://img.youtube.com/vi/3nh6If9cAVc/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/3nh6If9cAVc"/>
         </div>
         <a href="/portfolio" className="bg-sky-400 rounded-full text-white px-10 py-5">WE HAVE MORE!</a>
       </div>
