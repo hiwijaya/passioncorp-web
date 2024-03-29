@@ -263,9 +263,9 @@ const IndexPage = () => {
             thumbnail="https://img.youtube.com/vi/EihpKPFFOZM/maxresdefault.jpg"
             link="https://www.youtube.com/embed/EihpKPFFOZM"/>
           <VideoPlay 
-            title="VIVO V29E Brand Launching" 
-            thumbnail="https://img.youtube.com/vi/ZRUz3uyifzU/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/ZRUz3uyifzU"/>
+            title="Family Symphony" 
+            thumbnail="https://img.youtube.com/vi/qvLGlzah2BI/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/qvLGlzah2BI"/>
           <VideoPlay 
             title="Pertagas Seventeen Anniversary" 
             thumbnail="https://img.youtube.com/vi/3nh6If9cAVc/maxresdefault.jpg"
