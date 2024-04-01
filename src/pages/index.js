@@ -300,7 +300,7 @@ const IndexPage = () => {
             <div className="flex flex-col items-center xl:items-start justify-center flex-1 pl-0 md:pl-10 text-white">
               <div className="hidden md:block text-center">Passion Corp Indonesia as a solution your event matters</div>
               <div className="text-2xl font-bold mb-5 text-center px-5 md:px-0 mt-5 md:mt-0">Do you want your event to be quality? Just Passion.</div>
-              <a href="https://wa.me/6289609399684?text=Hi%2C%20Passion%20Corp%20Indonesia%2C%20I%20know%20you%20from%20website%20https%3A%2F%2Fpassioncorp.id%2F" target="_blank" className="bg-yellow-400 px-14 py-4 text-black rounded-xl">Get in Touch</a>
+              <a href="https://wa.me/6289609399684?text=Hi%2C%20Passion%20Corp%20Indonesia%2C%20I%20need%20you%20For%20our%20Event%20be%20quality%20%0A%0AI%20know%20you%20from%20website%20https%3A%2F%2Fpassioncorp.id%2F" target="_blank" className="bg-yellow-400 px-14 py-4 text-black rounded-xl">Get in Touch</a>
             </div>
             <div className="flex justify-end items-end">
               <StaticImage className="w-11/12 md:w-[380px] xl:w-[450px]" src="../images/image-group.png" alt="image group" />
