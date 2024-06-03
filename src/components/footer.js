@@ -23,7 +23,7 @@ const Footer = () => {
                   </div>
                   <div className="flex flex-row items-center text-sm">
                     <StaticImage className="w-4 mr-1" src="../images/icon-phone-black.png" alt="phone" />
-                    0896-0939-9684
+                    0823-1100-0310
                   </div>
                 </div>
               </div>
@@ -31,7 +31,7 @@ const Footer = () => {
 
             <div className="text-sm mt-6">
               <div className="font-medium mb-2">Are you a vendor?</div>
-              <a href="https://wa.me/6289609399684?text=4.%20Hi%2C%20Passion%20Corp%20Indonesia%2C%20im%20a%20vendor%20%2C%20and%20i%20want%20to%20join%20to%20Passion%20Corp%20Indonesia.%0A%0AI%20know%20you%20from%20website%20https%3A%2F%2Fpassioncorp.id%2F" target="_blank" className="inline-block rounded-xl bg-sky-500 text-white px-8 py-4 font-medium mb-5 sm:mb-10">Partnership</a>
+              <a href="https://wa.me/6282311000310?text=4.%20Hi%2C%20Passion%20Corp%20Indonesia%2C%20im%20a%20vendor%20%2C%20and%20i%20want%20to%20join%20to%20Passion%20Corp%20Indonesia.%0A%0AI%20know%20you%20from%20website%20https%3A%2F%2Fpassioncorp.id%2F" target="_blank" className="inline-block rounded-xl bg-sky-500 text-white px-8 py-4 font-medium mb-5 sm:mb-10">Partnership</a>
               <div className="flex flex-col xl:flex-row items-start xl:items-center">
                 <div className="font-medium mr-3 mb-2 xl:mb-0">Stay connect</div>
                 <div className="inline-flex gap-4">

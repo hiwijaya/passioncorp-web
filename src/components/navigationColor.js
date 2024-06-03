@@ -27,7 +27,7 @@ const NavigationColor = () => {
               <a href="/news">News</a>
               <a href="/">FAQ</a>
             </nav>
-            <a href={`/kontakWA?redirect=${encodeURIComponent('https://wa.me/6289609399684?text=Hi%2C%20Passion%20Corp%20Indonesia%2C%20I%20know%20you%20from%20website%20https%3A%2F%2Fpassioncorp.id%2F')}`} target="_blank" className="rounded-xl bg-sky-500 text-white px-6 py-3">Hire Us</a>
+            <a href={`/kontakWA?redirect=${encodeURIComponent('https://wa.me/6282311000310?text=Hi%2C%20Passion%20Corp%20Indonesia%2C%20I%20know%20you%20from%20website%20https%3A%2F%2Fpassioncorp.id%2F')}`} target="_blank" className="rounded-xl bg-sky-500 text-white px-6 py-3">Hire Us</a>
           </div>
           <div className="block lg:hidden">
             <button onClick={() => {
@@ -49,7 +49,7 @@ const NavigationColor = () => {
             <a href="/">Contact</a>
             <a href="/news">News</a>
             <a href="/">FAQ</a>
-            <a href={`/kontakWA?redirect=${encodeURIComponent('https://wa.me/6289609399684?text=Hi%2C%20Passion%20Corp%20Indonesia%2C%20I%20know%20you%20from%20website%20https%3A%2F%2Fpassioncorp.id%2F')}`} target="_blank" className="rounded-xl bg-sky-500 text-white px-6 py-3">Hire Us</a>
+            <a href={`/kontakWA?redirect=${encodeURIComponent('https://wa.me/6282311000310?text=Hi%2C%20Passion%20Corp%20Indonesia%2C%20I%20know%20you%20from%20website%20https%3A%2F%2Fpassioncorp.id%2F')}`} target="_blank" className="rounded-xl bg-sky-500 text-white px-6 py-3">Hire Us</a>
           </nav>
         </div>
 
