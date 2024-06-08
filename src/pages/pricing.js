@@ -7,6 +7,8 @@ import servicesData from "../content/services.json";
 import PartnerSlider from "../components/partnerSlider";
 import VideoPlay from "../components/videoPlay";
 import { navigate } from "gatsby";
+import AlertBar from "../components/alertBar";
+import ContactFloat from "../components/contactFloat";
 import SEO from "../components/seo";
 
 
@@ -188,7 +190,9 @@ const PricingPage = () => {
 
   return(
     <main className="relative min-h-screen bg-white">
-      <div className="pb-[500px] md:pb-[350px]">
+      <AlertBar/>
+      <ContactFloat/>
+      <div className="relative pb-[500px] md:pb-[350px]">
         <Navigation />
         <div className="relative w-full h-screen">
           <StaticImage className="w-full h-full" imgClassName="object-cover h-full" src="../images/image-service.png" alt="slide 1" />
