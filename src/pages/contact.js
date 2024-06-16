@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Footer from "../components/footer";
 import Navigation from "../components/navigation";
 import SEO from "../components/seo";
+import useSiteMetadata from '../hooks/use-site-metadata';
 
 
 const contactPage = () => {
@@ -88,6 +89,37 @@ const contactPage = () => {
   );
 }
 export default contactPage;
-export const Head = () => (
-  <SEO title={'Contact Us'}/>
-)
+
+
+export const Head = () => {
+  const { title, siteUrl, image } = useSiteMetadata();
+
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: title,
+    url: siteUrl,
+  };
+
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: title,
+    url: siteUrl,
+    logo: siteUrl + image,
+    sameAs: [
+      'https://www.instagram.com/passioncorp.id/',
+    ],
+  };
+
+  return (
+    <>
+      <SEO
+        title="Contact Us"
+        description="You can contact Passion sales to find out about products and services from Passion Corp Indonesia"
+        keywords="Passion Corp, Passion Corp Indonesia, contact"
+        schemaMarkup={[websiteSchema, organizationSchema]}
+      />
+    </>
+  );
+};
