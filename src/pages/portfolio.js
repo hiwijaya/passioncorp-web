@@ -41,9 +41,9 @@ const portfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/3nh6If9cAVc/maxresdefault.jpg"
             link="https://www.youtube.com/embed/3nh6If9cAVc"/>
           <VideoPlay 
-            title="VIVO V29E Brand Launching" 
-            thumbnail="https://img.youtube.com/vi/ZRUz3uyifzU/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/ZRUz3uyifzU"/>
+            title="Vida Partner Forum 2024" 
+            thumbnail="https://img.youtube.com/vi/vW0Hz-WjzrI/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/vW0Hz-WjzrI"/>
           <VideoPlay 
             title="Poundfit Hari Gizi Nasional Kemenkes" 
             thumbnail="https://img.youtube.com/vi/Qu07WW6bF-Q/maxresdefault.jpg"
@@ -68,9 +68,9 @@ const portfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/O70Z5igRpgc/maxresdefault.jpg"
             link="https://www.youtube.com/embed/O70Z5igRpgc"/>
           <VideoPlay 
-            title="Indoin Infinite 2023, Ritz Carlton Jakarta" 
-            thumbnail="https://img.youtube.com/vi/bFlQzp0MFT4/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/bFlQzp0MFT4"/>
+            title="We Clinic - Afternoon Party 2024" 
+            thumbnail="https://img.youtube.com/vi/y6VUGDAjRss/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/y6VUGDAjRss"/>
           <VideoPlay 
             title="30,000+ Paragonian Rekor Muri" 
             thumbnail="https://img.youtube.com/vi/msxYu8Ow4I8/maxresdefault.jpg"
@@ -80,9 +80,9 @@ const portfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/MZX0sVtcmVI/maxresdefault.jpg"
             link="https://www.youtube.com/embed/MZX0sVtcmVI"/>
           <VideoPlay 
-            title="ALEZA Fashion Show" 
-            thumbnail="https://img.youtube.com/vi/7FcLW8K-p3w/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/7FcLW8K-p3w"/>
+            title="China(Fujian) - Indonesia 2023" 
+            thumbnail="https://img.youtube.com/vi/G5PGI_Y-KN4/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/G5PGI_Y-KN4"/>
           <VideoPlay 
             title="Junior High School Graduation" 
             thumbnail="https://img.youtube.com/vi/AewdYg5AMm4/maxresdefault.jpg"
@@ -106,17 +106,17 @@ const portfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/46i2aRtMuo0/maxresdefault.jpg"
             link="https://www.youtube.com/embed/46i2aRtMuo0"/>
           <VideoPlay 
-            title="China(Fujian) - Indonesia 2023" 
-            thumbnail="https://img.youtube.com/vi/G5PGI_Y-KN4/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/G5PGI_Y-KN4"/>
+            title="ALEZA Fashion Show" 
+            thumbnail="https://img.youtube.com/vi/7FcLW8K-p3w/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/7FcLW8K-p3w"/>
           <VideoPlay 
-            title="Vida Partner Forum 2024" 
-            thumbnail="https://img.youtube.com/vi/vW0Hz-WjzrI/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/vW0Hz-WjzrI"/>
+            title="VIVO V29E Brand Launching" 
+            thumbnail="https://img.youtube.com/vi/ZRUz3uyifzU/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/ZRUz3uyifzU"/>
           <VideoPlay 
-            title="We Clinic - Afternoon Party 2024" 
-            thumbnail="https://img.youtube.com/vi/y6VUGDAjRss/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/y6VUGDAjRss"/>
+            title="Indoin Infinite 2023, Ritz Carlton Jakarta" 
+            thumbnail="https://img.youtube.com/vi/bFlQzp0MFT4/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/bFlQzp0MFT4"/>
           <VideoPlay 
             title="Birthday Party At Kempinksi Jakarta 2023" 
             thumbnail="https://img.youtube.com/vi/MLAnl5EZq5k/maxresdefault.jpg"
