@@ -33,23 +33,6 @@ const portfolioPage = () => {
       <div className="font-bold text-2xl sm:text-4xl mb-10 text-center sm:text-left">Know More About <span className="text-sky-500">Our Story</span></div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-10">
           <VideoPlay 
-            title="China(Fujian) - Indonesia 2023" 
-            thumbnail="https://img.youtube.com/vi/G5PGI_Y-KN4/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/G5PGI_Y-KN4"/>
-          <VideoPlay 
-            title="Vida Partner Forum 2024" 
-            thumbnail="https://img.youtube.com/vi/vW0Hz-WjzrI/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/vW0Hz-WjzrI"/>
-          <VideoPlay 
-            title="We Clinic - Afternoon Party 2024" 
-            thumbnail="https://img.youtube.com/vi/y6VUGDAjRss/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/y6VUGDAjRss"/>
-          <VideoPlay 
-            title="Birthday Party At Kempinksi Jakarta 2023" 
-            thumbnail="https://img.youtube.com/vi/MLAnl5EZq5k/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/MLAnl5EZq5k"/>
-
-          <VideoPlay 
             title="Asian Summit Vertiv 2023, Bali" 
             thumbnail="https://img.youtube.com/vi/uhfW9jKMlbo/maxresdefault.jpg"
             link="https://www.youtube.com/embed/uhfW9jKMlbo"/>
@@ -122,6 +105,22 @@ const portfolioPage = () => {
             title="Gelaran Budaya Bersama Kapolri 2023" 
             thumbnail="https://img.youtube.com/vi/46i2aRtMuo0/maxresdefault.jpg"
             link="https://www.youtube.com/embed/46i2aRtMuo0"/>
+          <VideoPlay 
+            title="China(Fujian) - Indonesia 2023" 
+            thumbnail="https://img.youtube.com/vi/G5PGI_Y-KN4/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/G5PGI_Y-KN4"/>
+          <VideoPlay 
+            title="Vida Partner Forum 2024" 
+            thumbnail="https://img.youtube.com/vi/vW0Hz-WjzrI/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/vW0Hz-WjzrI"/>
+          <VideoPlay 
+            title="We Clinic - Afternoon Party 2024" 
+            thumbnail="https://img.youtube.com/vi/y6VUGDAjRss/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/y6VUGDAjRss"/>
+          <VideoPlay 
+            title="Birthday Party At Kempinksi Jakarta 2023" 
+            thumbnail="https://img.youtube.com/vi/MLAnl5EZq5k/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/MLAnl5EZq5k"/>
         </div>
       </div>
     </div>
