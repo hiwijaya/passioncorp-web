@@ -253,7 +253,7 @@ const IndexPage = () => {
         <p className="mb-10 text-center">
           we are there every step of the way to provide you with the exceptional event and service you deserve
         </p>
-        <div className="inline-flex gap-5 pb-10 overflow-x-auto no-scrollbar w-full">
+        <div className="flex flex-col items-center sm:inline-flex sm:flex-row gap-5 pb-10 sm:overflow-x-auto no-scrollbar w-full">
           <VideoPlay 
             title="Asian Summit Vertiv 2023, Bali" 
             thumbnail="https://img.youtube.com/vi/uhfW9jKMlbo/maxresdefault.jpg"
