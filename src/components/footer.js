@@ -11,8 +11,8 @@ const Footer = () => {
           <div className="grid grid-rows-1 sm:grid-cols-3 sm:gap-10 mb-10 sm:mb-5">
 
             <div className="col-span-2">
-              <div className="flex flex-row items-center font-medium mb-5">
-                <StaticImage className="w-16 mr-2" src="../images/logo-color.png" alt="logo" />
+              <div className="flex flex-row items-center font-medium mb-5 text-blue-950">
+                <StaticImage className="w-16 mr-2" src="../images/new-logo-color.png" alt="logo" />
                 Passion Corp. Indonesia
               </div>
               <div>
