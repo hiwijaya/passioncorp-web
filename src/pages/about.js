@@ -24,10 +24,10 @@ const AboutPage = () => {
           </div>
         </div>
 
-        <div className="w-full py-16">
-          <div className="flex flex-row items-center justify-center w-full">
-            <StaticImage className="w-32" src="../images/logo-color.png" alt="passion logo" />
-            <h2 className="ml-5 text-3xl text-primary font-medium">Passion Corp Indonesia</h2>
+        <div className="w-full py-10 sm:py-16">
+          <div className="flex flex-col sm:flex-row items-center justify-center w-full">
+            <StaticImage className="w-24 sm:w-32" src="../images/new-logo-color.png" alt="passion logo" />
+            <h2 className="sm:ml-5 text-xl sm:text-3xl text-primary font-medium text-center">Passion Corp Indonesia</h2>
           </div>
         </div>
 
