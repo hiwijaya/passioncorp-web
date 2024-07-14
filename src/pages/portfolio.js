@@ -130,34 +130,42 @@ const portfolioPage = () => {
     <div className="inline-flex justify-center w-full bg-footer">
       <div className="flex flex-col items-center w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
         <div className="font-bold text-2xl sm:text-4xl mb-20 text-center"><span className="text-sky-500">Experienced</span> for World Class Events</div>
-        <div className="w-full grid grid-cols-3 md:grid-cols-7 gap-10">
+        <div className="w-full grid grid-cols-3 md:grid-cols-9 gap-5 text-xs md:text-sm">
           <div className="flex flex-col justify-center items-center font-bold">
-            <StaticImage className="w-20 mb-5" src="../images/indonesia.png" alt="Indonesia"/>
+            <StaticImage className="w-12 md:w-16 mb-5" src="../images/indonesia.png" alt="Indonesia"/>
             <div>INDONESIA</div>
           </div>
           <div className="flex flex-col justify-center items-center font-bold">
-            <StaticImage className="w-20 mb-5" src="../images/india.png" alt="India"/>
+            <StaticImage className="w-12 md:w-16 mb-5" src="../images/india.png" alt="India"/>
             <div>INDIA</div>
           </div>
           <div className="flex flex-col justify-center items-center font-bold">
-            <StaticImage className="w-20 mb-5" src="../images/philippines.png" alt="Philippines"/>
+            <StaticImage className="w-12 md:w-16 mb-5" src="../images/philippines.png" alt="Philippines"/>
             <div>PHILIPPINES</div>
           </div>
           <div className="flex flex-col justify-center items-center font-bold">
-            <StaticImage className="w-20 mb-5" src="../images/singapore.png" alt="Singapore"/>
+            <StaticImage className="w-12 md:w-16 mb-5" src="../images/singapore.png" alt="Singapore"/>
             <div>SINGAPORE</div>
           </div>
           <div className="flex flex-col justify-center items-center font-bold">
-            <StaticImage className="w-20 mb-5" src="../images/thailand.png" alt="Thailand"/>
+            <StaticImage className="w-12 md:w-16 mb-5" src="../images/thailand.png" alt="Thailand"/>
             <div>THAILAND</div>
           </div>
           <div className="flex flex-col justify-center items-center font-bold">
-            <StaticImage className="w-20 mb-5" src="../images/japan.png" alt="Japan"/>
+            <StaticImage className="w-12 md:w-16 mb-5" src="../images/japan.png" alt="Japan"/>
             <div>JAPAN</div>
           </div>
-          <div className="flex flex-col justify-center items-center font-bold col-span-3 md:col-span-1">
-            <StaticImage className="w-20 mb-5" src="../images/china.png" alt="Japan"/>
+          <div className="flex flex-col justify-center items-center font-bold">
+            <StaticImage className="w-12 md:w-16 mb-5" src="../images/china.png" alt="China"/>
             <div>CHINA</div>
+          </div>
+          <div className="flex flex-col justify-center items-center font-bold">
+            <StaticImage className="w-12 md:w-16 mb-5" src="../images/arab.png" alt="Saudi Arabia"/>
+            <div>SAUDI ARABIA</div>
+          </div>
+          <div className="flex flex-col justify-center items-center font-bold">
+            <StaticImage className="w-12 md:w-16 mb-5" src="../images/south-korea.png" alt="South Korea"/>
+            <div>SOUTH KOREA</div>
           </div>
         </div>
 
