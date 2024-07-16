@@ -113,7 +113,7 @@ const IndexPage = () => {
             <div className="">Documentation</div>
           </div>
           <div className="flex flex-col items-center cursor-pointer" onClick={() => navigate('/pricing?s=3d-design')}>
-            <StaticImage className="w-12 sm:w-12 mb-2" src="../images/services/documentation.png" alt="3D design"/>
+            <StaticImage className="w-12 sm:w-12 mb-2" src="../images/services/3d-design.png" alt="3D design"/>
             <div className="">3D Design</div>
           </div>
           <div className="flex flex-col items-center cursor-pointer" onClick={() => navigate('/pricing?s=graphics-content')}>
