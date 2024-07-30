@@ -53,9 +53,9 @@ const portfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/EihpKPFFOZM/maxresdefault.jpg"
             link="https://www.youtube.com/embed/EihpKPFFOZM"/>
           <VideoPlay 
-            title="Family Symphony" 
-            thumbnail="https://img.youtube.com/vi/qvLGlzah2BI/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/qvLGlzah2BI"/>
+            title="GOTION & ICBC Conference 2024" 
+            thumbnail="https://img.youtube.com/vi/KpoVRrV0pvQ/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/KpoVRrV0pvQ"/>
           <VideoPlay 
             title="Pertamina PET 36th Anniversary" 
             thumbnail="https://img.youtube.com/vi/0wGoB8WUiH4/maxresdefault.jpg"
@@ -76,9 +76,9 @@ const portfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/msxYu8Ow4I8/maxresdefault.jpg"
             link="https://www.youtube.com/embed/msxYu8Ow4I8"/>
           <VideoPlay 
-            title="Birthday Party at Jakarta Pinishi" 
-            thumbnail="https://img.youtube.com/vi/MZX0sVtcmVI/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/MZX0sVtcmVI"/>
+            title="Family Symphony" 
+            thumbnail="https://img.youtube.com/vi/qvLGlzah2BI/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/qvLGlzah2BI"/>
           <VideoPlay 
             title="China(Fujian) - Indonesia 2023" 
             thumbnail="https://img.youtube.com/vi/G5PGI_Y-KN4/maxresdefault.jpg"
@@ -121,6 +121,10 @@ const portfolioPage = () => {
             title="Birthday Party At Kempinksi Jakarta 2023" 
             thumbnail="https://img.youtube.com/vi/MLAnl5EZq5k/maxresdefault.jpg"
             link="https://www.youtube.com/embed/MLAnl5EZq5k"/>
+          <VideoPlay 
+            title="Birthday Party at Jakarta Pinishi" 
+            thumbnail="https://img.youtube.com/vi/MZX0sVtcmVI/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/MZX0sVtcmVI"/>
         </div>
       </div>
     </div>
