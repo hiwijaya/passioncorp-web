@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col-reverse sm:flex-row text-sm text-gray-500">
-            <div className="mr-10">© 2023 Passion Corp. Indonesia</div>
+            <div className="mr-10">© 2024 Passion Corp. Indonesia</div>
             <div className="inline-flex space-x-3 sm:space-x-5 mb-5 sm:mb-0">
               <a href="/about">About</a>
               <a href="/portfolio">Portfolio</a>
