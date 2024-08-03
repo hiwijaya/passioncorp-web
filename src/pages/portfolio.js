@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useState } from "react"
 import { StaticImage } from "gatsby-plugin-image";
 import Footer from "../components/footer";
 import Navigation from "../components/navigation";
@@ -9,6 +10,41 @@ import useSiteMetadata from '../hooks/use-site-metadata';
 
 
 const portfolioPage = () => {
+
+  const [showPlayer, setShowPlayer] = useState(false)
+
+  const introButton = () => (
+    <div className="flex flex-col lg:flex-row items-center mt-10 space-x-0 space-y-5 lg:space-x-10 lg:space-y-0">
+      <a href={`/kontakWA?redirect=${encodeURIComponent('https://wa.me/6282311000310?text=Hi%2C%20Passion%20Corp%20Indonesia%2C%20I%20know%20you%20from%20website%20https%3A%2F%2Fpassioncorp.id%2F%20%E2%80%9Cfree%20consultation%E2%80%9D')}`} target="_blank" rel="noreferrer" 
+        className="flex items-center rounded-xl bg-sky-500 text-white px-6 h-12 lg:h-14 self-center">FREE EVENT CONSULTATION</a>
+      <div className="flex flex-row items-center text-white" role="button"
+        onClick={() => setShowPlayer(prevState => !prevState)}>
+        <div className="border-2 animate-pulse border-sky-500 w-12 h-12 lg:w-14 lg:h-14 flex justify-center items-center rounded-full shadow-xl cursor-pointer mr-2" role="button"
+          onClick={() => {}}>
+          <StaticImage className="w-5" src="../images/icon-play.png" alt="play" />
+        </div>
+        WATCH INTRO
+      </div>
+    </div>
+  );
+
+  const player = () => (
+    <div className="fixed left-0 right-0 top-0 bottom-0 flex justify-center items-center bg-black bg-opacity-75 z-50">
+      <div className="flex flex-col w-full max-w-[900px] h-full max-h-[600px] bg-white p-5 rounded-xl">
+        <div className="flex flex-row items-center justify-between mb-5">
+          <div className="font-bold">{'China (Fujian ) - Indonesia - Signing'}</div>
+          <div className="p-3 bg-slate-200 rounded-full cursor-pointer" role="button" 
+            onClick={() => setShowPlayer(prevState => !prevState)}>
+            <StaticImage className="w-6" src="../images/icon-close-big.png" alt="close"/>
+          </div>
+        </div>
+        { 
+          <iframe className="h-full" src={'https://www.youtube.com/embed/G5PGI_Y-KN4'} referrerpolicy="no-referrer-when-downgrade"
+             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        }
+      </div>
+    </div>
+  )
 
   const gallerySection = () => (
     <div className="inline-flex justify-center w-full ">
@@ -125,6 +161,10 @@ const portfolioPage = () => {
             title="Birthday Party at Jakarta Pinishi" 
             thumbnail="https://img.youtube.com/vi/MZX0sVtcmVI/maxresdefault.jpg"
             link="https://www.youtube.com/embed/MZX0sVtcmVI"/>
+          <VideoPlay 
+            title="Pertamina RUPS 2024" 
+            thumbnail="https://img.youtube.com/vi/fKcqH2esQek/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/fKcqH2esQek"/>
         </div>
       </div>
     </div>
@@ -193,17 +233,19 @@ const portfolioPage = () => {
     <main className="relative min-h-screen bg-white">
       <div className="pb-[500px] md:pb-[350px]">
         <Navigation />
+        {showPlayer && player()}
         <div className="relative w-full h-screen">
           <StaticImage className="w-full h-full" imgClassName="object-cover h-full" src="../images/image-portfolio.jpg" alt="Portfolio" />
           <div className="absolute left-0 top-0 w-full h-full inline-flex justify-center items-center bg-black/75 px-4">
             <div className="w-full max-w-7xl text-white">
-              <h1 className="font-bold text-2xl lg:text-5xl text-center mb-5">EVENT MEMORABLE</h1>
-              <p className="text-center lg:text-lg">
-                When it comes to events, it's vital to create meaningful, memorable, and measurable experiences for exhibitors and attendes.
-                Why? Because memorable experiences give exhibitors the best change at that coveted "top-of-mind" position with your audiences.
-                Creating those experiences, through, can be a challenge. <br/>
+              <div className="font-bold text-2xl lg:text-5xl text-sky-500 mb-5 text-center lg:text-left">EVENT MEMORABLE</div>
+              <p className="w-full lg:max-w-2xl text-center lg:text-left">
+                When it comes to events, it's vital to create meaningful, memorable, and measurable experiences for exhibitors and attendes. 
+                Why? Because memorable experiences give exhibitors the best change at that coveted "top-of-mind" position with your audiences. 
+                Creating those experiences, through, can be a challenge.
                 <span className="font-bold">Passion Corp is the answer to goodness</span>
               </p>
+              {introButton()}
             </div>
           </div>
         </div>

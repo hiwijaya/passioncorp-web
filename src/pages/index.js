@@ -26,14 +26,13 @@ const IndexPage = () => {
             </div>
             <div className="font-bold text-xl mb-2">Go Passion Go World!</div>
             <p className="w-full max-w-xl mb-5">
-              We are a creative event consultant company.
-              Established in 2013, we have become a leader in Creative with a strong commitment
-              to core values of the company. We provide high-quality services that creative problems.
-              Passion Corp Indonesia (Event Organizer) team is ready to provide activity concepts according
-              to client needs and open discussions to exchange ideas and concepts for activities that will be held later.
-              Quite a lot of companies and organizations have trusted their Gatherings, Launchings, Virtual Events, Webinars.
-              Passion helps you stay focused on your goals. It's easier to maintain discipline and dedication when you have
-              a strong emotional connection to what you're.
+              We are a creative event consultant company. 
+              Established in 2013, we have become a leader in Creative with a strong commitment to core values of the company. 
+              We provide high-quality services that creative problems. 
+              Passion Corp Indonesia Event Organizer team is ready to provide activity concepts according to client needs and open discussions 
+              to exchange ideas and concepts for activities that will be held later. 
+              many companies and organizations have trusted their Gatherings, Launchings, Virtual Events, Webinars to us. 
+              Passion corp helps you stay focused on your goals.
             </p>
             <a href="/about" className="text-primary font-bold">More about us..</a>
           </div>
