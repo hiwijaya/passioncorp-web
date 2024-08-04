@@ -165,6 +165,10 @@ const portfolioPage = () => {
             title="Pertamina RUPS 2024" 
             thumbnail="https://img.youtube.com/vi/fKcqH2esQek/maxresdefault.jpg"
             link="https://www.youtube.com/embed/fKcqH2esQek"/>
+          <VideoPlay 
+            title="KEMENKUMHAM 2023" 
+            thumbnail="https://img.youtube.com/vi/CSSTqh1W0aU/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/CSSTqh1W0aU"/>
         </div>
       </div>
     </div>
