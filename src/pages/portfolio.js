@@ -5,6 +5,7 @@ import Footer from "../components/footer";
 import Navigation from "../components/navigation";
 import ImageGallery from "../components/imageGallery";
 import VideoPlay from "../components/videoPlay"
+import ContactFloat from "../components/contactFloat";
 import SEO from "../components/seo";
 import useSiteMetadata from '../hooks/use-site-metadata';
 
@@ -235,6 +236,7 @@ const portfolioPage = () => {
 
   return (
     <main className="relative min-h-screen bg-white">
+      <ContactFloat/>
       <div className="pb-[500px] md:pb-[350px]">
         <Navigation />
         {showPlayer && player()}
