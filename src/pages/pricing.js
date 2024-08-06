@@ -218,7 +218,22 @@ const PricingPage = () => {
         <p className="mb-10 text-center">
           Supporting events in cities in various regions in Indonesia, both at the scale of ministries, regional institutions and private companies.
         </p>
-        <StaticImage className="w-full" src="../images/passion-map.png" alt="passion map" />
+        <StaticImage className="w-full mb-10" src="../images/passion-map.png" alt="passion map" />
+        {giftSection()}
+      </div>
+    </div>
+  )
+
+  const giftSection = () => (
+    <div className="w-full rounded-xl bg-gradient-to-b sm:bg-gradient-to-r from-sky-700 to-sky-300 text-white px-10 py-5">
+      <div className="flex flex-col sm:flex-row justify-center items-center space-y-5 space-x-0 sm:space-x-5 sm:space-y-0">
+        <StaticImage className="w-12" src="../images/icon-gift.png" alt="icon gift" />
+        <div className="flex-1 flex-col items-center">
+          <div className="font-bold text-base text-center sm:text-start">You can get better deals for your choice</div>
+          <div className="text-sm text-center sm:text-start">consult your event, for better service. Now it's your turn!</div>
+        </div>
+        <a href={`/kontakWA?redirect=${encodeURIComponent('https://wa.me/6282311000310?text=Hi%2C%20Passion%20Corp%20Indonesia%2C%20I%20know%20you%20from%20website%20https%3A%2F%2Fpassioncorp.id%2F')}`} target="_blank" 
+          className="rounded-xl bg-white text-sky-400 font-bold px-6 py-3">Contact Us</a>
       </div>
     </div>
   )
