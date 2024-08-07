@@ -232,7 +232,7 @@ const PricingPage = () => {
           <div className="font-bold text-base text-center sm:text-start">You can get better deals for your choice</div>
           <div className="text-sm text-center sm:text-start">consult your event, for better service. Now it's your turn!</div>
         </div>
-        <a href={`/kontakWA?redirect=${encodeURIComponent('https://wa.me/6282311000310?text=Hi%2C%20Passion%20Corp%20Indonesia%2C%20I%20know%20you%20from%20website%20https%3A%2F%2Fpassioncorp.id%2F')}`} target="_blank" 
+        <a href={`/kontakWA?redirect=${encodeURIComponent('https://wa.me/6282311000310?text=Hi%2C%20Passion%20Corp%20Indonesia%2C%20I%20know%20you%20from%20website%20https%3A%2F%2Fpassioncorp.id%2F%0A%0A-Get%20better%20deals-')}`} target="_blank" 
           className="rounded-xl bg-white text-sky-400 font-bold px-6 py-3">Contact Us</a>
       </div>
     </div>
