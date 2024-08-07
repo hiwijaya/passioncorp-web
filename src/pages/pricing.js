@@ -91,7 +91,7 @@ const PricingPage = () => {
         </div>
 
         <p className="text-center text-sm mb-10 w-full max-w-2xl">{selectedService.description}</p>
-        <div className="w-full">
+        <div className="w-full mb-5">
           <div className="flex flex-col md:flex-row md:items-start md:space-x-5">
             {selectedService.packages.map((pkg, i) => (
               <div className="flex-1 rounded-lg shadow-lg overflow-hidden mb-5">
@@ -115,6 +115,7 @@ const PricingPage = () => {
             ))}
           </div>
         </div>
+        {giftSection()}
       </div>
     </div>
   )
@@ -219,7 +220,6 @@ const PricingPage = () => {
           Supporting events in cities in various regions in Indonesia, both at the scale of ministries, regional institutions and private companies.
         </p>
         <StaticImage className="w-full mb-10" src="../images/passion-map.png" alt="passion map" />
-        {giftSection()}
       </div>
     </div>
   )
