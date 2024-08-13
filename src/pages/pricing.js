@@ -91,7 +91,7 @@ const PricingPage = () => {
         </div>
 
         <p className="text-center text-sm mb-10 w-full max-w-2xl">{selectedService.description}</p>
-        <div className="w-full mb-5">
+        <div className="w-full">
           <div className="flex flex-col md:flex-row md:items-start md:space-x-5">
             {selectedService.packages.map((pkg, i) => (
               <div className="flex-1 rounded-lg shadow-lg overflow-hidden mb-5">
@@ -115,7 +115,6 @@ const PricingPage = () => {
             ))}
           </div>
         </div>
-        {giftSection()}
       </div>
     </div>
   )
@@ -163,6 +162,7 @@ const PricingPage = () => {
   const portfolioSection = () => (
     <div className="inline-flex justify-center w-full ">
       <div className="flex flex-col items-center w-full max-w-7xl px-4 xl:px-0 my-10 sm:my-20">
+        {giftSection()}
         <div className="w-fit relative mb-10 ">
           <div className="absolute bottom-0 left-3 sm:left-5 bg-sky-300 w-28 sm:w-44 h-3"></div>
           <h2 className="relative text-2xl sm:text-4xl font-bold">See Our Work</h2>
@@ -225,7 +225,7 @@ const PricingPage = () => {
   )
 
   const giftSection = () => (
-    <div className="w-full rounded-xl bg-gradient-to-b sm:bg-gradient-to-r from-sky-700 to-sky-300 text-white px-10 py-5">
+    <div className="w-full rounded-xl bg-gradient-to-b sm:bg-gradient-to-r from-sky-700 to-sky-300 text-white px-10 py-5 mb-10">
       <div className="flex flex-col sm:flex-row justify-center items-center space-y-5 space-x-0 sm:space-x-5 sm:space-y-0">
         <StaticImage className="w-12" src="../images/icon-gift.png" alt="icon gift" />
         <div className="flex-1 flex-col items-center">
