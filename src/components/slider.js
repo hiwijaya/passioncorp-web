@@ -27,14 +27,14 @@ const Slider = () => {
     <div className="fixed left-0 right-0 top-0 bottom-0 flex justify-center items-center bg-black bg-opacity-75 z-50">
       <div className="flex flex-col w-full max-w-[900px] h-full max-h-[600px] bg-white p-5 rounded-xl">
         <div className="flex flex-row items-center justify-between mb-5">
-          <div className="font-bold">{'China (Fujian ) - Indonesia - Signing'}</div>
+          <div className="font-bold">BTS PASSION CORP INDONESIA</div>
           <div className="p-3 bg-slate-200 rounded-full cursor-pointer" role="button" 
             onClick={() => setShowPlayer(prevState => !prevState)}>
             <StaticImage className="w-6" src="../images/icon-close-big.png" alt="close"/>
           </div>
         </div>
         { 
-          <iframe className="h-full" src={'https://www.youtube.com/embed/G5PGI_Y-KN4'} referrerpolicy="no-referrer-when-downgrade"
+          <iframe className="h-full" src={'https://www.youtube.com/embed/vFSfgtsYUWw'} referrerpolicy="no-referrer-when-downgrade"
              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         }
       </div>
