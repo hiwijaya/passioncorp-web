@@ -1,12 +1,115 @@
 import * as React from "react";
+import { useState, useEffect } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import SEO from "../../components/seo";
 
 
 const RegisterPage = () => {
 
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [city, setCity] = useState('');
+  const [institute, setInstitute] = useState('');
+  const [profession, setProfession] = useState('');
+  const [attendance, setAttendance] = useState('Offline');
+
+  const [message, setMessage] = useState('');
+  const [showModal, setShowModal] = useState(false);
+  const [onSubmit, setOnSubmit] = useState(false);
+
+
+  const modal = () => (
+    <div className="fixed flex flex-col items-center px-6 py-20 w-full h-screen bg-black bg-opacity-75 z-50">
+      <div className="bg-white rounded-xl w-full max-w-sm px-6 pt-10 pb-6">
+        <div className="mb-10">
+          {message}
+        </div>
+        <button className="bg-sky-500 w-full rounded-xl py-3 text-white" type="button" 
+          onClick={() => setShowModal(false)}>Tutup</button>
+      </div>
+    </div>
+  );
+
+  const validateEmail = (email) => {
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return pattern.test(email);
+  };
+
+  const validatePhone = (phone) => {
+    const pattern = /^08\d{8,11}$/;
+    return pattern.test(phone);
+  };
+
+  const showMessage = (message) => {
+    setMessage(message);
+    setShowModal(true);
+  }
+
+  const generateRegId = () => {
+
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let randomLetters = '';
+    for (let i = 0; i < 3; i++) {
+      randomLetters += alphabet[Math.floor(Math.random() * alphabet.length)];
+    }
+    const randomNumber = Math.floor(100000 + Math.random() * 900000);
+
+    return `${randomLetters}-${randomNumber}`;
+  }
+
+  const submitRegistration = () => {
+
+    if(onSubmit) return;
+
+    if(name === ''){
+      showMessage('Nama harus diisi');
+      return;
+    }
+    if(email === ''){
+      showMessage('Email harus diisi');
+      return;
+    }
+    if(!validateEmail(email)){
+      showMessage('Format email tidak sesuai');
+      return;
+    }
+    if(phone === ''){
+      showMessage('No HP harus diisi');
+      return;
+    }
+    if(!validatePhone(phone)){
+      showMessage('Format nomor HP tidak sesuai (08***)');
+      return;
+    }
+    if(city === ''){
+      showMessage('Domisili harus diisi');
+      return;
+    }
+    if(institute === ''){
+      showMessage('Institusi harus diisi');
+      return;
+    }
+    if(profession === ''){
+      showMessage('Profesi harus diisi');
+      return;
+    }
+    if(attendance === ''){
+      showMessage('Kehadian harus diisi');
+      return;
+    }
+
+    showMessage(`${name}-${email}-${phone}-${city}-${institute}-${profession}-${attendance}`);
+
+
+
+
+  }
+
+
   return (
     <div className="w-full">
+      {showModal && modal()}
       <div className="flex flex-col lg:flex-row h-full text-white overflow-y-auto">
         <div className="flex flex-col items-start lg:items-end flex-[5] bg-gray-900 flex-wrap px-6 lg:pr-20 py-10">
           <div className="max-w-2xl">
@@ -120,49 +223,66 @@ const RegisterPage = () => {
             <div>
               <div className="flex flex-col mb-5">
                 <label className="text-sm text-gray-400 mb-2" for="name">Nama</label>
-                <input className="bg-transparent border-2 p-3 rounded-xl border-gray-500" id="name"/>
+                <input className="bg-transparent border-2 p-3 rounded-xl border-gray-500" id="name" 
+                  onChange={e => setName(e.target.value)}/>
               </div>
               <div className="flex flex-col mb-5">
                 <label className="text-sm text-gray-400 mb-2" for="email">Email</label>
-                <input className="bg-transparent border-2 p-3 rounded-xl border-gray-500" id="email"/>
+                <input className="bg-transparent border-2 p-3 rounded-xl border-gray-500" id="email"
+                  onChange={e => setEmail(e.target.value)}/>
               </div>
               <div className="flex flex-col mb-5">
                 <label className="text-sm text-gray-400 mb-2" for="phone">No. HP</label>
-                <input className="bg-transparent border-2 p-3 rounded-xl border-gray-500" id="phone"/>
+                <input className="bg-transparent border-2 p-3 rounded-xl border-gray-500" id="phone" placeholder="08xxxxxxxxxx"
+                  onChange={e => setPhone(e.target.value)}/>
               </div>
               <div className="flex flex-col mb-5">
                 <label className="text-sm text-gray-400 mb-2" for="region">Domisili</label>
-                <input className="bg-transparent border-2 p-3 rounded-xl border-gray-500" id="region"/>
+                <input className="bg-transparent border-2 p-3 rounded-xl border-gray-500" id="region"
+                  onChange={e => setCity(e.target.value)}/>
               </div>
               <div className="flex flex-col mb-5">
                 <label className="text-sm text-gray-400 mb-2" for="region">Instansi</label>
-                <input className="bg-transparent border-2 p-3 rounded-xl border-gray-500" id="region"/>
+                <input className="bg-transparent border-2 p-3 rounded-xl border-gray-500" id="region"
+                  onChange={e => setInstitute(e.target.value)}/>
               </div>
               <div className="flex flex-col mb-5">
                 <div className="text-sm text-gray-400 mb-2" for="name">Profesi</div>
                 <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
                   <div>
-                    <input id="profession-1" type="radio" name="profession" className="mr-2" />
+                    <input id="profession-1" type="radio" name="profession" className="mr-2"
+                      value="Dosen" checked={profession === 'Dosen'} 
+                      onChange={(e) => setProfession(e.target.value)}/>
                     <label for="profession-1" className="text-sm">Dosen</label>
                   </div>
                   <div>
-                    <input id="profession-2" type="radio" name="profession" className="mr-2"/>
+                    <input id="profession-2" type="radio" name="profession" className="mr-2"
+                      value="Karyawan" checked={profession === 'Karyawan'} 
+                      onChange={(e) => setProfession(e.target.value)}/>
                     <label for="profession-2" className="text-sm">Karyawan</label>
                   </div>
                   <div>
-                    <input id="profession-3" type="radio" name="profession" className="mr-2"/>
+                    <input id="profession-3" type="radio" name="profession" className="mr-2"
+                      value="Pengusaha" checked={profession === 'Pengusaha'} 
+                      onChange={(e) => setProfession(e.target.value)}/>
                     <label for="profession-3" className="text-sm">Pengusaha</label>
                   </div>
                   <div>
-                    <input id="profession-4" type="radio" name="profession" className="mr-2"/>
+                    <input id="profession-4" type="radio" name="profession" className="mr-2"
+                      value="PNS" checked={profession === 'PNS'} 
+                      onChange={(e) => setProfession(e.target.value)}/>
                     <label for="profession-4" className="text-sm">PNS</label>
                   </div>
                   <div>
-                    <input id="profession-5" type="radio" name="profession" className="mr-2"/>
+                    <input id="profession-5" type="radio" name="profession" className="mr-2"
+                      value="Mahasiswa" checked={profession === 'Mahasiswa'} 
+                      onChange={(e) => setProfession(e.target.value)}/>
                     <label for="profession-5" className="text-sm">Mahasiswa</label>
                   </div>
                   <div>
-                    <input id="profession-6" type="radio" name="profession" className="mr-2"/>
+                    <input id="profession-6" type="radio" name="profession" className="mr-2"
+                      value="Lainnya" checked={profession === 'Lainnya'} 
+                      onChange={(e) => setProfession(e.target.value)}/>
                     <label for="profession-6" className="text-sm">Lainnya</label>
                   </div>
                 </div>
@@ -171,27 +291,33 @@ const RegisterPage = () => {
                 <div className="text-sm text-gray-400 mb-2" for="name">Kehadiran</div>
                 <div className="flex flex-row">
                   <div className="mr-10">
-                    <input id="attendance-1" type="radio" name="attendance" className="mr-2" checked={true}/>
+                    <input id="attendance-1" type="radio" name="attendance" className="mr-2"
+                      value="Offline" checked={attendance === 'Offline'} 
+                      onChange={(e) => setAttendance(e.target.value)}/>
                     <label for="attendance-1" className="text-sm">Offline</label>
                   </div>
                   <div>
-                    <input id="attendance-2" type="radio" name="attendance" className="mr-2"/>
-                    <label for="attendance-2" className="text-sm">Online</label>
+                    <input id="attendance-2" type="radio" name="attendance" className="mr-2"
+                      value="Online" checked={attendance === 'Online'} 
+                      onChange={(e) => setAttendance(e.target.value)}/>
+                    <label for="attendance-2" className="text-sm">Online <span className="text-gray-400">(Zoom Meeting)</span> </label>
                   </div>
                 </div>
               </div>
-              <button className="bg-sky-500 w-full rounded-xl py-3 mb-3" type="button">Submit</button>
-              <p className="text-sm">
+              <button className="bg-sky-500 w-full rounded-xl py-3 mb-3 font-bold" type="button"
+                onClick={() => submitRegistration()}>Submit</button>
+              <p className="text-xs sm:text-sm">
                 Link undangan akan dikirim ke email anda.
               </p>
 
-              <div className="mt-10 text-sm">
+              <div className="mt-16 text-sm">
                 <div className="text-gray-500">Powered by</div>
                 <a href="https://passioncorp.id" target="_blank" rel="noreferrer" className="inline-flex items-center">
                   <StaticImage className="w-12 mr-2" src="../../images/new-logo-color.png" alt="logo"/>
                   <span>Passion Corp Indonesia</span>
                 </a>
               </div>
+              <div className="mt-5 text-sm text-gray-500">© 2024 All right reserved.</div>
             </div>
           </div>
         </div>
