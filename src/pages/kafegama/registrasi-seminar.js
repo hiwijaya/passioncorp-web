@@ -162,7 +162,7 @@ const RegisterPage = () => {
   return (
     <div className="w-full">
       {showModal && modal()}
-      <div className="flex flex-col lg:flex-row h-full text-white overflow-y-auto">
+      <div className="flex flex-col lg:flex-row h-full text-white text-base overflow-y-auto">
         <div className="flex flex-col items-start lg:items-end flex-[5] bg-gray-900 flex-wrap px-6 lg:pr-20 py-10">
           <div className="max-w-2xl">
             <StaticImage className="w-20 sm:w-24 mb-5" src="../../images/kafegama/kafegama-logo.png" alt="logo KAFEGAMA"/>
@@ -229,7 +229,7 @@ const RegisterPage = () => {
             </div>
 
             <h2 className="font-bold mb-5">Panel Discussions</h2>
-            <div className="flex flex-col space-y-5">
+            <div className="flex flex-col space-y-5 mb-10" >
               <div className="inline-flex flex-row">
                 <StaticImage className="w-12 mr-5 rounded-full" src="../../images/kafegama/erwin.png" alt="Dr. Edwin Hidayat Abdullah"/>
                 <div className="flex flex-col justify-center">
@@ -258,6 +258,10 @@ const RegisterPage = () => {
                   <p className="text-sm text-gray-400">TKN Prabowo-Gibran</p>
                 </div>
               </div>
+            </div>
+
+            <h2 className="font-bold mb-5">Moderator</h2>
+            <div className="flex flex-col space-y-5">
               <div className="inline-flex flex-row">
                 <StaticImage className="w-12 mr-5 rounded-full" src="../../images/kafegama/piter.png" alt="Dr. Piter Abdullah Redjalam"/>
                 <div className="flex flex-col justify-center">
