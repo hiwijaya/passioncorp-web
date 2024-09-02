@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState } from "react"
+import { useState } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import Footer from "../components/footer";
 import Navigation from "../components/navigation";
@@ -10,9 +10,9 @@ import SEO from "../components/seo";
 import useSiteMetadata from '../hooks/use-site-metadata';
 
 
-const portfolioPage = () => {
+const PortfolioPage = () => {
 
-  const [showPlayer, setShowPlayer] = useState(false)
+  const [showPlayer, setShowPlayer] = useState(false);
 
   const introButton = () => (
     <div className="flex flex-col lg:flex-row items-center mt-10 space-x-0 space-y-5 lg:space-x-10 lg:space-y-0">
@@ -277,7 +277,7 @@ const portfolioPage = () => {
     </main>
   )
 }
-export default portfolioPage;
+export default PortfolioPage;
 
 
 export const Head = () => {
