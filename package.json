@@ -17,6 +17,7 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.45.3",
     "autoprefixer": "^10.4.16",
+    "crypto-js": "^4.2.0",
     "dotenv": "^16.4.5",
     "gatsby": "^5.12.4",
     "gatsby-plugin-google-gtag": "^5.13.1",
@@ -26,15 +27,19 @@
     "gatsby-plugin-postcss": "^6.12.0",
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-plugin-sitemap": "^6.13.1",
+    "gatsby-plugin-use-query-params": "^1.0.1",
     "gatsby-remark-images": "^7.13.1",
     "gatsby-source-filesystem": "^5.12.1",
     "gatsby-transformer-remark": "^6.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
+    "html-to-image": "^1.11.11",
     "postcss": "^8.4.31",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-qr-code": "^2.0.15",
     "react-slideshow-image": "^4.3.0",
-    "tailwindcss": "^3.3.5"
+    "tailwindcss": "^3.3.5",
+    "use-query-params": "^2.2.1"
   }
 }

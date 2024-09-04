@@ -176,7 +176,7 @@ const RegisterPage = () => {
                 <StaticImage className="w-5 mr-3" src="../../images/kafegama/calendar.png" alt="calendar"/>
                 <div>
                   <div>Senin, 23 September 2024</div>
-                  <div>09:00 - 12:00 WIB</div>
+                  <div>08:00 - 12:00 WIB</div>
                 </div>
               </div>
               <div className="flex flex-row items-center text-sm">
