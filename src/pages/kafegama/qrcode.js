@@ -82,7 +82,7 @@ const QRCodePage = () => {
             <div className="p-6 pb-2">
               <div className="text-xs text-gray-500 mb-1">QR Code</div>
               <div className="p-6">
-                <QRCode value="PDX-123456" 
+                <QRCode value={regId} 
                   style={{ height: "auto", maxWidth: "100%", width: "100%" }}
                 />
               </div>
