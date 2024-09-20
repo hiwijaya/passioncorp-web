@@ -82,9 +82,9 @@ const PortfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/vW0Hz-WjzrI/maxresdefault.jpg"
             link="https://www.youtube.com/embed/vW0Hz-WjzrI"/>
           <VideoPlay 
-            title="Poundfit Hari Gizi Nasional Kemenkes" 
-            thumbnail="https://img.youtube.com/vi/Qu07WW6bF-Q/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/Qu07WW6bF-Q"/>
+            title="International Conference PVC 2024" 
+            thumbnail="https://img.youtube.com/vi/T_KlIjG_nbE/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/T_KlIjG_nbE"/>
           <VideoPlay 
             title="HUT PERTAMINA 66th" 
             thumbnail="https://img.youtube.com/vi/EihpKPFFOZM/maxresdefault.jpg"
@@ -139,9 +139,9 @@ const PortfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/6AhcWoFqw0E/maxresdefault.jpg"
             link="https://www.youtube.com/embed/6AhcWoFqw0E"/>
           <VideoPlay 
-            title="Gelaran Budaya Bersama Kapolri 2023" 
-            thumbnail="https://img.youtube.com/vi/46i2aRtMuo0/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/46i2aRtMuo0"/>
+            title="Poundfit Hari Gizi Nasional Kemenkes" 
+            thumbnail="https://img.youtube.com/vi/Qu07WW6bF-Q/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/Qu07WW6bF-Q"/>
           <VideoPlay 
             title="ALEZA Fashion Show" 
             thumbnail="https://img.youtube.com/vi/7FcLW8K-p3w/maxresdefault.jpg"
