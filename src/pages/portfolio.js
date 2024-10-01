@@ -86,9 +86,9 @@ const PortfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/T_KlIjG_nbE/maxresdefault.jpg"
             link="https://www.youtube.com/embed/T_KlIjG_nbE"/>
           <VideoPlay 
-            title="HUT PERTAMINA 66th" 
-            thumbnail="https://img.youtube.com/vi/EihpKPFFOZM/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/EihpKPFFOZM"/>
+            title="BTS BCA" 
+            thumbnail="https://img.youtube.com/vi/XkfQh9oFz0E/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/XkfQh9oFz0E"/>
           <VideoPlay 
             title="GOTION & ICBC Conference 2024" 
             thumbnail="https://img.youtube.com/vi/KpoVRrV0pvQ/maxresdefault.jpg"
@@ -143,9 +143,9 @@ const PortfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/Qu07WW6bF-Q/maxresdefault.jpg"
             link="https://www.youtube.com/embed/Qu07WW6bF-Q"/>
           <VideoPlay 
-            title="ALEZA Fashion Show" 
-            thumbnail="https://img.youtube.com/vi/7FcLW8K-p3w/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/7FcLW8K-p3w"/>
+            title="HUT PERTAMINA 66th" 
+            thumbnail="https://img.youtube.com/vi/EihpKPFFOZM/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/EihpKPFFOZM"/>
           <VideoPlay 
             title="VIVO V29E Brand Launching" 
             thumbnail="https://img.youtube.com/vi/ZRUz3uyifzU/maxresdefault.jpg"
@@ -170,6 +170,10 @@ const PortfolioPage = () => {
             title="KEMENKUMHAM 2023" 
             thumbnail="https://img.youtube.com/vi/CSSTqh1W0aU/maxresdefault.jpg"
             link="https://www.youtube.com/embed/CSSTqh1W0aU"/>
+          <VideoPlay 
+            title="ALEZA Fashion Show" 
+            thumbnail="https://img.youtube.com/vi/7FcLW8K-p3w/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/7FcLW8K-p3w"/>
         </div>
       </div>
     </div>
