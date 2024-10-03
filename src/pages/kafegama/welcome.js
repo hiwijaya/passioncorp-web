@@ -2,6 +2,7 @@ import * as React from "react";
 import { useState, useRef } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import supabase from "../../components/supabaseClient";
+import backgroundWelcome from "../../images/kafegama/background.jpg";
 
 
 const WelcomePage = () => {
@@ -58,9 +59,7 @@ const WelcomePage = () => {
 
 
   return(
-    <div className="relative w-full h-screen bg-slate-800 p-6 ">
-      <StaticImage className="absolute left-0 top-0 bottom-0 right-0 z-0 w-full h-screen object-fill" 
-        src="../../images/kafegama/background.jpg" alt="background"/>
+    <div style={{ backgroundImage: `url(${backgroundWelcome})` }} className="relative w-full h-screen bg-cover p-6 ">
       <div className="absolute left-0 top-0 right-0 bottom-0 z-10 flex flex-col justify-center items-center p-6">
         <div className="text-5xl mb-16">Selamat Datang</div>
         <div className="font-bold text-7xl">{name}</div>
