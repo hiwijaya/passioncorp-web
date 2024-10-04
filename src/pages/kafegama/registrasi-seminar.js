@@ -175,8 +175,8 @@ const RegisterPage = () => {
               <div className="flex flex-row items-center text-sm mb-3">
                 <StaticImage className="w-5 mr-3" src="../../images/kafegama/calendar.png" alt="calendar"/>
                 <div>
-                  <div>Senin, 14 Oktober 2024</div>
-                  <div>09:00 - 12:00 WIB</div>
+                  <div>Sabtu, 16 November 2024</div>
+                  <div>08:00 - 12:00 WIB</div>
                 </div>
               </div>
               <div className="flex flex-row items-center text-sm">
@@ -191,17 +191,17 @@ const RegisterPage = () => {
             <h2 className="font-bold mb-5">Welcome remarks</h2>
             <div className="flex flex-col space-y-5 mb-10">
               <div className="inline-flex flex-row">
-                <StaticImage className="w-12 mr-5 rounded-full" src="../../images/kafegama/friderica.png" alt="Dr. Friderica Widyasari Dewi"/>
-                <div className="flex flex-col justify-center">
-                  <div>Dr. Friderica Widyasari Dewi</div>
-                  <p className="text-sm text-gray-400">Ketua Umum PP KAFEGAMA</p>
-                </div>
-              </div>
-              <div className="inline-flex flex-row">
                 <StaticImage className="w-12 mr-5 rounded-full" src="../../images/kafegama/perry.png" alt="Perry Warjiyo, PhD."/>
                 <div className="flex flex-col justify-center">
                   <div>Perry Warjiyo, PhD.</div>
                   <p className="text-sm text-gray-400">Gubernur Bank Indonesia</p>
+                </div>
+              </div>
+              <div className="inline-flex flex-row">
+                <StaticImage className="w-12 mr-5 rounded-full" src="../../images/kafegama/friderica.png" alt="Dr. Friderica Widyasari Dewi"/>
+                <div className="flex flex-col justify-center">
+                  <div>Dr. Friderica Widyasari Dewi</div>
+                  <p className="text-sm text-gray-400">Ketua Umum PP KAFEGAMA</p>
                 </div>
               </div>
             </div>
@@ -222,7 +222,7 @@ const RegisterPage = () => {
               <div className="inline-flex flex-row">
                 <StaticImage className="w-12 mr-5 rounded-full" src="../../images/kafegama/edwin.png" alt="Dr. Edwin Hidayat Abdullah"/>
                 <div className="flex flex-col justify-center">
-                  <div>Dr. Edwin Hidayat Abdullah</div>
+                  <div>Edwin Hidayat Abdullah</div>
                   <p className="text-sm text-gray-400">Wakil Ketua Umum PP KAFEGAMA</p>
                 </div>
               </div>
