@@ -66,7 +66,7 @@ const QRCodePage = () => {
                 </div>
                 <div>
                   <div className="text-xs text-gray-500 mb-1">Date</div>
-                  <div className="text-black"> 14 Oktober 09:00 WIB</div>
+                  <div className="text-black"> 16 November 08:00 WIB</div>
                 </div>
               </div>
               <div>
