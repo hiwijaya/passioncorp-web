@@ -90,7 +90,7 @@ const PortfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/T_KlIjG_nbE/maxresdefault.jpg"
             link="https://www.youtube.com/embed/T_KlIjG_nbE"/>
           <VideoPlay 
-            title="BTS BCA" 
+            title="Corporate Gathering BCA 2024" 
             thumbnail="https://img.youtube.com/vi/XkfQh9oFz0E/maxresdefault.jpg"
             link="https://www.youtube.com/embed/XkfQh9oFz0E"/>
           <VideoPlay 
@@ -129,10 +129,9 @@ const PortfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/AewdYg5AMm4/maxresdefault.jpg"
             link="https://www.youtube.com/embed/AewdYg5AMm4"/>
           <VideoPlay 
-            title="Daikin Gathering 2023" 
-            thumbnail="https://img.youtube.com/vi/OiwncNc9XQE/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/OiwncNc9XQE"/>
-
+            title="Behind The Scene NIQ" 
+            thumbnail="https://img.youtube.com/vi/1KXEeF3EVv4/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/1KXEeF3EVv4"/>
 
           <VideoPlay 
             title="Sun Energy 2023" 
@@ -178,6 +177,10 @@ const PortfolioPage = () => {
             title="KAS KOM Meeting 2023, Bali" 
             thumbnail="https://img.youtube.com/vi/6AhcWoFqw0E/maxresdefault.jpg"
             link="https://www.youtube.com/embed/6AhcWoFqw0E"/>
+          <VideoPlay 
+            title="Daikin Gathering 2023" 
+            thumbnail="https://img.youtube.com/vi/OiwncNc9XQE/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/OiwncNc9XQE"/>
         </div>
       </div>
     </div>
