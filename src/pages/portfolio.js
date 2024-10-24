@@ -74,6 +74,10 @@ const PortfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/uhfW9jKMlbo/maxresdefault.jpg"
             link="https://www.youtube.com/embed/uhfW9jKMlbo"/>
           <VideoPlay 
+            title="NieisenIQ Indonesia Executive Summit 2024" 
+            thumbnail="https://img.youtube.com/vi/6vANFRmn7lc/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/6vANFRmn7lc"/>
+          <VideoPlay 
             title="Pertagas Seventeen Anniversary" 
             thumbnail="https://img.youtube.com/vi/3nh6If9cAVc/maxresdefault.jpg"
             link="https://www.youtube.com/embed/3nh6If9cAVc"/>
@@ -135,10 +139,6 @@ const PortfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/QyffSIrsnIo/maxresdefault.jpg"
             link="https://www.youtube.com/embed/QyffSIrsnIo"/>
           <VideoPlay 
-            title="KAS KOM Meeting 2023, Bali" 
-            thumbnail="https://img.youtube.com/vi/6AhcWoFqw0E/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/6AhcWoFqw0E"/>
-          <VideoPlay 
             title="Poundfit Hari Gizi Nasional Kemenkes" 
             thumbnail="https://img.youtube.com/vi/Qu07WW6bF-Q/maxresdefault.jpg"
             link="https://www.youtube.com/embed/Qu07WW6bF-Q"/>
@@ -174,6 +174,10 @@ const PortfolioPage = () => {
             title="ALEZA Fashion Show" 
             thumbnail="https://img.youtube.com/vi/7FcLW8K-p3w/maxresdefault.jpg"
             link="https://www.youtube.com/embed/7FcLW8K-p3w"/>
+          <VideoPlay 
+            title="KAS KOM Meeting 2023, Bali" 
+            thumbnail="https://img.youtube.com/vi/6AhcWoFqw0E/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/6AhcWoFqw0E"/>
         </div>
       </div>
     </div>
