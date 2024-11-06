@@ -10,6 +10,7 @@ const WelcomePage = () => {
   const [regId, setRegId] = useState('');
   const [name, setName] = useState('');
   const [loading, setLoading] = useState(false);
+  const [isOnline, setIsOnlline] = useState(false);
 
   const inputRef = useRef(null);
 
@@ -32,22 +33,34 @@ const WelcomePage = () => {
       }
       else{
         if(data.length > 0){
-          
-          const { error } = await supabase.from('participants')
-            .update({ registered_at: new Date().toISOString() })
-            .eq('id', data[0].id);
-          if(error){
-            throw error;
+          const person = data[0];
+
+          setName(person.name);
+          if(person.attendance === 'Online'){
+            setIsOnlline(true);
           }
-          setName(data[0].name);
+          else{
+            setIsOnlline(false);
+          }
+
+          if(!person.registered_at){
+            const { error } = await supabase.from('participants')
+            .update({ registered_at: new Date().toISOString() })
+            .eq('id', person.id);
+            if(error){
+              throw error;
+            }
+          }
         }
         else{
           setName('');
+          setIsOnlline(false);
         }
       }
     }
     catch(error){
       setName('');
+      setIsOnlline(false);
     }
     finally{
       setLoading(false);
@@ -72,6 +85,7 @@ const WelcomePage = () => {
           }}
           onBlur={() => inputRef.current.focus()}/>
         <div className="absolute bottom-20 w-full text-center text-3xl">Terima kasih atas kehadirannya</div>
+        { isOnline && <div className="absolute bottom-5 w-full text-center">*Anda terdaftar sebagai peserta Online</div> }
       </div>
     </div>
   );

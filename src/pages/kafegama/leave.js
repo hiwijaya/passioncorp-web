@@ -10,6 +10,7 @@ const LeavePage = () => {
   const [regId, setRegId] = useState('');
   const [name, setName] = useState('');
   const [loading, setLoading] = useState(false);
+  const [flag, setFlag] = useState(false);
 
   const inputRef = useRef(null);
 
@@ -32,38 +33,37 @@ const LeavePage = () => {
       }
       else{
         if(data.length > 0){
+          const person = data[0];
+          
+          setName(person.name);
 
-          const leave_at = data[0].leave_at;
-          if(leave_at){
+          if(person.leave_at){
+            setFlag(true);
+          }
+          else{
+            setFlag(false);
             const { error } = await supabase.from('participants')
             .update({ leave_at: new Date().toISOString() })
             .eq('id', data[0].id);
             if(error){
               throw error;
             }
-            setName(data[0].name);
           }
-          else {
-            // TODO: marked here..
-            setName(data[0].name);
-          }
-          
-          
         }
         else{
           setName('');
+          setFlag(false);
         }
       }
     }
     catch(error){
       setName('');
+      setFlag(false);
     }
     finally{
       setLoading(false);
       inputRef.current.value = '';
     }
-
-
   }
 
 
@@ -81,6 +81,7 @@ const LeavePage = () => {
           }}
           onBlur={() => inputRef.current.focus()}/>
         <div className="absolute bottom-20 w-full text-center text-3xl">Terima kasih atas kehadirannya</div>
+        { flag && <div className="absolute bottom-5 w-full text-center">*Souvenir sudah diberikan</div> }
       </div>
     </div>
   );
