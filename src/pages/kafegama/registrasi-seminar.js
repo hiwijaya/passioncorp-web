@@ -275,7 +275,23 @@ const RegisterPage = () => {
         </div>
         <div className="flex-[4] bg-gray-800 px-6 lg:pl-20 py-10">
           <div className="max-w-md">
-            <h2 className="text-xl font-bold mb-5 lg:mb-10">REGISTRASI</h2>
+            <h2 className="text-xl font-bold mb-5 lg:mb-5">REGISTRASI</h2>
+            <div className="border-2 border-green-600 p-4 rounded-xl mb-5 lg:mb-10">
+              <div className="font-bold mb-2">Pengumuman:</div>
+              <p className="mb-4">
+                Bersama ini kami menyampaikan bahwa penyelenggaraan <b>Seminar KAFEGAMA 2024 dengan tema "Memacu Pertumbuhan Menuju Indonesia Maju"</b> yang rencananya akan dilaksanakan pada:
+              </p>
+              <p className="mb-4">
+                Hari, Tanggal: Sabtu, 16 November 2024 <br/>
+                Waktu: 08.00 WIB - 12.00 WIB <br/>
+                Tempat: Ballroom Lantai 6, Bank BTN. <br/>
+              </p>
+              <p className="mb-4">
+                Dengan hormat kami sampaikan permohonan maaf bahwa acara tersebut dilakukan <b>Penyesuaian Jadwal kegiatan</b>. 
+                Adapun tanggal penyesuaian akan kami sampaikan dalam waktu dekat.
+              </p>
+              <p>Terima kasih.</p>
+            </div>
             <div>
               <div className="flex flex-col mb-5">
                 <label className="text-sm text-gray-400 mb-2" htmlFor="name">Nama</label>
@@ -359,8 +375,7 @@ const RegisterPage = () => {
                   </div>
                 </div>
               </div>
-              <button className="bg-sky-500 w-full rounded-xl py-3 mb-3 font-bold" type="button"
-                onClick={() => submitRegistration()}>{onSubmit ? 'Mengirim data..' : 'Submit'}</button>
+              <button className="bg-gray-500 w-full rounded-xl py-3 mb-3 font-bold" type="button" disabled>{onSubmit ? 'Mengirim data..' : 'Submit'}</button>
               <p className="text-xs sm:text-sm">
                 Link undangan akan dikirim ke email anda.
               </p>
