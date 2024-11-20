@@ -117,9 +117,9 @@ const PortfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/msxYu8Ow4I8/maxresdefault.jpg"
             link="https://www.youtube.com/embed/msxYu8Ow4I8"/>
           <VideoPlay 
-            title="Family Symphony" 
-            thumbnail="https://img.youtube.com/vi/qvLGlzah2BI/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/qvLGlzah2BI"/>
+            title="Cyber Security Symphosiums 2024" 
+            thumbnail="https://img.youtube.com/vi/kdcf2tn1NYE/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/kdcf2tn1NYE"/>
           <VideoPlay 
             title="China(Fujian) - Indonesia 2023" 
             thumbnail="https://img.youtube.com/vi/G5PGI_Y-KN4/maxresdefault.jpg"
@@ -174,13 +174,17 @@ const PortfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/7FcLW8K-p3w/maxresdefault.jpg"
             link="https://www.youtube.com/embed/7FcLW8K-p3w"/>
           <VideoPlay 
-            title="KAS KOM Meeting 2023, Bali" 
-            thumbnail="https://img.youtube.com/vi/6AhcWoFqw0E/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/6AhcWoFqw0E"/>
+            title="Family Symphony" 
+            thumbnail="https://img.youtube.com/vi/qvLGlzah2BI/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/qvLGlzah2BI"/>
           <VideoPlay 
             title="Daikin Gathering 2023" 
             thumbnail="https://img.youtube.com/vi/OiwncNc9XQE/maxresdefault.jpg"
             link="https://www.youtube.com/embed/OiwncNc9XQE"/>
+          <VideoPlay 
+            title="KAS KOM Meeting 2023, Bali" 
+            thumbnail="https://img.youtube.com/vi/6AhcWoFqw0E/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/6AhcWoFqw0E"/>
         </div>
       </div>
     </div>
