@@ -185,6 +185,10 @@ const PortfolioPage = () => {
             title="KAS KOM Meeting 2023, Bali" 
             thumbnail="https://img.youtube.com/vi/6AhcWoFqw0E/maxresdefault.jpg"
             link="https://www.youtube.com/embed/6AhcWoFqw0E"/>
+          <VideoPlay 
+            title="Asia Customer Experience 2024" 
+            thumbnail="https://img.youtube.com/vi/5A0YDEDXTl4/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/5A0YDEDXTl4"/>
         </div>
       </div>
     </div>
