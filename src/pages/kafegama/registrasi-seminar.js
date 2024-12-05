@@ -13,7 +13,7 @@ const RegisterPage = () => {
   const [city, setCity] = useState('');
   const [institute, setInstitute] = useState('');
   const [profession, setProfession] = useState('');
-  const [attendance, setAttendance] = useState('Online');
+  const [attendance, setAttendance] = useState('Offline');
 
   const [message, setMessage] = useState('');
   const [showModal, setShowModal] = useState(false);
@@ -175,8 +175,8 @@ const RegisterPage = () => {
               <div className="flex flex-row items-center text-sm mb-3">
                 <StaticImage className="w-5 mr-3" src="../../images/kafegama/calendar.png" alt="calendar"/>
                 <div>
-                  <div>Sabtu, 16 November 2024</div>
-                  <div>08:00 - 12:00 WIB</div>
+                  <div>Sabtu, 14 Desember 2024</div>
+                  <div>12:00 - 17:00 WIB</div>
                 </div>
               </div>
               <div className="flex flex-row items-center text-sm">
@@ -188,7 +188,7 @@ const RegisterPage = () => {
               </div>
             </div>
 
-            <h2 className="font-bold mb-5">Welcome remarks</h2>
+            <h2 className="font-bold mb-5">Opening remarks</h2>
             <div className="flex flex-col space-y-5 mb-10">
               <div className="inline-flex flex-row">
                 <StaticImage className="w-12 mr-5 rounded-full" src="../../images/kafegama/perry.png" alt="Perry Warjiyo, PhD."/>
@@ -202,6 +202,17 @@ const RegisterPage = () => {
                 <div className="flex flex-col justify-center">
                   <div>Dr. Friderica Widyasari Dewi</div>
                   <p className="text-sm text-gray-400">Ketua Umum PP KAFEGAMA</p>
+                </div>
+              </div>
+            </div>
+
+            <h2 className="font-bold mb-5">Welcome Remark</h2>
+            <div className="flex flex-col space-y-5 mb-10">
+              <div className="inline-flex flex-row">
+                <StaticImage className="w-12 mr-5 rounded-full" src="../../images/kafegama/nixon.png" alt="Nixon L.P Napitupulu"/>
+                <div className="flex flex-col justify-center">
+                  <div>Nixon L.P Napitupulu</div>
+                  <p className="text-sm text-gray-400">Direktur Utama BTN</p>
                 </div>
               </div>
             </div>
@@ -222,7 +233,7 @@ const RegisterPage = () => {
               <div className="inline-flex flex-row">
                 <StaticImage className="w-12 mr-5 rounded-full" src="../../images/kafegama/edwin.png" alt="Dr. Edwin Hidayat Abdullah"/>
                 <div className="flex flex-col justify-center">
-                  <div>Edwin Hidayat Abdullah</div>
+                  <div>Dr. Edwin Hidayat Abdullah</div>
                   <p className="text-sm text-gray-400">Wakil Ketua Umum PP KAFEGAMA</p>
                 </div>
               </div>
@@ -231,10 +242,10 @@ const RegisterPage = () => {
             <h2 className="font-bold mb-5">Panel Discussions</h2>
             <div className="flex flex-col space-y-5 mb-10" >
               <div className="inline-flex flex-row">
-                <StaticImage className="w-12 mr-5 rounded-full" src="../../images/kafegama/erwin.png" alt="Dr. Edwin Hidayat Abdullah"/>
+                <StaticImage className="w-12 mr-5 rounded-full" src="../../images/kafegama/eka.png" alt="Eka Chandra Buana"/>
                 <div className="flex flex-col justify-center">
-                  <div>Erwin Dimas, SE, DEA, MSi</div>
-                  <p className="text-sm text-gray-400">Kementrian PPN/Bappenas</p>
+                  <div>Eka Chandra Buana</div>
+                  <p className="w-full max-w-md text-sm text-gray-400">Kementerian PPN/Bappenas</p>
                 </div>
               </div>
               <div className="inline-flex flex-row">
@@ -249,13 +260,6 @@ const RegisterPage = () => {
                 <div className="flex flex-col justify-center">
                   <div>Edimon Ginting, PhD.</div>
                   <p className="text-sm text-gray-400">Asian Development Bank</p>
-                </div>
-              </div>
-              <div className="inline-flex flex-row">
-                <StaticImage className="w-12 mr-5 rounded-full" src="../../images/kafegama/dradjad.png" alt="Dr. Dradjad Hari Wibowo"/>
-                <div className="flex flex-col justify-center">
-                  <div>Dr. Dradjad Hari Wibowo</div>
-                  <p className="text-sm text-gray-400">TKN Prabowo-Gibran</p>
                 </div>
               </div>
             </div>
@@ -276,22 +280,6 @@ const RegisterPage = () => {
         <div className="flex-[4] bg-gray-800 px-6 lg:pl-20 py-10">
           <div className="max-w-md">
             <h2 className="text-xl font-bold mb-5 lg:mb-5">REGISTRASI</h2>
-            <div className="border-2 border-green-600 p-4 rounded-xl mb-5 lg:mb-10">
-              <div className="font-bold mb-2">Pengumuman:</div>
-              <p className="mb-4">
-                Bersama ini kami menyampaikan bahwa penyelenggaraan <b>Seminar KAFEGAMA 2024 dengan tema "Memacu Pertumbuhan Menuju Indonesia Maju"</b> yang rencananya akan dilaksanakan pada:
-              </p>
-              <p className="mb-4">
-                Hari, Tanggal: Sabtu, 16 November 2024 <br/>
-                Waktu: 08.00 WIB - 12.00 WIB <br/>
-                Tempat: Ballroom Lantai 6, Bank BTN. <br/>
-              </p>
-              <p className="mb-4">
-                Dengan hormat kami sampaikan permohonan maaf bahwa acara tersebut dilakukan <b>Penyesuaian Jadwal kegiatan</b>. 
-                Adapun tanggal penyesuaian akan kami sampaikan dalam waktu dekat.
-              </p>
-              <p>Terima kasih.</p>
-            </div>
             <div>
               <div className="flex flex-col mb-5">
                 <label className="text-sm text-gray-400 mb-2" htmlFor="name">Nama</label>
@@ -363,9 +351,10 @@ const RegisterPage = () => {
                 <div className="text-sm text-gray-400 mb-2" htmlFor="name">Kehadiran</div>
                 <div className="flex flex-row">
                   <div className="mr-10">
-                    <input id="attendance-1" type="radio" name="attendance" className="mr-2" disabled
-                      value="Offline" />
-                    <label htmlFor="attendance-1" className="text-sm text-gray-400">Offline</label>
+                    <input id="attendance-1" type="radio" name="attendance" className="mr-2"
+                      value="Offline" checked={attendance === 'Offline'} 
+                      onChange={(e) => setAttendance(e.target.value)}/>
+                    <label htmlFor="attendance-1" className="text-sm">Offline</label>
                   </div>
                   <div>
                     <input id="attendance-2" type="radio" name="attendance" className="mr-2"
@@ -375,7 +364,8 @@ const RegisterPage = () => {
                   </div>
                 </div>
               </div>
-              <button className="bg-gray-500 w-full rounded-xl py-3 mb-3 font-bold" type="button" disabled>{onSubmit ? 'Mengirim data..' : 'Submit'}</button>
+              <button className="bg-sky-500 w-full rounded-xl py-3 mb-3 font-bold" type="button"
+                onClick={() => submitRegistration()}>{onSubmit ? 'Mengirim data..' : 'Submit'}</button>
               <p className="text-xs sm:text-sm">
                 Link undangan akan dikirim ke email anda.
               </p>
