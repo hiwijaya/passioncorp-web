@@ -82,9 +82,9 @@ const PortfolioPage = () => {
             thumbnail="https://img.youtube.com/vi/3nh6If9cAVc/maxresdefault.jpg"
             link="https://www.youtube.com/embed/3nh6If9cAVc"/>
           <VideoPlay 
-            title="Vida Partner Forum 2024" 
-            thumbnail="https://img.youtube.com/vi/vW0Hz-WjzrI/maxresdefault.jpg"
-            link="https://www.youtube.com/embed/vW0Hz-WjzrI"/>
+            title="8th 'Belt and Road' Business Services Forum and Celebration ( Indonesia - Beijing ) 2024"
+            thumbnail="https://img.youtube.com/vi/UJxusLiAZ5w/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/UJxusLiAZ5w"/>
           <VideoPlay 
             title="International Conference PVC 2024" 
             thumbnail="https://img.youtube.com/vi/T_KlIjG_nbE/maxresdefault.jpg"
@@ -189,6 +189,10 @@ const PortfolioPage = () => {
             title="Asia Customer Experience 2024" 
             thumbnail="https://img.youtube.com/vi/5A0YDEDXTl4/maxresdefault.jpg"
             link="https://www.youtube.com/embed/5A0YDEDXTl4"/>
+          <VideoPlay 
+            title="Vida Partner Forum 2024" 
+            thumbnail="https://img.youtube.com/vi/vW0Hz-WjzrI/maxresdefault.jpg"
+            link="https://www.youtube.com/embed/vW0Hz-WjzrI"/>
         </div>
       </div>
     </div>
