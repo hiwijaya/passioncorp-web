@@ -13,7 +13,7 @@ const RegisterPage = () => {
   const [city, setCity] = useState('');
   const [institute, setInstitute] = useState('');
   const [profession, setProfession] = useState('');
-  const [attendance, setAttendance] = useState('Offline');
+  const [attendance, setAttendance] = useState('Online');
 
   const [message, setMessage] = useState('');
   const [showModal, setShowModal] = useState(false);
@@ -352,9 +352,8 @@ const RegisterPage = () => {
                 <div className="flex flex-row">
                   <div className="mr-10">
                     <input id="attendance-1" type="radio" name="attendance" className="mr-2"
-                      value="Offline" checked={attendance === 'Offline'} 
-                      onChange={(e) => setAttendance(e.target.value)}/>
-                    <label htmlFor="attendance-1" className="text-sm">Offline</label>
+                      value="Offline" checked={attendance === 'Offline'} disabled/>
+                    <label htmlFor="attendance-1" className="text-sm text-gray-500">Offline</label>
                   </div>
                   <div>
                     <input id="attendance-2" type="radio" name="attendance" className="mr-2"
