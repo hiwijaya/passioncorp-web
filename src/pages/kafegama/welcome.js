@@ -11,6 +11,7 @@ const WelcomePage = () => {
   const [name, setName] = useState('');
   const [loading, setLoading] = useState(false);
   const [isOnline, setIsOnlline] = useState(false);
+  const [flag, setFlag] = useState(false);
 
   const inputRef = useRef(null);
 
@@ -43,7 +44,10 @@ const WelcomePage = () => {
             setIsOnlline(false);
           }
 
-          if(!person.registered_at){
+          if(person.registered_at){
+            setFlag(true);
+          }
+          else{
             const { error } = await supabase.from('participants')
             .update({ registered_at: new Date().toISOString() })
             .eq('id', person.id);
@@ -55,12 +59,14 @@ const WelcomePage = () => {
         else{
           setName('');
           setIsOnlline(false);
+          setFlag(false);
         }
       }
     }
     catch(error){
       setName('');
       setIsOnlline(false);
+      setFlag(false);
     }
     finally{
       setLoading(false);
@@ -85,7 +91,8 @@ const WelcomePage = () => {
           }}
           onBlur={() => inputRef.current.focus()}/>
         <div className="absolute bottom-20 w-full text-center text-3xl">Terima kasih atas kehadirannya</div>
-        { isOnline && <div className="absolute bottom-5 w-full text-center">*Anda terdaftar sebagai peserta Online</div> }
+        { isOnline && <div className="absolute bottom-10 w-full text-center text-lg font-bold">*Anda terdaftar sebagai peserta Online</div> }
+        { flag && <div className="absolute bottom-10 w-full text-center text-lg font-bold">*Anda sudah terdaftar sebelumnya</div> }
       </div>
     </div>
   );
