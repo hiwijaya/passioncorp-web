@@ -363,8 +363,8 @@ const RegisterPage = () => {
                   </div>
                 </div>
               </div>
-              <button className="bg-sky-500 w-full rounded-xl py-3 mb-3 font-bold" type="button"
-                onClick={() => submitRegistration()}>{onSubmit ? 'Mengirim data..' : 'Submit'}</button>
+              <button className="bg-gray-500 w-full rounded-xl py-3 mb-3 font-bold" type="button"
+                disabled>{onSubmit ? 'Mengirim data..' : 'Pendaftaran ditutup'}</button>
               <p className="text-xs sm:text-sm">
                 Link undangan akan dikirim ke email anda.
               </p>
